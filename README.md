@@ -122,6 +122,7 @@ README give the commands; the kit needs a Linux machine with Landlock and a syst
 - https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a (artifact under test, run 1).
 - https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5 (artifact under test, run 2).
 - https://github.com/leanprover/comparator (d03acab1, 75c730e9) and https://github.com/leanprover/lean4export (076e8e57, 9fb131bb): the checker.
+- https://github.com/Joeyxyxyz/sturm-liouville-comparator-run: the Sturm–Liouville file of add-on v3 as a standalone Lake project with its own Comparator challenge (accepted again on 2026-11-03, Lean kernel and NanoDa).
 
 ## Who did what
 
