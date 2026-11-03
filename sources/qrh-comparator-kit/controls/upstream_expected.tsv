@@ -1,0 +1,20 @@
+# Comparator's own regression projects (tests/projects at the pinned commit) that do not need
+# the nanoda kernel: name, expected exit code, and a text the output must contain. The texts
+# were observed on 2026-10-07 with Comparator v4.34.0 built by Lean 4.34.1; they tie each
+# verdict to its reason, so that a crash cannot be mistaken for a rejection.
+char_ofnat_issue	1	Constant Quot not found in environment
+def_hole	0	Your solution is okay!
+def_hole_axiom_issue	1	Illegal axiom detected: 'sorryAx'
+def_hole_kind_mismatch	1	Solution constant is not a definition: 'n'
+def_hole_type_mismatch	1	Const does not match between challenge and target 'n'
+numeric_namespace	0	Your solution is okay!
+olean_issue	1	Lean default kernel rejects the solution
+opaque_value	1	Illegal axiom detected: 'f'
+primitive_issue	1	Constant String.mk not found in environment
+proj_trick	1	Const does not match between challenge and target 'S.mk'
+quot_mismatch	1	Constant Nat not found in environment
+simple_axiom_issue	1	Illegal axiom detected: 'helper'
+simple_kind_mismatch	1	Illegal axiom detected: 'helper'
+simple_match	0	Your solution is okay!
+simple_mismatch	1	Challenge and solution constant kind don't match: 'comm'
+theorem_hole_issue	0	Your solution is okay!

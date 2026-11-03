@@ -1,0 +1,1 @@
+{"exit_code": 1, "must_contain": "Illegal axiom detected: 'sorryAx'", "why": "a sorry anywhere in the proof must be rejected"}

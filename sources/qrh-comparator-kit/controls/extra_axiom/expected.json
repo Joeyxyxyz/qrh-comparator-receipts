@@ -1,0 +1,1 @@
+{"exit_code": 1, "must_contain": "Illegal axiom detected: 'qrh_helper'", "why": "an extra axiom must be rejected"}

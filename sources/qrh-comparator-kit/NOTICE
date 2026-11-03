@@ -1,0 +1,24 @@
+QRH Comparator kit
+Prepared 2026-10-07 for Joey Messina.
+
+The kit contains no third-party source code. At run time, on the droplet, its scripts download
+the following, each at the revision pinned in PINS.env:
+
+  Comparator        https://github.com/leanprover/comparator        Apache-2.0   Lean FRO
+  lean4export       https://github.com/leanprover/lean4export       Apache-2.0   Lean FRO
+  landrun           https://github.com/zouuup/landrun               MIT          Armin Ranjbar
+  Lean 4 (via elan) https://github.com/leanprover/lean4             Apache-2.0
+  Go                https://go.dev/                                 BSD-3-Clause (only to build landrun)
+  openai/math       https://github.com/openai/math                  Apache-2.0   OpenAI (the artifact under test)
+  Mathlib and the other Lean packages OpenAI's manifest names, from their own repositories.
+
+Phase 3 runs Comparator's own regression projects from the Comparator checkout
+(tests/projects/); they are not copied into the kit. The five projects in controls/ were written
+for this kit.
+
+The launch command follows Comparator's README. The structure of a pinned verification script
+was informed by anthropics/formal-math, zeta23/scripts/verify-comparator.sh (Apache-2.0); no
+code was taken from it.
+
+bridge/MNF_Bridge78.lean and bridge/MNF_Bridge78_Unconditional.lean belong to the Messina
+Nullification Framework corpus.

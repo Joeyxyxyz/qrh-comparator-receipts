@@ -1,0 +1,18 @@
+# sha256 of every file in this record (zenodo-record-2026-10-29) except this one and README-DEPOSIT.md (which cites these hashes).
+# Check: sha256sum -c CHECKSUMS.sha256   or   ./verify_deposit.sh
+e0745073e49e9e2d3620a4a6472c9757819ab163388f56ac1aaf253bd92c46ea  qrh-comparator-kit.tar.gz
+d86705398e4858e034bb8f18397e28984ec6525699b31f1d794b230e1998fcbb  qrh-receipt.tar.gz
+295ee9c6086730e9e0592b36e989452943d18d7b2ef1f05aee276002ff0fa7df  qrh-mnf-addon.tar.gz
+f9180842f8c269b64d89ad0f236898e9164af3e5b39ef0c5e1b34561b8838d6b  qrh-mnf-receipt.tar.gz
+933c5ba89388b045fe7a6b7d0a067c56e063f4033bfec80a9196c2bf55a03d3e  qrh-mnf-addon-v2.tar.gz
+c6142a402077b7f312eb22ab990dca3b92b7bdcaa94c26836dc5dc5b15d79eb6  qrh-mnf-v2-receipt.tar.gz
+3668e13824776b259141df844a0f6a1243447d94c548b90bca891a2e9dafb447  qrh-mnf-addon-v3.tar.gz
+023d7ada93e313296e7e9d88c82569fa65c704a2624149a67e5e74c762c8159a  qrh-mnf-v3-receipt.tar.gz
+958abb9f8a2a9e4b87597956344da0967fb6d635d187a861ea3337bd9b22da1f  qrh-zeta23-addon.tar.gz
+e0b9a4d97a04dff75f25cca69f28e684a785bd5f633ea8d0763085be7ea364e5  qrh-zeta23-receipt.tar.gz
+1476f56809c5739866e538d84d41670d573dc37fb56f74ddcc1709da065c1eef  qrh-zeta23-mnf-receipt.tar.gz
+9049e04f9e184f24f4ded4ee64e8b42a5b5061684adfaa86ae5df9503a15693a  DEPOSIT_MAP.md
+acdec80a53f64d284e1358abd6f6c96c3926b6e6c0a937f078a4847c7a9afd7c  LICENSE
+73ed38c1aced86ff70c78a6fca93b4639328f12675c67cd1579f1319716925e6  NOTICE
+66989f3c43ddeeee5b1af10d246989b69d8e48d0ee57f194fa27195aa0cdd45b  verify_deposit.sh
+47bb00544e40ed3337daa2668c2a42e71692c7e0951e2be990f9555b811249b8  zenodo-metadata.json

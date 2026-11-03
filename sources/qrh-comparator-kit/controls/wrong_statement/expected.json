@@ -1,0 +1,1 @@
+{"exit_code": 1, "must_contain": "theorem statement do not match: 'qrh_control'", "why": "a proof of a different statement under the same name must be rejected"}

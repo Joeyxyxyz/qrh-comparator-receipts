@@ -1,0 +1,43 @@
+NOTICE — zenodo-record-2026-10-29 (QRH Comparator kit, the MNF.RH add-ons, and their receipts)
+
+Prepared 2026-10-29 for Joey Messina. This record contains Joey's own scripts, documents and
+Lean files, and the receipts (logs and facts) of Comparator runs made on his laptop. It contains
+no third-party source code, except as noted under "Quoted material". At run time the kit and the
+add-ons download the following, each at a revision pinned in PINS.env / PINS-zeta23.env, and the
+receipts record which:
+
+  Comparator        https://github.com/leanprover/comparator        Apache-2.0   Lean FRO
+  lean4export       https://github.com/leanprover/lean4export       Apache-2.0   Lean FRO
+  NanoDa            https://github.com/robsimmons/nanoda_lib         (see its repository)
+  landrun           https://github.com/zouuup/landrun               MIT          Armin Ranjbar
+  Lean 4 (via elan) https://github.com/leanprover/lean4             Apache-2.0
+  Go                https://go.dev/                                 BSD-3-Clause (only to build landrun)
+  Rust / cargo      Ubuntu packages                                 (only to build NanoDa)
+  openai/math       https://github.com/openai/math                  Apache-2.0   OpenAI (artifact under test)
+  anthropics/formal-math  https://github.com/anthropics/formal-math Apache-2.0   Anthropic, PBC (artifact under test)
+  Mathlib and the other Lean packages the two projects' manifests name, from their own repositories.
+
+Quoted material inside the receipts:
+  - RECEIPT.md (in qrh-receipt.tar.gz) quotes the whole of OpenAI's challenge file
+    lean/ComparatorChallenges/QuasiRiemannHypothesis.lean (9 lines, Apache-2.0, OpenAI).
+  - RECEIPT-zeta23.md (in qrh-zeta23-receipt.tar.gz) quotes the whole of Anthropic's
+    zeta23/Challenge.lean (Apache-2.0, Anthropic, PBC; copyright notice preserved in the quote).
+  - The zeta23 add-on's receipts and reports name theorems of Anthropic's Zeta23 library; no
+    file of that library is included here.
+
+Authorship of the Lean files in the add-on tarballs:
+  - MNF/RH/Core.lean, Gap.lean, Hypotheses.lean, Unconditional.lean, Reduction.lean,
+    Schrodinger.lean: the Messina Nullification Framework corpus (Joey Messina), consolidated
+    2026-10-27/28; the Comparator add-on scripts and the additions of 2026-10-28/29
+    (Counting.lean, Zeta23Restated.lean, GapDensity.lean, the three spectral-gap theorems of v2,
+    the Prop forms of GapMechanism and SchrodingerRealization, the port of the Sturm–Liouville
+    file) were written with Claude Code (Anthropic) under Joey's direction and reviewed by
+    independent model reviewers before each Comparator run; every theorem is kernel-checked.
+  - SturmLiouville/SimpleEigenvalues.lean: co-authored by Aristotle (Harmonic),
+    aristotle-harmonic@harmonic.fun, 2026-03-03, consolidated by Joey 2026-10-27 and ported to
+    Mathlib d13f23b7 on 2026-10-28 (proof-internal changes only).
+  - The structure of the kit's pinned verification scripts was informed by
+    anthropics/formal-math, zeta23/scripts/verify-comparator.sh (Apache-2.0); no code was taken.
+
+License of this record: see LICENSE (Apache-2.0 for everything authored for this record; the
+third-party items above keep their own licenses, named here).

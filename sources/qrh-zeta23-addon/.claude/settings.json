@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(scripts/z23_prepare.sh)",
+      "Bash(scripts/z23_status.sh)",
+      "Bash(scripts/z23_status.sh --wait *)",
+      "Bash(scripts/z23_report.sh)",
+      "Bash(scripts/z23_mnf.sh)",
+      "Bash(scripts/z23_mnf_status.sh)",
+      "Bash(scripts/z23_mnf_status.sh --wait *)",
+      "Bash(scripts/z23_mnf_report.sh)"
+    ],
+    "deny": [
+      "Edit(~/qrh-work/**)",
+      "Edit(~/qrh-zeta23-work/**)",
+      "Edit(/MANIFEST.sha256)",
+      "Edit(/PINS-zeta23.env)",
+      "Edit(/CLAUDE.md)",
+      "Edit(/README.md)",
+      "Edit(/scripts/**)",
+      "Edit(/.claude/**)",
+      "Edit(/MNF/**)",
+      "Edit(/MNFChallenges/**)",
+      "Edit(/lakefile_append.toml)"
+    ]
+  }
+}

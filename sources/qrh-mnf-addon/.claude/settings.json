@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(scripts/mnf_prepare.sh)",
+      "Bash(scripts/mnf_status.sh)",
+      "Bash(scripts/mnf_status.sh --wait *)",
+      "Bash(scripts/mnf_report.sh)"
+    ],
+    "deny": [
+      "Edit(~/qrh-work/**)",
+      "Edit(/MANIFEST.sha256)",
+      "Edit(/CLAUDE.md)",
+      "Edit(/README.md)",
+      "Edit(/DEPOSIT_MAP.md)",
+      "Edit(/MNF/**)",
+      "Edit(/MNFChallenges/**)",
+      "Edit(/MNF_Audit.lean)",
+      "Edit(/lakefile_append.lean)",
+      "Edit(/scripts/**)",
+      "Edit(/.claude/**)"
+    ]
+  }
+}

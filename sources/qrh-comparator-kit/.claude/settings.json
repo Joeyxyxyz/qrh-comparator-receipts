@@ -1,0 +1,50 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(scripts/where.sh)",
+      "Bash(scripts/status.sh *)",
+      "Bash(scripts/show.sh *)",
+      "Bash(scripts/note.sh *)",
+      "Bash(scripts/stop.sh *)",
+      "Bash(scripts/01_preflight.sh)",
+      "Bash(scripts/detach.sh toolchain 02_toolchain.sh)",
+      "Bash(scripts/detach.sh selftest 03_selftest.sh)",
+      "Bash(scripts/detach.sh fetch 04_fetch.sh)",
+      "Bash(scripts/detach.sh deps 05_deps.sh)",
+      "Bash(scripts/detach.sh bridge 08_bridge.sh)",
+      "Bash(scripts/06_run_comparator.sh)",
+      "Bash(scripts/07_receipt.sh)",
+      "Bash(scripts/remote.sh host)",
+      "Bash(scripts/remote.sh fetch-receipt)",
+      "Bash(scripts/remote.sh oom-check)",
+      "Bash(scripts/remote.sh run where.sh)",
+      "Bash(scripts/remote.sh run status.sh *)",
+      "Bash(scripts/remote.sh run show.sh *)",
+      "Bash(scripts/remote.sh run note.sh *)",
+      "Bash(scripts/remote.sh run stop.sh *)",
+      "Bash(scripts/remote.sh run 01_preflight.sh)",
+      "Bash(scripts/remote.sh run detach.sh toolchain 02_toolchain.sh)",
+      "Bash(scripts/remote.sh run detach.sh selftest 03_selftest.sh)",
+      "Bash(scripts/remote.sh run detach.sh fetch 04_fetch.sh)",
+      "Bash(scripts/remote.sh run detach.sh deps 05_deps.sh)",
+      "Bash(scripts/remote.sh run detach.sh bridge 08_bridge.sh)",
+      "Bash(scripts/remote.sh run 06_run_comparator.sh)",
+      "Bash(scripts/remote.sh run 07_receipt.sh)",
+      "Bash(scripts/reset_tree.sh *)",
+      "Bash(scripts/remote.sh run reset_tree.sh *)"
+    ],
+    "deny": [
+      "Edit(~/qrh-work/openai-math/**)",
+      "Edit(/PINS.env)",
+      "Edit(/KIT_MANIFEST.sha256)",
+      "Edit(/CLAUDE.md)",
+      "Edit(/README.md)",
+      "Edit(/NOTICE)",
+      "Edit(/scripts/**)",
+      "Edit(/controls/**)",
+      "Edit(/bridge/**)",
+      "Edit(/docs/**)",
+      "Edit(/.claude/**)"
+    ]
+  }
+}

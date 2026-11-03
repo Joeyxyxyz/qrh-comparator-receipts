@@ -1,0 +1,13 @@
+MNF.Bridge78.zeroFree_seven_eighths : MNF.Bridge78.ZeroFreeRightOf (7 / 8)
+MNF.Bridge78.nontrivial_zero_re_mem_unconditional {ρ : ℂ} (hρ : MNF.Bridge78.is_nontrivial_zero ρ) :
+  1 / 8 ≤ ρ.re ∧ ρ.re ≤ 7 / 8
+MNF.Bridge78.shifted_bounded_three_eighths_unconditional (x : ℝ) : x ∈ MNF.Bridge78.ShiftedZeroSpectrum → |x| ≤ 3 / 8
+MNF.Bridge78.riemannHypothesis_iff_gap_unconditional {Δ : ℝ} (hΔ : 3 / 8 < Δ) :
+  RiemannHypothesis ↔ MNF.Bridge78.SpectralGapProperty MNF.Bridge78.ShiftedZeroSpectrum Δ
+MNF.Bridge78.riemannHypothesis_iff_remaining_strip_unconditional :
+  RiemannHypothesis ↔ ∀ (s : ℂ), 1 / 2 < s.re → s.re ≤ 7 / 8 → riemannZeta s ≠ 0
+MNF.Bridge78.zetaZeros_satisfies_structural_inputs_unconditional :
+  MNF.Bridge78.StripSymmetric MNF.Bridge78.ZetaZeros ∧ ∀ ρ ∈ MNF.Bridge78.ZetaZeros, ρ.re ≤ 7 / 8
+MNF.Bridge78.euler_type_no_go_unconditional :
+  (∀ (s : ℂ), 7 / 8 < s.re → riemannZeta s * MNF.Bridge78.twoFactor s ≠ 0) ∧
+    ∃ s, 1 / 2 < s.re ∧ s.re ≤ 7 / 8 ∧ riemannZeta s * MNF.Bridge78.twoFactor s = 0
