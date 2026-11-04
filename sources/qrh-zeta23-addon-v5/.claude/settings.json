@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(scripts/z23_density.sh)",
+      "Bash(scripts/z23_density_status.sh)",
+      "Bash(scripts/z23_density_status.sh --wait *)",
+      "Bash(scripts/z23_density_report.sh)"
+    ],
+    "deny": [
+      "Edit(~/qrh-work/**)",
+      "Edit(~/qrh-zeta23-work/**)",
+      "Edit(/MANIFEST.sha256)",
+      "Edit(/PINS-zeta23.env)",
+      "Edit(/CLAUDE.md)",
+      "Edit(/README.md)",
+      "Edit(/scripts/**)",
+      "Edit(/.claude/**)",
+      "Edit(/MNF/**)",
+      "Edit(/Zeta23/**)",
+      "Edit(/lakefile_append.toml)"
+    ]
+  }
+}

@@ -337,6 +337,152 @@ import MNF.RH.DensityAll
 #print axioms Zeta23.BL.meanSquare_strip'
 #print axioms MNF.RH.reservoirDensityOne_unconditional
 #print axioms MNF.RH.onLineDensityOne_of_gap_only
+#print axioms Zeta23.BL.one_half_pos'
+#print axioms Zeta23.BL.tsum_one_div_rpow_two_sq_le
+#print axioms Zeta23.BL.meanSquare_explicit_small
+#print axioms Zeta23.BL.NRight_le_Ncount
+#print axioms Zeta23.BL.Rout_half
+#print axioms Zeta23.BL.rin_half
+#print axioms Zeta23.BL.hwin_half_ge
+#print axioms Zeta23.BL.log_half_ge
+#print axioms Zeta23.BL.K_half_ge
+#print axioms Zeta23.BL.rpow_neg_five_half_mul
+#print axioms Zeta23.BL.log_three_nonneg
+#print axioms Zeta23.BL.bohrLandau_explicit
+#print axioms Zeta23.MNF_Ncount_le_mul_log
+#print axioms Zeta23.MNF_mul_log_le_Ncount
+#print axioms MNF.RH.abs_re_sub_half_lt_half
+#print axioms MNF.RH.abs_re_sub_half_le_half
+#print axioms MNF.RH.NOff_anti
+#print axioms MNF.RH.NOff_antitone
+#print axioms MNF.RH.NOff_intervalIntegrable
+#print axioms MNF.RH.indicator_le_antitone
+#print axioms MNF.RH.term_intervalIntegrable
+#print axioms MNF.RH.integral_indicator_le_eq
+#print axioms MNF.RH.reservoirMass_eq_integral
+#print axioms MNF.RH.reservoirMass_nonneg
+#print axioms MNF.RH.reservoirMass_le_half_Ncount
+#print axioms MNF.RH.integral_NOff_split
+#print axioms MNF.RH.integral_NOff_le_mul_Ncount
+#print axioms MNF.RH.integral_NOff_tail_le
+#print axioms MNF.RH.reservoirMass_le_split
+#print axioms MNF.RH.reservoirMass_le_eps_Ncount
+#print axioms MNF.RH.signedReservoir_eq_zero
+#print axioms MNF.RH.sum_right_eq_sum_left
+#print axioms MNF.RH.reservoirMass_eq_two_right
+#print axioms MNF.RH.rpow_tail_intervalIntegrable
+#print axioms MNF.RH.integral_rpow_tail_le
+#print axioms MNF.RH.reservoirMass_le_rpow
+#print axioms MNF.RH.reservoirMass_le_Ncount_mul
+#print axioms MNF.RH.meanDisplacement_tendsto_zero
+#print axioms Zeta23.Density.analyticOnNhd_Mx
+#print axioms Zeta23.Density.analyticOnNhd_fz
+#print axioms Zeta23.Density.continuousOn_fz
+#print axioms Zeta23.Density.tail_inv_sq_le
+#print axioms Zeta23.Density.fz_sub_one_eq
+#print axioms Zeta23.Density.norm_fz_sub_one_le
+#print axioms Zeta23.Density.pi_sq_lt_ten
+#print axioms Zeta23.Density.pi_sq_div_six_div_le
+#print axioms Zeta23.Density.norm_fz_le_one_add
+#print axioms Zeta23.Density.one_sub_norm_le_norm_fz
+#print axioms Zeta23.Density.fz_lower_two
+#print axioms Zeta23.Density.neg_log_norm_fz_two_le
+#print axioms Zeta23.Density.log_norm_fz_le_of_two_le_re
+#print axioms Zeta23.Density.norm_sq_fz_le_of_two_le_re
+#print axioms Zeta23.Density.abs_cm_le
+#print axioms Zeta23.Density.cm_eq_of_le
+#print axioms Zeta23.Density.S_mul_Mx_eq
+#print axioms Zeta23.Density.card_filter_dvd_dvd_le
+#print axioms Zeta23.Density.gcd_le_sum_dvd
+#print axioms Zeta23.Density.gcd_le_sum_Icc
+#print axioms Zeta23.Density.sum_div_of_dvd_le
+#print axioms Zeta23.Density.ite_and_div_eq
+#print axioms Zeta23.Density.sum_gcd_div_le
+#print axioms Zeta23.Density.dX_eq_card_filter
+#print axioms Zeta23.Density.dX_eq_sum
+#print axioms Zeta23.Density.sum_dX_sq_le
+#print axioms Zeta23.Density.sum_mul_le_of_partial_sums
+#print axioms Zeta23.Density.sum_mul_le_of_partial_sums_tail
+#print axioms Zeta23.Density.sum_Ioc_rpow_le
+#print axioms Zeta23.Density.tail_sum_le
+#print axioms Zeta23.Density.weight_sum_le
+#print axioms Zeta23.Density.integral_window_eq
+#print axioms Zeta23.Density.norm_coeff_sq
+#print axioms Zeta23.Density.abs_cm_sq_le
+#print axioms Zeta23.Density.meanSquare_prodPoly
+#print axioms Zeta23.Density.norm_add_sq_le_eta
+#print axioms Zeta23.Density.norm_Mx_le
+#print axioms Zeta23.Density.continuousOn_B_window
+#print axioms Zeta23.Density.integral_inv_sq_window
+#print axioms Zeta23.Density.meanSquare_B_window
+#print axioms Zeta23.Density.continuous_A_window
+#print axioms Zeta23.Density.continuousOn_fz_window
+#print axioms Zeta23.Density.meanSquare_fz_window
+#print axioms Zeta23.Density.sum_Icc_two_inv_mul_sub_one
+#print axioms Zeta23.Density.norm_moebius_mul_cpow_le
+#print axioms Zeta23.Density.Mx_eq_one_add
+#print axioms Zeta23.Density.Mx_ne_zero_of_le_re
+#print axioms Zeta23.Density.analyticOrderAt_Mx_ne_top
+#print axioms Zeta23.Density.zeta_order_le_divisor_fz
+#print axioms Zeta23.Density.finset_sum_zeta_order_le_finsum_divisor_fz
+#print axioms Zeta23.Density.fz_two_add_ne_zero
+#print axioms Zeta23.Density.count_disc_le_fz
+#print axioms Zeta23.Density.count_finset_le_fz
+#print axioms Zeta23.Density.count_window_le_fz
+#print axioms Zeta23.Density.log_norm_le_Leps
+#print axioms Zeta23.Density.continuousOn_Leps
+#print axioms Zeta23.Density.circleAverage_log_norm_le_Leps
+#print axioms Zeta23.Density.concaveOn_half_log_add
+#print axioms Zeta23.Density.half_log_le_half
+#print axioms Zeta23.Density.segment_average_Leps_le
+#print axioms Zeta23.Density.continuousOn_Leps_fz_ne_one
+#print axioms Zeta23.Density.continuousOn_Leps_circleMap
+#print axioms Zeta23.Density.integrableOn_Leps_circleMap_prod
+#print axioms Zeta23.Density.integrable_Leps_circleMap_prod_restrict
+#print axioms Zeta23.Density.intervalIntegrable_circleAverage_Leps
+#print axioms Zeta23.Density.integral_circleAverage_Leps_eq_swap
+#print axioms Zeta23.Density.intervalIntegrable_Leps_segment
+#print axioms Zeta23.Density.intervalIntegrable_normSq_fz_segment
+#print axioms Zeta23.Density.circleAverage_log_fz_le_Leps
+#print axioms Zeta23.Density.count_le_integral_fz_window
+#print axioms Zeta23.Density.count_le_integral_fz_NSigma
+#print axioms Zeta23.Density.NRight_sub_eq_NSigma
+#print axioms Zeta23.Density.count_le_integral_fz
+#print axioms Zeta23.Density.integral_Leps_segment_le_of_meanSquare
+#print axioms Zeta23.Density.Leps_fz_le_of_two_le_re
+#print axioms Zeta23.Density.integral_Leps_segment_le_of_two_le
+#print axioms Zeta23.Density.integral_Leps_circle_le
+#print axioms Zeta23.Density.integral_circleAverage_Leps_le
+#print axioms Zeta23.Density.count_le_meanSquare_fz_window
+#print axioms Zeta23.Density.count_le_meanSquare_fz
+#print axioms Zeta23.Density.theta_pos
+#print axioms Zeta23.Density.theta_le_one
+#print axioms Zeta23.Density.kappa_pos
+#print axioms Zeta23.Density.kappa_le_theta
+#print axioms Zeta23.Density.theta_mul_eq
+#print axioms Zeta23.Density.offdiag_exponent
+#print axioms Zeta23.Density.cross_exponent
+#print axioms Zeta23.Density.cross_exponent'
+#print axioms Zeta23.Density.half_le_nat_floor
+#print axioms Zeta23.Density.rpow_sq_eq
+#print axioms Zeta23.Density.two_rpow_le_two
+#print axioms Zeta23.Density.one_add_log_cube_le_rpow
+#print axioms Zeta23.Density.single_params
+#print axioms Zeta23.Density.X_rpow_le
+#print axioms Zeta23.Density.rpow_le_X_rpow
+#print axioms Zeta23.Density.NX_rpow_div_le
+#print axioms Zeta23.Density.inv_X_le
+#print axioms Zeta23.Density.E0gen_le
+#print axioms Zeta23.Density.le_E0gen
+#print axioms Zeta23.Density.E0gen_le_const
+#print axioms Zeta23.Density.cross_le
+#print axioms Zeta23.Density.Egen_le
+#print axioms Zeta23.Density.Ksingle_pos
+#print axioms Zeta23.Density.exponent_single
+#print axioms Zeta23.Density.w4_rhs_le
+#print axioms Zeta23.Density.geom_lower
+#print axioms Zeta23.Density.count_le_Egen
+#print axioms Zeta23.Density.density_single_window
 
 #check @MNF.RH.N0_le_Ncount
 #check @MNF.RH.NOff_le_Ncount
@@ -672,3 +818,149 @@ import MNF.RH.DensityAll
 #check @Zeta23.BL.meanSquare_strip'
 #check @MNF.RH.reservoirDensityOne_unconditional
 #check @MNF.RH.onLineDensityOne_of_gap_only
+#check @Zeta23.BL.one_half_pos'
+#check @Zeta23.BL.tsum_one_div_rpow_two_sq_le
+#check @Zeta23.BL.meanSquare_explicit_small
+#check @Zeta23.BL.NRight_le_Ncount
+#check @Zeta23.BL.Rout_half
+#check @Zeta23.BL.rin_half
+#check @Zeta23.BL.hwin_half_ge
+#check @Zeta23.BL.log_half_ge
+#check @Zeta23.BL.K_half_ge
+#check @Zeta23.BL.rpow_neg_five_half_mul
+#check @Zeta23.BL.log_three_nonneg
+#check @Zeta23.BL.bohrLandau_explicit
+#check @Zeta23.MNF_Ncount_le_mul_log
+#check @Zeta23.MNF_mul_log_le_Ncount
+#check @MNF.RH.abs_re_sub_half_lt_half
+#check @MNF.RH.abs_re_sub_half_le_half
+#check @MNF.RH.NOff_anti
+#check @MNF.RH.NOff_antitone
+#check @MNF.RH.NOff_intervalIntegrable
+#check @MNF.RH.indicator_le_antitone
+#check @MNF.RH.term_intervalIntegrable
+#check @MNF.RH.integral_indicator_le_eq
+#check @MNF.RH.reservoirMass_eq_integral
+#check @MNF.RH.reservoirMass_nonneg
+#check @MNF.RH.reservoirMass_le_half_Ncount
+#check @MNF.RH.integral_NOff_split
+#check @MNF.RH.integral_NOff_le_mul_Ncount
+#check @MNF.RH.integral_NOff_tail_le
+#check @MNF.RH.reservoirMass_le_split
+#check @MNF.RH.reservoirMass_le_eps_Ncount
+#check @MNF.RH.signedReservoir_eq_zero
+#check @MNF.RH.sum_right_eq_sum_left
+#check @MNF.RH.reservoirMass_eq_two_right
+#check @MNF.RH.rpow_tail_intervalIntegrable
+#check @MNF.RH.integral_rpow_tail_le
+#check @MNF.RH.reservoirMass_le_rpow
+#check @MNF.RH.reservoirMass_le_Ncount_mul
+#check @MNF.RH.meanDisplacement_tendsto_zero
+#check @Zeta23.Density.analyticOnNhd_Mx
+#check @Zeta23.Density.analyticOnNhd_fz
+#check @Zeta23.Density.continuousOn_fz
+#check @Zeta23.Density.tail_inv_sq_le
+#check @Zeta23.Density.fz_sub_one_eq
+#check @Zeta23.Density.norm_fz_sub_one_le
+#check @Zeta23.Density.pi_sq_lt_ten
+#check @Zeta23.Density.pi_sq_div_six_div_le
+#check @Zeta23.Density.norm_fz_le_one_add
+#check @Zeta23.Density.one_sub_norm_le_norm_fz
+#check @Zeta23.Density.fz_lower_two
+#check @Zeta23.Density.neg_log_norm_fz_two_le
+#check @Zeta23.Density.log_norm_fz_le_of_two_le_re
+#check @Zeta23.Density.norm_sq_fz_le_of_two_le_re
+#check @Zeta23.Density.abs_cm_le
+#check @Zeta23.Density.cm_eq_of_le
+#check @Zeta23.Density.S_mul_Mx_eq
+#check @Zeta23.Density.card_filter_dvd_dvd_le
+#check @Zeta23.Density.gcd_le_sum_dvd
+#check @Zeta23.Density.gcd_le_sum_Icc
+#check @Zeta23.Density.sum_div_of_dvd_le
+#check @Zeta23.Density.ite_and_div_eq
+#check @Zeta23.Density.sum_gcd_div_le
+#check @Zeta23.Density.dX_eq_card_filter
+#check @Zeta23.Density.dX_eq_sum
+#check @Zeta23.Density.sum_dX_sq_le
+#check @Zeta23.Density.sum_mul_le_of_partial_sums
+#check @Zeta23.Density.sum_mul_le_of_partial_sums_tail
+#check @Zeta23.Density.sum_Ioc_rpow_le
+#check @Zeta23.Density.tail_sum_le
+#check @Zeta23.Density.weight_sum_le
+#check @Zeta23.Density.integral_window_eq
+#check @Zeta23.Density.norm_coeff_sq
+#check @Zeta23.Density.abs_cm_sq_le
+#check @Zeta23.Density.meanSquare_prodPoly
+#check @Zeta23.Density.norm_add_sq_le_eta
+#check @Zeta23.Density.norm_Mx_le
+#check @Zeta23.Density.continuousOn_B_window
+#check @Zeta23.Density.integral_inv_sq_window
+#check @Zeta23.Density.meanSquare_B_window
+#check @Zeta23.Density.continuous_A_window
+#check @Zeta23.Density.continuousOn_fz_window
+#check @Zeta23.Density.meanSquare_fz_window
+#check @Zeta23.Density.sum_Icc_two_inv_mul_sub_one
+#check @Zeta23.Density.norm_moebius_mul_cpow_le
+#check @Zeta23.Density.Mx_eq_one_add
+#check @Zeta23.Density.Mx_ne_zero_of_le_re
+#check @Zeta23.Density.analyticOrderAt_Mx_ne_top
+#check @Zeta23.Density.zeta_order_le_divisor_fz
+#check @Zeta23.Density.finset_sum_zeta_order_le_finsum_divisor_fz
+#check @Zeta23.Density.fz_two_add_ne_zero
+#check @Zeta23.Density.count_disc_le_fz
+#check @Zeta23.Density.count_finset_le_fz
+#check @Zeta23.Density.count_window_le_fz
+#check @Zeta23.Density.log_norm_le_Leps
+#check @Zeta23.Density.continuousOn_Leps
+#check @Zeta23.Density.circleAverage_log_norm_le_Leps
+#check @Zeta23.Density.concaveOn_half_log_add
+#check @Zeta23.Density.half_log_le_half
+#check @Zeta23.Density.segment_average_Leps_le
+#check @Zeta23.Density.continuousOn_Leps_fz_ne_one
+#check @Zeta23.Density.continuousOn_Leps_circleMap
+#check @Zeta23.Density.integrableOn_Leps_circleMap_prod
+#check @Zeta23.Density.integrable_Leps_circleMap_prod_restrict
+#check @Zeta23.Density.intervalIntegrable_circleAverage_Leps
+#check @Zeta23.Density.integral_circleAverage_Leps_eq_swap
+#check @Zeta23.Density.intervalIntegrable_Leps_segment
+#check @Zeta23.Density.intervalIntegrable_normSq_fz_segment
+#check @Zeta23.Density.circleAverage_log_fz_le_Leps
+#check @Zeta23.Density.count_le_integral_fz_window
+#check @Zeta23.Density.count_le_integral_fz_NSigma
+#check @Zeta23.Density.NRight_sub_eq_NSigma
+#check @Zeta23.Density.count_le_integral_fz
+#check @Zeta23.Density.integral_Leps_segment_le_of_meanSquare
+#check @Zeta23.Density.Leps_fz_le_of_two_le_re
+#check @Zeta23.Density.integral_Leps_segment_le_of_two_le
+#check @Zeta23.Density.integral_Leps_circle_le
+#check @Zeta23.Density.integral_circleAverage_Leps_le
+#check @Zeta23.Density.count_le_meanSquare_fz_window
+#check @Zeta23.Density.count_le_meanSquare_fz
+#check @Zeta23.Density.theta_pos
+#check @Zeta23.Density.theta_le_one
+#check @Zeta23.Density.kappa_pos
+#check @Zeta23.Density.kappa_le_theta
+#check @Zeta23.Density.theta_mul_eq
+#check @Zeta23.Density.offdiag_exponent
+#check @Zeta23.Density.cross_exponent
+#check @Zeta23.Density.cross_exponent'
+#check @Zeta23.Density.half_le_nat_floor
+#check @Zeta23.Density.rpow_sq_eq
+#check @Zeta23.Density.two_rpow_le_two
+#check @Zeta23.Density.one_add_log_cube_le_rpow
+#check @Zeta23.Density.single_params
+#check @Zeta23.Density.X_rpow_le
+#check @Zeta23.Density.rpow_le_X_rpow
+#check @Zeta23.Density.NX_rpow_div_le
+#check @Zeta23.Density.inv_X_le
+#check @Zeta23.Density.E0gen_le
+#check @Zeta23.Density.le_E0gen
+#check @Zeta23.Density.E0gen_le_const
+#check @Zeta23.Density.cross_le
+#check @Zeta23.Density.Egen_le
+#check @Zeta23.Density.Ksingle_pos
+#check @Zeta23.Density.exponent_single
+#check @Zeta23.Density.w4_rhs_le
+#check @Zeta23.Density.geom_lower
+#check @Zeta23.Density.count_le_Egen
+#check @Zeta23.Density.density_single_window

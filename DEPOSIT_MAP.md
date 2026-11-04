@@ -10,11 +10,14 @@ Receipts behind this map, all from the kit's launcher on Joey's laptop: v1 `qrh-
 bodies compared, `c6142a40…`); v3 `qrh-mnf-v3-receipt.tar.gz` (ACCEPTED 2026-10-29 05:56–06:10 UTC, 87
 theorems, 41 definitions, `023d7ada93e313296e7e9d88c82569fa65c704a2624149a67e5e74c762c8159a`); zeta23
 `qrh-zeta23-receipt.tar.gz` (PASS, `e0b9a4d9…`) and the MNF layer on it `qrh-zeta23-mnf-receipt.tar.gz`
-(ACCEPTED, 62, `1476f568…`). Revised again 2026-11-04 for the density field (§10): three more
+(ACCEPTED, 62, `1476f568…`). Revised again 2026-11-04 for the density field (§10): four more
 receipts on the zeta23 tree, add-on v2 `qrh-zeta23-density-receipt.tar.gz` (ACCEPTED 2026-11-03,
 124 theorems, `975b2178…`), v3 `qrh-zeta23-density-v3-receipt.tar.gz` (ACCEPTED, 270, `0588555d…`),
 v4 `qrh-zeta23-density-v4-receipt.tar.gz` (ACCEPTED 2026-11-04 00:52–00:58 UTC, 334 theorems, 81
-definitions, `0d1919e42cbe45408d719536fc3c45ecdaa106bb1c83470e12b063006372f56a`). This root copy is the current deposit map;
+definitions, `0d1919e42cbe45408d719536fc3c45ecdaa106bb1c83470e12b063006372f56a`), v5
+`qrh-zeta23-density-v5-receipt.tar.gz` (ACCEPTED 2026-11-04 14:38–14:45 UTC, 480 theorems, 98
+definitions, `37a806b20c4ef5abf9bed06f127746e46d2184b928a75a0efcaa06de1a5ef863`: the reservoir mass and
+a zero-density estimate with a power saving). This root copy is the current deposit map;
 the copies inside the add-on folders and inside the Zenodo record of 2026-10-29 are frozen with
 the add-on or record they belong to.
 
@@ -248,7 +251,7 @@ as such. (Wording from notes/FischerForward_The_Math.md §6.)
 
 ## 10. The density field and Bohr–Landau on the zeta23 tree (2026-11-03/04)
 
-Three further Comparator runs on the zeta23 checkout that run 2 checked (cold under the kit's
+Four further Comparator runs on the zeta23 checkout that run 2 checked (cold under the kit's
 launcher, AF_UNIX denied, Lean kernel and NanoDa, every definition compared by body). The
 working notes, the receipts extracted, the plan, the two adversarial prose reviews and the
 per-agent sources are in `notes/density-field-2026-11-03/` (ledger `DENSITY_LEDGER.md`).
@@ -258,8 +261,9 @@ per-agent sources are in `notes/density-field-2026-11-03/` (ledger `DENSITY_LEDG
 | 7 | `zeta23-density` | `qrh-zeta23-addon-v2.tar.gz` `5dc41dff…` | `qrh-zeta23-density-receipt.tar.gz` `975b2178…` | 124 (66 definitions) | ACCEPTED 2026-11-03 21:05–21:13 UTC |
 | 8 | `zeta23-density-v3` | `qrh-zeta23-addon-v3.tar.gz` `c0958d53…` | `qrh-zeta23-density-v3-receipt.tar.gz` `0588555d…` | 270 (76) | ACCEPTED 2026-11-03 22:03–22:09 UTC |
 | 9 | `zeta23-density-v4` | `qrh-zeta23-addon-v4.tar.gz` `fb74e8a2…` | `qrh-zeta23-density-v4-receipt.tar.gz` `0d1919e4…` | 334 (81) | ACCEPTED 2026-11-04 00:52–00:58 UTC |
+| 10 | `zeta23-density-v5` | `qrh-zeta23-addon-v5.tar.gz` `2d2cf058…` | `qrh-zeta23-density-v5-receipt.tar.gz` `37a806b2…` | 480 (98) | ACCEPTED 2026-11-04 14:38–14:45 UTC |
 
-Each run re-judges everything of the previous one plus the new modules; run 9 is the complete
+Each run re-judges everything of the previous one plus the new modules; run 10 is the complete
 layer. What is proved there, in register terms:
 
 | theorem (module) | status | note |
@@ -274,6 +278,11 @@ layer. What is proved there, in register terms:
 | **`Zeta23.BL.bohrLandau_full : MNF.RH.BohrLandau`** (BohrLandauClosure) | [PROVED \| this tree] | for every δ > 0 the nontrivial zeros with 0 < Im ρ ≤ T and \|Re ρ − 1/2\| ≥ δ, with multiplicity, number ≤ C_δ·T (T ≥ 2). Bohr–Landau 1914, formalized; not new mathematics |
 | `MNF.RH.reservoirDensityOne_unconditional`, **`onLineDensityOne_of_gap_only`** (BohrLandauClosure) | [PROVED \| this tree]; [CONDITIONAL] on the gap alone | density one within every fixed δ of the line with no hypothesis; a gap at any Δ > 0 gives density one on the line with no other hypothesis. For Δ ≥ 1/2 the gap is RH (§1); for 0 < Δ < 1/2 it is the open strip of §4 |
 | `Zeta23.BL.meanSquare_strip'`, `rightHalfBound_of_meanSquare'` (BohrLandauClosure) | [PROVED \| this tree] | the two statements that `Zeta23/BohrLandau.lean` named as `sorry`; the originals are kept untouched (their sorries are in no claim set); at σ = 1 the ∫₀ᵀ form holds only by Mathlib's junk-value convention, as the docstrings say |
+| `MNF.RH.reservoirMass_eq_integral`, `reservoirMass_le_half_Ncount`, `signedReservoir_eq_zero`, `reservoirMass_eq_two_right` (ReservoirMass) | [PROVED] bookkeeping | the reservoir mass Σ m(ρ)·\|Re ρ − 1/2\| over 0 < Im ρ ≤ T (the total displacement of the zeros from the line, with multiplicity) is the layer-cake integral ∫₀^{1/2} NOff(δ; 0, T) dδ, is ≤ ½·N(0,T), its signed version Σ m(ρ)(Re ρ − 1/2) is 0 by the reflection ρ ↦ 1 − ρ̄, and it is twice the right-half signed sum |
+| `Zeta23.BL.bohrLandau_explicit` (ReservoirMass) | [PROVED \| this tree] | NOff(δ; 0, T) ≤ (A·δ^{−5/2} + B)·T for 0 < δ ≤ 1/2 and T ≥ 2, with A and B explicit up to the tree's two existential constants (the approximate-formula constant at σ₀ = 1/2 and the unit-window Riemann–von Mangoldt constant) |
+| **`MNF.RH.reservoirMass_le_rpow`**, `reservoirMass_le_Ncount_mul`, **`meanDisplacement_tendsto_zero`** (ReservoirMass) | [PROVED \| this tree] | reservoirMass T ≤ A·T·(log T)^{3/5} for T ≥ T₀, hence ≤ A·(log T)^{−2/5}·N(0,T): the mean distance of the zeros from the line, with multiplicity, tends to 0. Far weaker than Littlewood 1924 (O(T log log T)) and Selberg 1946 (O(T)); compatible with infinitely many zeros off the line and silent on the gap |
+| **`Zeta23.Density.density_single_window`** (StripDensity) | [PROVED \| this tree] | for 1/2 < σ₁ and σ₁ − 1/2 < δ ≤ 1/2: NRight(δ, T) ≤ C·T^{1 − (2σ₁−1)²/(2σ₁)}·(1 + log T)³ for all T ≥ 2 (at σ₁ = 3/4: O(T^{5/6}(log T)³)) — a zero-density estimate with a power saving, Carlson's method with one approximate formula on one window; weaker than Carlson's exponent 4σ₁(1 − σ₁), which is not proved. A count, not a zero-free region: it excludes no individual zero and says nothing about zeros closer than δ to the line |
+| `sum_dX_sq_le`, `S_mul_Mx_eq`, `fz_sub_one_eq`, `meanSquare_fz_window`, `count_le_meanSquare_fz` (StripDensity) | [PROVED], [PROVED \| this tree] | the divisor bound Σ_{m≤Y} d_X(m)² ≤ Y(1 + log X)³; the product polynomial S_N·M_X; the Möbius identity ζ·M_X − 1 = −ζ·Σ_{n>X} μ(n)n^{−s} for Re s > 1; the window mean square of ζ·M_X; the Jensen-disc count with the majorant ½ log(ε² + ‖f‖²) |
 
 Register tag **[PROVED | this tree]**: proved on the zeta23 checkout from Mathlib and the tree's
 sorry-free files (zeta23's own library, receipted in run 2), delegated by unfolding where it is
@@ -283,4 +292,13 @@ Sturm–Liouville file of add-on v3 lives on as the standalone project
 github.com/Joeyxyxyz/sturm-liouville-comparator-run (simplicity plus the first oscillation step,
 Comparator-accepted 2026-11-03; no completed Lean proof of the simplicity theorem was known to the
 author as of 2026-11-03, see notes/density-field-2026-11-03 and the project's README).
+
+Erratum (2026-11-04). The report inside the run 9 bundle (`density-v4/MNF_DENSITY.md`, block
+`## How to read this`) carries the sentence "Bohr–Landau itself is NOT proved …", inherited from
+the v2/v3 report generator, where it was true; for run 9 it is false, as the same report's
+statement block and axiom table show (`Zeta23.BL.bohrLandau_full` with standard axioms). The
+verdict, the audit and the hashes of run 9 are unaffected; the generator is corrected in add-on
+v5 and the run 10 report carries the corrected prose; the run 9 bundle is not altered. The
+zero-density estimate of run 10 is a count of zeros off the line, not a zero-free region:
+`SpectralGapHyp` stays [OPEN] for every Δ, exactly as in §6.
 

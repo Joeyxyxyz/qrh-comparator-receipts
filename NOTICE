@@ -55,3 +55,14 @@ Added 2026-11-04 (runs 7–9, the density field on the zeta23 tree):
   - MNF/RH/GapDensity.lean: add-on v3's file, docstrings revised 2026-11-03, statements unchanged.
   - The receipts quote nothing from zeta23 beyond theorem names.
 
+Added 2026-11-04 (run 10, add-on v5):
+  - MNF/RH/ReservoirMass.lean and Zeta23/Density/StripDensity.lean: written with Claude Code
+    (Anthropic) under Joey Messina's direction by parallel workflow agents from written plans
+    (notes/density-field-2026-11-03/reservoir/, strip/), merged, recompiled independently and
+    corrected after adversarial prose reviews; every theorem kernel-checked and Comparator-judged.
+  - scripts/z23_density_check.py of add-on v5 corrects a stale sentence of the v2–v4 report
+    generator (DEPOSIT_MAP.md §10, Erratum).
+  - notes/density-field-2026-11-03/numeric/: pure-Python code written with Claude Code; the
+    tabulated zero ordinates it compares against are public (Odlyzko / LMFDB tables) and are
+    reproduced only for the first ten zeros and the hundredth, to nine decimals.
+

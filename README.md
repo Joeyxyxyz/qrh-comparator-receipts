@@ -34,7 +34,7 @@ definition compared by name, type and body:
 
 (Six runs, five bundles: run 2 and run 6 share the zeta23 tree and are two bundles of one add-on.)
 
-Added 2026-11-04, three more runs on the zeta23 tree, each re-judging the previous one plus new
+Added 2026-11-04, four more runs on the zeta23 tree, each re-judging the previous one plus new
 modules (details: `DEPOSIT_MAP.md` §10 and `notes/density-field-2026-11-03/`):
 
 7. **The density field** (`zeta23-density`, add-on v2): 124 theorems, 66 definitions, Lean kernel
@@ -50,6 +50,20 @@ modules (details: `DEPOSIT_MAP.md` §10 and `notes/density-field-2026-11-03/`):
    every σ > 1/2, and from them `Zeta23.BL.bohrLandau_full : MNF.RH.BohrLandau`; so the
    density-one theorem now has exactly one hypothesis, the spectral gap
    (`MNF.RH.onLineDensityOne_of_gap_only`). Bohr–Landau (1914) formalized, not new mathematics.
+10. **The reservoir mass and a zero-density estimate with a power saving** (`zeta23-density-v5`,
+   add-on v5): 480 theorems, 98 definitions, Lean kernel and NanoDa, ACCEPTED 2026-11-04.
+   `MNF/RH/ReservoirMass.lean`: the total displacement of the zeros from the line,
+   Σ m(ρ)·|Re ρ − 1/2| over 0 < Im ρ ≤ T, is the layer-cake integral ∫₀^{1/2} NOff(δ) dδ and is
+   ≤ A·T·(log T)^{3/5}, so the mean displacement per zero tends to 0 (far weaker than Littlewood
+   1924 and Selberg 1946). `Zeta23/Density/StripDensity.lean`: `Zeta23.Density.density_single_window`,
+   Carlson's method in single-window form — for 1/2 < σ₁ and σ₁ − 1/2 < δ ≤ 1/2 the zeros with
+   Re ρ − 1/2 ≥ δ and 0 < Im ρ ≤ T number ≤ C·T^{1 − (2σ₁−1)²/(2σ₁)}·(1 + log T)³ (weaker than
+   Carlson's 4σ₁(1 − σ₁), which is not proved). A count, not a zero-free region: it excludes no
+   individual zero and leaves `SpectralGapHyp` open. Erratum: the run 9 report's "How to read
+   this" block carries a stale sentence ("Bohr–Landau itself is NOT proved"), true for runs 7–8
+   and false for run 9, as that report's own axiom table shows; the verdict, audit and hashes of
+   run 9 are unaffected, the generator is corrected in add-on v5, and the bundle is not altered
+   (`DEPOSIT_MAP.md` §10).
 
 ## What a PASS or ACCEPTED means, in the receipts' words
 
@@ -107,8 +121,9 @@ From `MNF_LIBRARY.md` (the library on OpenAI's tree):
 | `qrh-zeta23-addon-v2.tar.gz` / `qrh-zeta23-density-receipt.tar.gz` | add-on v2 (the density field) and its report (MNF_DENSITY.md, audit, logs) | `5dc41dff…` / `975b2178…` |
 | `qrh-zeta23-addon-v3.tar.gz` / `qrh-zeta23-density-v3-receipt.tar.gz` | add-on v3 (Bohr–Landau for δ > 1/6) and its report | `c0958d53…` / `0588555d…` |
 | `qrh-zeta23-addon-v4.tar.gz` / `qrh-zeta23-density-v4-receipt.tar.gz` | add-on v4 (Bohr–Landau for every δ > 0) and its report | `fb74e8a2…` / `0d1919e4…` |
-| `DEPOSIT_MAP.md` | the register: what is proved, conditional, open, withdrawn, external; §10 the density field | `fd1acdf3…` |
-| `notes/density-field-2026-11-03/` | the working notes of runs 7–9: ledger, plan, the two prose reviews, the extracted receipts, the agent sources, the Aristotle contract | |
+| `qrh-zeta23-addon-v5.tar.gz` / `qrh-zeta23-density-v5-receipt.tar.gz` | add-on v5 (the reservoir mass; a zero-density estimate with a power saving) and its report | `2d2cf058…` / `37a806b2…` |
+| `DEPOSIT_MAP.md` | the register: what is proved, conditional, open, withdrawn, external; §10 the density field | `3c058e0a…` |
+| `notes/density-field-2026-11-03/` | the working notes of runs 7–10: ledger, plans, the prose reviews, the extracted receipts and dry runs, the agent sources, the numeric exploration of the first 400 zeros, the Aristotle contract | |
 | `CHECKSUMS.sha256`, `verify_deposit.sh` | full hashes; the verifier (hashes, verdicts, manifests, upstream statement files) | |
 | `LICENSE`, `NOTICE` | Apache-2.0 for what was authored for this record; third-party items and quoted material named | |
 

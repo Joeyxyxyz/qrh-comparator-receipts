@@ -1,0 +1,308 @@
+Zeta23.MVDiag : ℝ → Prop
+Zeta23.MVHilbert : ℝ → Prop
+Zeta23.MV.mvDiag_thirteen : Zeta23.MVDiag 13
+Zeta23.MV.mv_hilbert : ∃ C, 0 < C ∧ Zeta23.MVHilbert C
+@Zeta23.MVHilbert_of_diag : ∀ {C : ℝ}, 0 ≤ C → Zeta23.MVDiag C → Zeta23.MVHilbert (2 * C)
+@Zeta23.MV.Adm : {ι : Type u_1} → (ι → ℝ) → (ι → ℝ) → Prop
+Zeta23.MV.EigenBound : ℝ → Prop
+@Zeta23.MV.mvDiag_of_eigenBound : ∀ {C : ℝ}, Zeta23.MV.EigenBound C → Zeta23.MVDiag C
+'Zeta23.MV.mvDiag_thirteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+@M1.log_nat_gap : ∀ {m n : ℕ}, 1 ≤ m → 1 ≤ n → m ≠ n → 1 / (↑n + 1) ≤ |Real.log ↑n - Real.log ↑m|
+M1.mv_Icc : ∀ (N : ℕ) (x : ℕ → ℂ),
+  ‖∑ m ∈ Finset.Icc 1 N,
+        ∑ n ∈ Finset.Icc 1 N, if m = n then 0 else x m * (starRingEnd ℂ) (x n) / ↑(Real.log ↑m - Real.log ↑n)‖ ≤
+    13 * ∑ n ∈ Finset.Icc 1 N, (↑n + 1) * ‖x n‖ ^ 2
+M1.dirichlet_meanSquare_le : ∀ (a : ℕ → ℂ) (N : ℕ) (T : ℝ),
+  ∫ (t : ℝ) in 0..T, ‖∑ n ∈ Finset.Icc 1 N, a n * ↑n ^ (-↑t * Complex.I)‖ ^ 2 ≤
+    T * ∑ n ∈ Finset.Icc 1 N, ‖a n‖ ^ 2 + 26 * ∑ n ∈ Finset.Icc 1 N, (↑n + 1) * ‖a n‖ ^ 2
+M1.meanValue_pow_raw : ∀ («σ» : ℝ) (N : ℕ) (T : ℝ),
+  ∫ (t : ℝ) in 0..T, ‖∑ n ∈ Finset.Icc 1 N, ↑n ^ (-(↑«σ» + ↑t * Complex.I))‖ ^ 2 ≤
+    T * ∑ n ∈ Finset.Icc 1 N, ↑n ^ (-2 * «σ») + 26 * ∑ n ∈ Finset.Icc 1 N, (↑n + 1) * ↑n ^ (-2 * «σ»)
+M1.meanValue_pow : ∀ («σ» : ℝ),
+  1 / 2 < «σ» →
+    «σ» ≤ 1 →
+      ∀ (N : ℕ) (T : ℝ),
+        0 < T →
+          ∫ (t : ℝ) in 0..T, ‖∑ n ∈ Finset.Icc 1 N, ↑n ^ (-(↑«σ» + ↑t * Complex.I))‖ ^ 2 ≤
+            T * ∑ n ∈ Finset.Icc 1 N, ↑n ^ (-2 * «σ») + 52 * ↑N ^ (2 - 2 * «σ») * (Real.log ↑N + 1)
+M1.meanValue_pow_logfree : ∀ («σ» : ℝ),
+  1 / 2 < «σ» →
+    «σ» < 1 →
+      ∀ (N : ℕ) (T : ℝ),
+        ∫ (t : ℝ) in 0..T, ‖∑ n ∈ Finset.Icc 1 N, ↑n ^ (-(↑«σ» + ↑t * Complex.I))‖ ^ 2 ≤
+          T * ∑ n ∈ Finset.Icc 1 N, ↑n ^ (-2 * «σ») + 52 * (1 + ↑N ^ (2 - 2 * «σ») / (2 - 2 * «σ»))
+M1.meanValue_pow_explicit : ∀ («σ» : ℝ),
+  1 / 2 < «σ» →
+    «σ» ≤ 1 →
+      ∀ (N : ℕ) (T : ℝ),
+        0 ≤ T →
+          ∫ (t : ℝ) in 0..T, ‖∑ n ∈ Finset.Icc 1 N, ↑n ^ (-(↑«σ» + ↑t * Complex.I))‖ ^ 2 ≤
+            T * (1 + 1 / (2 * «σ» - 1)) + 52 * ↑N ^ (2 - 2 * «σ») * (Real.log ↑N + 1)
+M1.sum_weight_le : ∀ «σ» ≤ 1,
+  ∀ (N : ℕ), ∑ n ∈ Finset.Icc 1 N, (↑n + 1) * ↑n ^ (-2 * «σ») ≤ 2 * ↑N ^ (2 - 2 * «σ») * (Real.log ↑N + 1)
+M1.sum_weight_le_logfree : ∀ («σ» : ℝ),
+  1 / 2 < «σ» →
+    «σ» < 1 → ∀ (N : ℕ), ∑ n ∈ Finset.Icc 1 N, (↑n + 1) * ↑n ^ (-2 * «σ») ≤ 2 * (1 + ↑N ^ (2 - 2 * «σ») / (2 - 2 * «σ»))
+M1.sum_rpow_neg_le : ∀ («σ» : ℝ), 1 / 2 < «σ» → ∀ (N : ℕ), ∑ n ∈ Finset.Icc 1 N, ↑n ^ (-2 * «σ») ≤ 1 + 1 / (2 * «σ» - 1)
+M1.sum_inv_le : ∀ (N : ℕ), ∑ n ∈ Finset.Icc 1 N, (↑n)⁻¹ ≤ 1 + Real.log ↑N
+DPMV.dirichlet_mean_value : ∀ (a : ℕ → ℂ) (N : ℕ) (T : ℝ),
+  0 < T →
+    ∫ (t : ℝ) in 0..T, ‖∑ n ∈ Finset.Icc 1 N, a n * ↑n ^ (-↑t * Complex.I)‖ ^ 2 ≤
+      T * ∑ n ∈ Finset.Icc 1 N, ‖a n‖ ^ 2 +
+        ∑ m ∈ Finset.Icc 1 N, ∑ n ∈ Finset.Icc 1 N, if m = n then 0 else ‖a m‖ * ‖a n‖ * (2 / |Real.log (↑n / ↑m)|)
+DPMV2.dirichlet_mean_value : ∀ (a : ℕ → ℂ) (N : ℕ) (T : ℝ),
+  0 < T →
+    ∫ (t : ℝ) in 0..T, ‖∑ n ∈ Finset.Icc 1 N, a n * Complex.exp (-↑t * Complex.I * ↑(Real.log ↑n))‖ ^ 2 ≤
+      T * ∑ n ∈ Finset.Icc 1 N, ‖a n‖ ^ 2 +
+        ∑ m ∈ Finset.Icc 1 N,
+          ∑ n ∈ Finset.Icc 1 N, if m = n then 0 else ‖a m‖ * ‖a n‖ * (2 / |Real.log ↑n - Real.log ↑m|)
+Zeta23.BL.M3.Dpoly : ℝ → ℕ → ℝ → ℂ
+Zeta23.BL.M3.meanValue_Dpoly : ∀ («σ» : ℝ) (N : ℕ) (T : ℝ),
+  ∫ (t : ℝ) in 0..T, ‖Zeta23.BL.M3.Dpoly «σ» N t‖ ^ 2 ≤
+    T * ∑ n ∈ Finset.Icc 1 N, ↑n ^ (-2 * «σ») + 26 * ∑ n ∈ Finset.Icc 1 N, (↑n + 1) * ↑n ^ (-2 * «σ»)
+@Zeta23.BL.M3.integral_bound_abstract : ∀ {«σ» : ℝ} {N : ℕ} {T : ℝ},
+  1 ≤ T →
+    ∀ {A K : ℝ},
+      0 ≤ A →
+        0 ≤ K →
+          (∀ t ∈ Set.Icc 1 T,
+              ‖riemannZeta (↑«σ» + ↑t * Complex.I)‖ ^ 2 ≤
+                4 * ‖Zeta23.BL.M3.Dpoly «σ» N t‖ ^ 2 + 4 * A * (t ^ 2)⁻¹ + K) →
+            ∫ (t : ℝ) in 1..T, ‖riemannZeta (↑«σ» + ↑t * Complex.I)‖ ^ 2 ≤
+              4 * (T * ∑ n ∈ Finset.Icc 1 N, ↑n ^ (-2 * «σ») + 26 * ∑ n ∈ Finset.Icc 1 N, (↑n + 1) * ↑n ^ (-2 * «σ»)) +
+                  4 * A +
+                K * T
+Zeta23.BL.M3.MeanSquareUnifFrom : ℝ → Prop
+'M1.dirichlet_meanSquare_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+sum_divisor_mul_log_le : ∀ (c : ℂ) (r R : ℝ) (f : ℂ → ℂ),
+  0 < r →
+    r < R →
+      AnalyticOnNhd ℂ f (Metric.closedBall c R) →
+        f c ≠ 0 →
+          (∑ᶠ (u : ℂ), ↑((MeromorphicOn.divisor f (Metric.closedBall c r)) u)) * Real.log (R / r) ≤
+            Real.circleAverage (fun z => Real.log ‖f z‖) c R - Real.log ‖f c‖
+AnalyticOnNhd.circleAverage_log_norm_le_half_log_circleAverage_sq : ∀ (c : ℂ) (R : ℝ),
+  0 < R →
+    ∀ (f : ℂ → ℂ),
+      AnalyticOnNhd ℂ f (Metric.closedBall c R) →
+        f c ≠ 0 →
+          Real.circleAverage (fun z => Real.log ‖f z‖) c R ≤
+            1 / 2 * Real.log (Real.circleAverage (fun z => ‖f z‖ ^ 2) c R)
+@Zeta23.BL.count_disc_le : ∀ {t r R : ℝ},
+  3 ≤ t →
+    0 < r →
+      r < R →
+        R < 3 →
+          (∑ᶠ (u : ℂ), ↑((MeromorphicOn.divisor riemannZeta (Metric.closedBall (2 + ↑t * Complex.I) r)) u)) *
+              Real.log (R / r) ≤
+            Real.circleAverage (fun z => Real.log ‖riemannZeta z‖) (2 + ↑t * Complex.I) R -
+              Real.log ‖riemannZeta (2 + ↑t * Complex.I)‖
+@Zeta23.BL.divisor_riemannZeta_eq : ∀ {c : ℂ} {r : ℝ},
+  1 ∉ Metric.closedBall c r →
+    ∀ {ρ : ℂ},
+      ρ ∈ Metric.closedBall c r →
+        ↑((MeromorphicOn.divisor riemannZeta (Metric.closedBall c r)) ρ) = ↑(MNF.RH.zeta_order ρ)
+@Zeta23.BL.finset_sum_zeta_order_le_finsum_divisor : ∀ {c : ℂ} {r : ℝ},
+  1 ∉ Metric.closedBall c r →
+    ∀ (S : Finset ℂ),
+      (∀ ρ ∈ S, MNF.RH.is_nontrivial_zero ρ ∧ ρ ∈ Metric.closedBall c r) →
+        ∑ ρ ∈ S, ↑(MNF.RH.zeta_order ρ) ≤ ∑ᶠ (u : ℂ), ↑((MeromorphicOn.divisor riemannZeta (Metric.closedBall c r)) u)
+@Zeta23.BL.count_finset_le : ∀ {t r R : ℝ},
+  3 ≤ t →
+    0 < r →
+      r < R →
+        R < 3 →
+          ∀ (S : Finset ℂ),
+            (∀ ρ ∈ S, MNF.RH.is_nontrivial_zero ρ ∧ ρ ∈ Metric.closedBall (2 + ↑t * Complex.I) r) →
+              (∑ ρ ∈ S, ↑(MNF.RH.zeta_order ρ)) * Real.log (R / r) ≤
+                Real.circleAverage (fun z => Real.log ‖riemannZeta z‖) (2 + ↑t * Complex.I) R + Real.log 3
+Zeta23.BL.Lz : ℂ → ℝ
+@Zeta23.BL.circleAverage_Lz_le : ∀ {c : ℂ} {R : ℝ},
+  0 < R →
+    1 ∉ Metric.sphere c R →
+      Real.circleAverage Zeta23.BL.Lz c R ≤ 1 / 2 * Real.log (1 + Real.circleAverage (fun z => ‖riemannZeta z‖ ^ 2) c R)
+@Zeta23.BL.count_window_le : ∀ {σ₁ «δ» : ℝ},
+  1 / 2 < σ₁ →
+    σ₁ - 1 / 2 < «δ» →
+      «δ» ≤ 1 / 2 →
+        ∀ {t : ℝ},
+          3 ≤ t →
+            ∀ (S : Finset ℂ),
+              (∀ ρ ∈ S, MNF.RH.is_nontrivial_zero ρ ∧ «δ» ≤ ρ.re - 1 / 2 ∧ |t - ρ.im| ≤ Zeta23.BL.hwin σ₁ «δ») →
+                (∑ ρ ∈ S, ↑(MNF.RH.zeta_order ρ)) * Real.log (Zeta23.BL.Rout σ₁ / Zeta23.BL.rin σ₁ «δ») ≤
+                  Real.circleAverage (fun z => Real.log ‖riemannZeta z‖) (2 + ↑t * Complex.I) (Zeta23.BL.Rout σ₁) +
+                    Real.log 3
+@Zeta23.BL.integral_Lz_circle_le : ∀ {σ₁ C : ℝ},
+  1 / 2 < σ₁ →
+    σ₁ < 1 →
+      ∀ {T : ℝ},
+        0 ≤ T →
+          (∀ («σ» : ℝ),
+              σ₁ ≤ «σ» →
+                «σ» ≤ 2 + Zeta23.BL.Rout σ₁ →
+                  ∀ (T : ℝ), 2 ≤ T → ∫ (t : ℝ) in 1..T, ‖riemannZeta (↑«σ» + ↑t * Complex.I)‖ ^ 2 ≤ C * T) →
+            ∀ (θ : ℝ),
+              ∫ (t : ℝ) in 3..T + 3, Zeta23.BL.Lz (circleMap (2 + ↑t * Complex.I) (Zeta23.BL.Rout σ₁) θ) ≤
+                1 / 2 * (C * (T + 5))
+@Zeta23.BL.integral_circleAverage_Lz_le : ∀ {σ₁ C : ℝ},
+  1 / 2 < σ₁ →
+    σ₁ < 1 →
+      ∀ {T : ℝ},
+        0 ≤ T →
+          (∀ («σ» : ℝ),
+              σ₁ ≤ «σ» →
+                «σ» ≤ 2 + Zeta23.BL.Rout σ₁ →
+                  ∀ (T : ℝ), 2 ≤ T → ∫ (t : ℝ) in 1..T, ‖riemannZeta (↑«σ» + ↑t * Complex.I)‖ ^ 2 ≤ C * T) →
+            ∫ (t : ℝ) in 3..T + 3, Real.circleAverage Zeta23.BL.Lz (2 + ↑t * Complex.I) (Zeta23.BL.Rout σ₁) ≤
+              1 / 2 * (C * (T + 5))
+@Zeta23.BL.count_le_integral : ∀ {σ₁ «δ» : ℝ},
+  1 / 2 < σ₁ →
+    σ₁ - 1 / 2 < «δ» →
+      «δ» ≤ 1 / 2 →
+        ∀ {T : ℝ},
+          4 ≤ T →
+            2 * Zeta23.BL.hwin σ₁ «δ» * Real.log (Zeta23.BL.Rout σ₁ / Zeta23.BL.rin σ₁ «δ») *
+                (↑(Zeta23.BL.NRight «δ» T) - ↑(Zeta23.BL.NRight «δ» 4)) ≤
+              ∫ (t : ℝ) in 3..T + 3,
+                Real.circleAverage Zeta23.BL.Lz (2 + ↑t * Complex.I) (Zeta23.BL.Rout σ₁) + Real.log 3
+@Zeta23.BL.count_le_meanSquare : ∀ {σ₁ «δ» C : ℝ},
+  1 / 2 < σ₁ →
+    σ₁ < 1 →
+      σ₁ - 1 / 2 < «δ» →
+        «δ» ≤ 1 / 2 →
+          (∀ («σ» : ℝ),
+              σ₁ ≤ «σ» →
+                «σ» ≤ 2 + Zeta23.BL.Rout σ₁ →
+                  ∀ (T : ℝ), 2 ≤ T → ∫ (t : ℝ) in 1..T, ‖riemannZeta (↑«σ» + ↑t * Complex.I)‖ ^ 2 ≤ C * T) →
+            ∀ {T : ℝ},
+              4 ≤ T →
+                2 * Zeta23.BL.hwin σ₁ «δ» * Real.log (Zeta23.BL.Rout σ₁ / Zeta23.BL.rin σ₁ «δ») *
+                    (↑(Zeta23.BL.NRight «δ» T) - ↑(Zeta23.BL.NRight «δ» 4)) ≤
+                  1 / 2 * (C * (T + 5)) + T * Real.log 3
+@Zeta23.BL.count_le_meanSquare' : ∀ {σ₁ «δ» C : ℝ},
+  1 / 2 < σ₁ →
+    σ₁ < 1 →
+      σ₁ - 1 / 2 < «δ» →
+        «δ» ≤ 1 / 2 →
+          (∀ («σ» : ℝ),
+              σ₁ ≤ «σ» → ∀ (T : ℝ), 2 ≤ T → ∫ (t : ℝ) in 1..T, ‖riemannZeta (↑«σ» + ↑t * Complex.I)‖ ^ 2 ≤ C * T) →
+            ∀ {T : ℝ},
+              4 ≤ T →
+                2 * Zeta23.BL.hwin σ₁ «δ» * Real.log (Zeta23.BL.Rout σ₁ / Zeta23.BL.rin σ₁ «δ») *
+                    (↑(Zeta23.BL.NRight «δ» T) - ↑(Zeta23.BL.NRight «δ» 4)) ≤
+                  1 / 2 * (C * (T + 5)) + T * Real.log 3
+@Zeta23.BL.rightHalf_of_meanSquareUnif : ∀ {σ₁ : ℝ},
+  1 / 2 < σ₁ →
+    σ₁ < 1 →
+      Zeta23.BL.M3.MeanSquareUnifFrom σ₁ →
+        ∀ («δ» : ℝ), σ₁ - 1 / 2 < «δ» → ∃ C, ∀ (T : ℝ), 2 ≤ T → ↑(Zeta23.BL.NRight «δ» T) ≤ C * T
+@Zeta23.RvM.analyticOnNhd_riemannZeta : ∀ {S : Set ℂ}, 1 ∉ S → AnalyticOnNhd ℂ riemannZeta S
+Zeta23.RvM.zeta_lower_bound_two (t : ℝ) : 1 / 3 ≤ ‖riemannZeta (2 + ↑t * Complex.I)‖
+@Zeta23.RvM.riemannZeta_ne_zero_of_two_le_re : ∀ {s : ℂ}, 2 ≤ s.re → riemannZeta s ≠ 0
+@Zeta23.analyticOrderAt_riemannZeta_ne_top : ∀ {s : ℂ}, s ≠ 1 → analyticOrderAt riemannZeta s ≠ ⊤
+@MNF.RH.analyticAt_riemannZeta : ∀ {s : ℂ}, s ≠ 1 → AnalyticAt ℂ riemannZeta s
+@MeromorphicOn.divisor_mul : ∀ {𝕜 : Type u_1} [inst : NontriviallyNormedField 𝕜] {U : Set 𝕜} {f₁ f₂ : 𝕜 → 𝕜},
+  MeromorphicOn f₁ U →
+    MeromorphicOn f₂ U →
+      (∀ z ∈ U, meromorphicOrderAt f₁ z ≠ ⊤) →
+        (∀ z ∈ U, meromorphicOrderAt f₂ z ≠ ⊤) →
+          MeromorphicOn.divisor (f₁ * f₂) U = MeromorphicOn.divisor f₁ U + MeromorphicOn.divisor f₂ U
+@MeromorphicOn.divisor_fun_mul : ∀ {𝕜 : Type u_1} [inst : NontriviallyNormedField 𝕜] {U : Set 𝕜} {f₁ f₂ : 𝕜 → 𝕜},
+  MeromorphicOn f₁ U →
+    MeromorphicOn f₂ U →
+      (∀ z ∈ U, meromorphicOrderAt f₁ z ≠ ⊤) →
+        (∀ z ∈ U, meromorphicOrderAt f₂ z ≠ ⊤) →
+          MeromorphicOn.divisor (fun z => f₁ z * f₂ z) U = MeromorphicOn.divisor f₁ U + MeromorphicOn.divisor f₂ U
+@analyticOrderAt_mul : ∀ {𝕜 : Type u_1} [inst : NontriviallyNormedField 𝕜] {f g : 𝕜 → 𝕜} {z₀ : 𝕜},
+  AnalyticAt 𝕜 f z₀ → AnalyticAt 𝕜 g z₀ → analyticOrderAt (f * g) z₀ = analyticOrderAt f z₀ + analyticOrderAt g z₀
+@MeromorphicOn.AnalyticOnNhd.divisor_apply : ∀ {𝕜 : Type u_1} [inst : NontriviallyNormedField 𝕜] {U : Set 𝕜} {z : 𝕜}
+  {E : Type u_2} [inst_1 : NormedAddCommGroup E] [inst_2 : NormedSpace 𝕜 E] {f : 𝕜 → E},
+  AnalyticOnNhd 𝕜 f U → z ∈ U → (MeromorphicOn.divisor f U) z = (ENat.map Nat.cast (analyticOrderAt f z)).untop₀
+@MeromorphicOn.AnalyticOnNhd.divisor_nonneg : ∀ {𝕜 : Type u_1} [inst : NontriviallyNormedField 𝕜] {U : Set 𝕜}
+  {E : Type u_2} [inst_1 : NormedAddCommGroup E] [inst_2 : NormedSpace 𝕜 E] {f : 𝕜 → E},
+  AnalyticOnNhd 𝕜 f U → 0 ≤ MeromorphicOn.divisor f U
+@AnalyticOnNhd.circleAverage_log_norm : ∀ {c : ℂ} {R : ℝ} {f : ℂ → ℂ},
+  R ≠ 0 →
+    AnalyticOnNhd ℂ f (Metric.closedBall c |R|) →
+      f c ≠ 0 →
+        Real.circleAverage (fun x => Real.log ‖f x‖) c R =
+          ∑ᶠ (u : ℂ), ↑((MeromorphicOn.divisor f (Metric.closedBall c |R|)) u) * Real.log (R * ‖c - u‖⁻¹) +
+            Real.log ‖f c‖
+'Zeta23.BL.count_le_meanSquare'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.BL.bohrLandau_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BLClosure.meanSquareUnif_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BLClosure.zeta_approx_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.BL.bohrLandau' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+μ : ArithmeticFunction ℤ
+moebius_mul_coe_zeta : μ * ↑ζ = 1
+@coe_zeta_mul_coe_moebius : ∀ {R : Type u_1} [inst : Ring R], ↑ζ * ↑μ = 1
+@coe_moebius_mul_coe_zeta : ∀ {R : Type u_1} [inst : Ring R], ↑μ * ↑ζ = 1
+@ArithmeticFunction.one_apply : ∀ {R : Type u_1} [inst : Zero R] [inst_1 : One R] {x : ℕ}, 1 x = if x = 1 then 1 else 0
+@ArithmeticFunction.mul_apply : ∀ {R : Type u_1} [inst : Semiring R] {f g : ArithmeticFunction R} {n : ℕ},
+  (f * g) n = ∑ x ∈ n.divisorsAntidiagonal, f x.1 * g x.2
+@coe_zeta_mul_apply : ∀ {R : Type u_1} [inst : Semiring R] {f : ArithmeticFunction R} {x : ℕ},
+  (↑ζ * f) x = ∑ i ∈ x.divisors, f i
+@coe_mul_zeta_apply : ∀ {R : Type u_1} [inst : Semiring R] {f : ArithmeticFunction R} {x : ℕ},
+  (f * ↑ζ) x = ∑ i ∈ x.divisors, f i
+@IsMultiplicative : {R : Type u_1} → [inst : MonoidWithZero R] → ArithmeticFunction R → Prop
+@IsMultiplicative.mul : ∀ {R : Type u_1} [inst : CommSemiring R] {f g : ArithmeticFunction R},
+  f.IsMultiplicative → g.IsMultiplicative → (f * g).IsMultiplicative
+ArithmeticFunction.isMultiplicative_moebius : μ.IsMultiplicative
+ArithmeticFunction.isMultiplicative_zeta : ζ.IsMultiplicative
+@isMultiplicative_sigma : ∀ {k : ℕ}, (σ k).IsMultiplicative
+@sum_eq_iff_sum_mul_moebius_eq : ∀ {R : Type u_1} [inst : NonAssocRing R] {f g : ℕ → R},
+  (∀ n > 0, ∑ i ∈ n.divisors, f i = g n) ↔ ∀ n > 0, ∑ x ∈ n.divisorsAntidiagonal, ↑(μ x.1) * g x.2 = f n
+@sum_eq_iff_sum_smul_moebius_eq : ∀ {R : Type u_1} [inst : AddCommGroup R] {f g : ℕ → R},
+  (∀ n > 0, ∑ i ∈ n.divisors, f i = g n) ↔ ∀ n > 0, ∑ x ∈ n.divisorsAntidiagonal, μ x.1 • g x.2 = f n
+@sum_eq_iff_sum_mul_moebius_eq_on : ∀ {R : Type u_1} [inst : NonAssocRing R] {f g : ℕ → R} (s : Set ℕ),
+  (∀ (m n : ℕ), m ∣ n → n ∈ s → m ∈ s) →
+    ((∀ n > 0, n ∈ s → ∑ i ∈ n.divisors, f i = g n) ↔
+      ∀ n > 0, n ∈ s → ∑ x ∈ n.divisorsAntidiagonal, ↑(μ x.1) * g x.2 = f n)
+@prod_eq_iff_prod_pow_moebius_eq : ∀ {R : Type u_1} [inst : CommGroup R] {f g : ℕ → R},
+  (∀ n > 0, ∏ i ∈ n.divisors, f i = g n) ↔ ∀ n > 0, ∏ x ∈ n.divisorsAntidiagonal, g x.2 ^ μ x.1 = f n
+@IsMultiplicative.prodPrimeFactors_one_sub_of_squarefree : ∀ {R : Type u_1} [inst : CommRing R]
+  (f : ArithmeticFunction R),
+  f.IsMultiplicative → ∀ {n : ℕ}, Squarefree n → ∏ p ∈ n.primeFactors, (1 - f p) = ∑ d ∈ n.divisors, ↑(μ d) * f d
+@abs_moebius_le_one : ∀ {n : ℕ}, |μ n| ≤ 1
+@moebius_sq : ∀ {n : ℕ}, μ n ^ 2 = if Squarefree n then 1 else 0
+sigma_zero_apply : ∀ (n : ℕ), (σ 0) n = n.divisors.card
+@sigma_zero_apply_prime_pow : ∀ {p i : ℕ}, Nat.Prime p → (σ 0) (p ^ i) = i + 1
+@Nat.card_divisors : ∀ {n : ℕ}, n ≠ 0 → n.divisors.card = ∏ x ∈ n.primeFactors, (n.factorization x + 1)
+Nat.card_divisors_le_self : ∀ (n : ℕ), n.divisors.card ≤ n
+@Nat.Coprime.card_divisors_mul : ∀ {m n : ℕ}, m.Coprime n → (m * n).divisors.card = m.divisors.card * n.divisors.card
+@Nat.sum_divisorsAntidiagonal : ∀ {M : Type u_1} [inst : AddCommMonoid M] (f : ℕ → ℕ → M) {n : ℕ},
+  ∑ i ∈ n.divisorsAntidiagonal, f i.1 i.2 = ∑ i ∈ n.divisors, f i (n / i)
+@Nat.sum_divisorsAntidiagonal' : ∀ {M : Type u_1} [inst : AddCommMonoid M] (f : ℕ → ℕ → M) {n : ℕ},
+  ∑ i ∈ n.divisorsAntidiagonal, f i.1 i.2 = ∑ i ∈ n.divisors, f (n / i) i
+@Nat.mem_divisorsAntidiagonal : ∀ {n : ℕ} {x : ℕ × ℕ}, x ∈ n.divisorsAntidiagonal ↔ x.1 * x.2 = n ∧ n ≠ 0
+@Nat.mem_divisors : ∀ {n m : ℕ}, n ∈ m.divisors ↔ n ∣ m ∧ m ≠ 0
+@Nat.sum_divisors_eq_sum_properDivisors_add_self : ∀ {n : ℕ}, ∑ i ∈ n.divisors, i = ∑ i ∈ n.properDivisors, i + n
+Nat.divisors_mul : ∀ (m n : ℕ), (m * n).divisors = m.divisors * n.divisors
+@Finset.nat_divisors_prod : ∀ {ι : Type u_1} (s : Finset ι) (f : ι → ℕ),
+  (∏ i ∈ s, f i).divisors = ∏ i ∈ s, (f i).divisors
+@harmonic_eq_sum_Icc : ∀ {n : ℕ}, harmonic n = ∑ i ∈ Finset.Icc 1 n, (↑i)⁻¹
+harmonic_le_one_add_log : ∀ (n : ℕ), ↑(harmonic n) ≤ 1 + Real.log ↑n
+log_add_one_le_harmonic : ∀ (n : ℕ), Real.log ↑(n + 1) ≤ ↑(harmonic n)
+harmonic_floor_le_one_add_log : ∀ (y : ℝ), 1 ≤ y → ↑(harmonic ⌊y⌋₊) ≤ 1 + Real.log y
+@LSeries_zeta_mul_Lseries_moebius : ∀ {s : ℂ}, 1 < s.re → L (fun n => ↑(ζ n)) s * L (fun n => ↑(μ n)) s = 1
+@LSeries_zeta_eq_riemannZeta : ∀ {s : ℂ}, 1 < s.re → L (fun n => ↑(ζ n)) s = riemannZeta s
+@LSeries_convolution' : ∀ {f g : ℕ → ℂ} {s : ℂ}, LSeriesSummable f s → LSeriesSummable g s → L (f ⍟ g) s = L f s * L g s
+@LSeries_mul' : ∀ {f g : ArithmeticFunction ℂ} {s : ℂ},
+  LSeriesSummable (fun n => f n) s →
+    LSeriesSummable (fun n => g n) s → L (fun n => (f * g) n) s = L (fun n => f n) s * L (fun n => g n) s
+@LSeries.convolution_def : ∀ {R : Type u_1} [inst : Semiring R] (f g : ℕ → R),
+  f ⍟ g = fun n => ∑ p ∈ n.divisorsAntidiagonal, f p.1 * g p.2
+@LSeriesSummable_moebius_iff : ∀ {s : ℂ}, LSeriesSummable (fun n => ↑(μ n)) s ↔ 1 < s.re
+@sum_mul_eq_sub_sub_integral_mul : ∀ {𝕜 : Type u_1} [inst : RCLike 𝕜] (c : ℕ → 𝕜) {f : ℝ → 𝕜} {a b : ℝ},
+  0 ≤ a →
+    a ≤ b →
+      (∀ t ∈ Set.Icc a b, DifferentiableAt ℝ f t) →
+        MeasureTheory.IntegrableOn (deriv f) (Set.Icc a b) MeasureTheory.volume →
+          ∑ k ∈ Finset.Ioc ⌊a⌋₊ ⌊b⌋₊, f ↑k * c k =
+            f b * ∑ k ∈ Finset.Icc 0 ⌊b⌋₊, c k - f a * ∑ k ∈ Finset.Icc 0 ⌊a⌋₊, c k -
+              ∫ (t : ℝ) in Set.Ioc a b, deriv f t * ∑ k ∈ Finset.Icc 0 ⌊t⌋₊, c k
+@vonMangoldt_sum : ∀ {n : ℕ}, ∑ i ∈ n.divisors, Λ i = Real.log ↑n
+@sum_moebius_mul_log_eq : ∀ {n : ℕ}, ∑ d ∈ n.divisors, ↑(μ d) * log d = -Λ n
+@Finset.sum_mul_sq_le_sq_mul_sq : ∀ {ι : Type u_1} {R : Type u_2} [inst : CommSemiring R] [inst_1 : LinearOrder R]
+  [IsStrictOrderedRing R] [ExistsAddOfLE R] (s : Finset ι) (f g : ι → R),
+  (∑ i ∈ s, f i * g i) ^ 2 ≤ (∑ i ∈ s, f i ^ 2) * ∑ i ∈ s, g i ^ 2

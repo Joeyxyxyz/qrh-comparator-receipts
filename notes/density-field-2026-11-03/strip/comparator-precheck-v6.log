@@ -1,0 +1,1020 @@
+== density-layer v6 pre-check 2026-11-04T06:25:56Z tree=/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23
+151f945f7d7bb8ff7e8144c7261287062d8a03738891ffe4fa5ebbe9fba1741e  Zeta23/Density/StripDensity.lean
+32fa92c31b8682f80faf5753717d696fbbe8132925e3d473b4f7a299c4c054eb  MNF/RH/ReservoirMass.lean
+e7ede8d7cd5158de73878a2385e1c432ff2a8c962ff8a88016e0b3bc13ecab54  MNF/RH/DensityAll.lean
+3d090155c11d6f1fdbc81d985bf7e778c3c370a932bdf38011a3f159dca85e76  MNFChallengesD/StripDensity.lean
+73d5d78aabca8391ec2c7a133ac6014eb2acf979710bf46887bc5b99459936a3  MNFChallengesD/Density.json
+config: MNFChallengesD/Density.json (480 claims)
+Building MNFChallengesD.All
+⚠ [3573/3826] Replayed MNFChallengesD.Core
+warning: MNFChallengesD/Core.lean:72:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:75:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:78:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:83:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:87:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:90:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:95:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:99:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:103:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:108:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:114:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:119:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:123:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:127:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:133:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:139:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:142:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:145:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:148:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:152:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:159:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:163:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:168:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:173:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:177:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:182:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:190:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:196:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:201:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:206:8: declaration uses `sorry`
+info: MNFChallengesD/Core.lean:214:0: 'MNF.RH.zeta_order_ge_one' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:215:0: 'MNF.RH.order_one_iff_deriv' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:216:0: 'MNF.RH.deriv_zero_of_high_order' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:217:0: 'MNF.RH.nontrivial_zero_reflect' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:218:0: 'MNF.RH.deriv_reflect' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:219:0: 'MNF.RH.analyticOrderAt_reflect' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:220:0: 'MNF.RH.zeta_order_reflect' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:221:0: 'MNF.RH.shifted_symmetric' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:222:0: 'MNF.RH.in_strip_of_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:223:0: 'MNF.RH.riemannHypothesis_iff_strip' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:224:0: 'MNF.RH.riemannHypothesis_iff_shifted_subset_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:225:0: 'MNF.RH.shifted_bounded' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3574/3826] Replayed MNFChallengesD.Gap
+warning: MNFChallengesD/Gap.lean:42:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:46:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:49:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:57:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:66:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:72:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:78:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:83:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:92:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:100:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:103:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:106:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:109:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:120:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:123:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:129:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:134:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:139:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:145:8: declaration uses `sorry`
+info: MNFChallengesD/Gap.lean:156:0: 'MNF.RH.tau_threshold' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:157:0: 'MNF.RH.riemannHypothesis_iff_gap_half' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:158:0: 'MNF.RH.shifted_bounded_of_zeroFree' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:159:0: 'MNF.RH.riemannHypothesis_iff_gap_of_zeroFree' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:160:0: 'MNF.RH.riemannHypothesis_iff_remaining_strip' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:161:0: 'MNF.RH.gap_below_bound_insufficient' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:162:0: 'MNF.RH.symmetric_bounded_not_on_line' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:163:0: 'MNF.RH.sign_gate_shifted' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:164:0: 'MNF.RH.nullify_dilation' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:165:0: 'MNF.RH.gap_iff_nullify_id' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:166:0: 'MNF.RH.delta_from_ratio_38_insufficient' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3575/3826] Replayed MNFChallengesD.Hypotheses
+warning: MNFChallengesD/Hypotheses.lean:69:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:73:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:79:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:90:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:99:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:103:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:108:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:115:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:123:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:132:8: declaration uses `sorry`
+info: MNFChallengesD/Hypotheses.lean:143:0: 'MNF.RH.rh_of_symmetric_operator' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:144:0: 'MNF.RH.rh_of_gap' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:145:0: 'MNF.RH.rh_of_gap_of_zeroFree' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:146:0: 'MNF.RH.gap_of_rh' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:147:0: 'MNF.RH.spectralGapHyp_iff_zeroFree_strip' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:148:0: 'MNF.RH.spectralGapHyp_three_eighths_iff_of' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:149:0: 'MNF.RH.multiplicityBoundOne_iff_allZerosSimple' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:150:0: 'MNF.RH.derivativeNonvanishing_of_left' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:151:0: 'MNF.RH.allZerosSimple_of_speiser_and_double_zero_hyp' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:152:0: 'MNF.RH.allZerosSimple_of_rh_of_line' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3577/3826] Replayed MNFChallengesD.Counting
+warning: MNFChallengesD/Counting.lean:81:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:85:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:88:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:94:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:100:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:106:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:111:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:119:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:122:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:125:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:137:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:145:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:152:8: declaration uses `sorry`
+info: MNFChallengesD/Counting.lean:162:0: 'MNF.RH.mem_zerosIn' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:163:0: 'MNF.RH.zerosIn_subset_zetaZeros' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:164:0: 'MNF.RH.zerosIn_mono' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:165:0: 'MNF.RH.zerosIn_subset_box' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:166:0: 'MNF.RH.zerosIn_finite' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:167:0: 'MNF.RH.Ncount_eq_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:168:0: 'MNF.RH.Ndist_eq_sum_ones' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:169:0: 'MNF.RH.Ndist_le_Ncount' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:170:0: 'MNF.RH.N0star_le_Ndist' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:171:0: 'MNF.RH.N0simple_le_N0star' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:172:0: 'MNF.RH.riemannHypothesis_iff_window_counts' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:173:0: 'MNF.RH.allZerosSimple_iff_window_counts' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:174:0: 'MNF.RH.N0simple_eq_deriv_form' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3578/3826] Replayed MNFChallengesD.GapDensity
+warning: MNFChallengesD/GapDensity.lean:89:8: declaration uses `sorry`
+warning: MNFChallengesD/GapDensity.lean:93:8: declaration uses `sorry`
+warning: MNFChallengesD/GapDensity.lean:102:8: declaration uses `sorry`
+warning: MNFChallengesD/GapDensity.lean:115:8: declaration uses `sorry`
+info: MNFChallengesD/GapDensity.lean:125:0: 'MNF.RH.N0_le_Ncount' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/GapDensity.lean:126:0: 'MNF.RH.NOff_le_Ncount' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/GapDensity.lean:127:0: 'MNF.RH.gap_forces_NOff_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/GapDensity.lean:128:0: 'MNF.RH.on_line_density_one_of_gap' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3613/3826] Replayed MNFChallengesD.BohrLandau
+warning: MNFChallengesD/BohrLandau.lean:24:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:29:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:37:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:46:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:50:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:56:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:60:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:65:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:68:8: declaration uses `sorry`
+info: MNFChallengesD/BohrLandau.lean:72:0: 'Zeta23.BL.NLeft_eq_NRight' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/BohrLandau.lean:73:0: 'Zeta23.BL.bohrLandau_of_right' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/BohrLandau.lean:74:0: 'Zeta23.BL.bohrLandau' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/BohrLandau.lean:75:0: 'Zeta23.BL.meanSquare_gt_one' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3614/3826] Replayed MNFChallengesD.Density
+warning: MNFChallengesD/Density.lean:89:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:94:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:99:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:103:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:107:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:112:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:122:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:131:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:137:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:156:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:160:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:166:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:173:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:179:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:187:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:194:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:199:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:203:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:208:8: declaration uses `sorry`
+⚠ [8704/8714] Replayed MNFChallengesD.Extension
+warning: MNFChallengesD/Extension.lean:66:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:72:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:80:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:87:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:102:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:106:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:109:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:113:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:116:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:120:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:123:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:127:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:131:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:138:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:143:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:148:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:152:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:158:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:164:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:171:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:175:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:179:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:182:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:187:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:192:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:197:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:201:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:211:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:217:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:245:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:250:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:270:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:275:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:279:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:284:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:290:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:295:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:301:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:306:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:310:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:315:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:319:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:330:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:339:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:343:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:347:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:354:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:358:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:362:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:366:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:370:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:375:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:379:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:383:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:387:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:393:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:399:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:425:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:436:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:442:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:449:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:457:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:472:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:476:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:493:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:499:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:504:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:517:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:521:8: declaration uses `sorry`
+⚠ [8705/8714] Replayed MNFChallengesD.Strip
+warning: MNFChallengesD/Strip.lean:69:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:79:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:83:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:88:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:93:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:97:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:101:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:108:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:114:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:121:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:126:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:130:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:135:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:141:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:148:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:153:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:158:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:165:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:171:8: declaration uses `sorry`
+⚠ [8706/8714] Replayed MNFChallengesD.DPMV
+warning: MNFChallengesD/DPMV.lean:21:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:26:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:31:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:37:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:43:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:48:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:52:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:61:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:64:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:69:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:76:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:82:8: declaration uses `sorry`
+⚠ [8707/8714] Replayed MNFChallengesD.DPMVexp
+warning: MNFChallengesD/DPMVexp.lean:28:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:34:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:39:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:45:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:53:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:63:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:68:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:74:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:83:8: declaration uses `sorry`
+⚠ [8708/8714] Replayed MNFChallengesD.JensenDisc
+warning: MNFChallengesD/JensenDisc.lean:13:8: declaration uses `sorry`
+warning: MNFChallengesD/JensenDisc.lean:26:8: declaration uses `sorry`
+warning: MNFChallengesD/JensenDisc.lean:37:8: declaration uses `sorry`
+warning: MNFChallengesD/JensenDisc.lean:48:8: declaration uses `sorry`
+warning: MNFChallengesD/JensenDisc.lean:55:8: declaration uses `sorry`
+⚠ [8709/8714] Replayed MNFChallengesD.BohrLandauPartial
+warning: MNFChallengesD/BohrLandauPartial.lean:48:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:54:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:62:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:68:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:79:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:90:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:96:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:105:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:110:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:115:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:120:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:126:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:134:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:144:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:149:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:154:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:160:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:166:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:174:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:195:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:201:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:204:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:207:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:210:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:213:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:216:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:219:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:222:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:225:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:229:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:235:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:240:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:245:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:250:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:256:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:262:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:269:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:276:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:286:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:295:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:303:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:312:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:323:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:330:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:336:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:344:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:364:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:368:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:373:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:378:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:383:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:388:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:394:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:401:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:410:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:418:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:442:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:446:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:454:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:463:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:468:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:475:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:488:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:501:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:508:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:514:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:523:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:536:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:542:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:564:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:568:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:573:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:579:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:585:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:591:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:596:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:602:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:609:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:617:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:624:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:639:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:644:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:649:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:654:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:659:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:664:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:670:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:694:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:698:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:705:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:710:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:718:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:728:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:739:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:743:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:747:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:750:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:753:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:758:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:763:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:769:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:777:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:786:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:791:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:801:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:810:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:834:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:840:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:845:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:850:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:856:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:863:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:871:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:880:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:884:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:888:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:892:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:900:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:908:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:921:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:932:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:943:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:955:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:960:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:966:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:995:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1006:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1013:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1031:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1036:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1041:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1046:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1053:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1059:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1066:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1072:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1078:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1089:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1095:8: declaration uses `sorry`
+⚠ [8710/8714] Replayed MNFChallengesD.DensityPartial
+warning: MNFChallengesD/DensityPartial.lean:68:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:76:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:81:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:88:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:93:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:99:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:106:8: declaration uses `sorry`
+⚠ [8711/8714] Replayed MNFChallengesD.BohrLandauClosure
+warning: MNFChallengesD/BohrLandauClosure.lean:84:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:90:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:95:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:101:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:107:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:111:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:120:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:123:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:126:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:129:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:132:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:135:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:139:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:142:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:147:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:151:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:155:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:163:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:169:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:184:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:200:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:214:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:230:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:237:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:245:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:250:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:255:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:260:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:263:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:266:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:269:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:273:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:283:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:291:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:304:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:307:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:310:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:315:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:322:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:329:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:335:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:342:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:350:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:364:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:378:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:385:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:397:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:407:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:421:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:426:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:434:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:446:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:453:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:461:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:468:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:474:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:480:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:499:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:503:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:508:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:517:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:530:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:543:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:553:8: declaration uses `sorry`
+⚠ [8712/8714] Replayed MNFChallengesD.ReservoirMass
+warning: MNFChallengesD/ReservoirMass.lean:112:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:129:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:144:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:167:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:172:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:175:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:179:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:184:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:191:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:197:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:207:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:214:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:241:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:246:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:275:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:279:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:290:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:295:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:300:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:305:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:310:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:317:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:327:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:332:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:336:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:344:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:350:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:356:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:364:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:373:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:405:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:410:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:416:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:435:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:442:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:455:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:463:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:472:8: declaration uses `sorry`
+⚠ [8713/8714] Replayed MNFChallengesD.StripDensity
+warning: MNFChallengesD/StripDensity.lean:104:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:108:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:112:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:116:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:127:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:134:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:139:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:143:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:148:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:152:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:156:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:161:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:166:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:171:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:186:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:193:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:200:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:215:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:223:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:229:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:236:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:243:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:249:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:256:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:261:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:266:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:282:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:289:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:299:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:305:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:316:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:334:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:344:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:350:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:357:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:371:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:376:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:384:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:391:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:398:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:412:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:418:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:426:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:451:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:456:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:461:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:466:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:471:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:478:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:486:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:501:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:506:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:519:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:528:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:547:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:552:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:560:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:567:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:574:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:582:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:597:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:603:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:611:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:619:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:628:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:637:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:648:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:655:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:669:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:682:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:692:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:703:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:712:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:730:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:738:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:745:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:757:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:769:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:783:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:799:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:853:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:856:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:859:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:862:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:867:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:872:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:878:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:884:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:897:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:901:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:905:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:909:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:917:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:930:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:936:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:942:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:948:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:954:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:962:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:968:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:976:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:985:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:994:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:1004:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:1016:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:1040:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:1057:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:1083:8: declaration uses `sorry`
+Build completed successfully (8714 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, MNF.RH.N0_le_Ncount, MNF.RH.NOff_le_Ncount, MNF.RH.gap_forces_NOff_eq, MNF.RH.on_line_density_one_of_gap, MNF.RH.nullify_eq_zero_iff, MNF.RH.NNear_eq_nullified_count, MNF.RH.Ncount_eq_near_add_off, MNF.RH.N0_le_NNear, MNF.RH.NOff_le_NOffLine, MNF.RH.NNear_eq_N0_of_gap, MNF.RH.ncountSuperlinear, MNF.RH.offLine_le_one_third, MNF.RH.NOff_le_one_third, MNF.RH.reservoirDensityOne_of_bohrLandau, MNF.RH.near_line_density_one, MNF.RH.nullified_density_one, MNF.RH.onLineDensityOne_of_reservoir_of_gap, MNF.RH.onLineDensityOne_of_gap, MNF.RH.NOff_eq_right_add_left, MNF.RH.NLeft_eq_NRight, MNF.RH.bohrLandau_of_right, MNF.RH.onLineDensityOne_of_right, MNF.RH.reservoirDensityOne_of_right, MNF.Extension.conservation, MNF.Extension.idempotent', MNF.Extension.dilation_covariance, MNF.Extension.abs_nullify_antitone_in_threshold, MNF.Extension.eject_gapped, MNF.Extension.eject_idem, MNF.Extension.nullify_eject, MNF.Extension.eject_nullify, MNF.Extension.remainder_eject, MNF.Extension.eject_sub_nullify, MNF.Extension.eject_probe_reading, MNF.Extension.eject_dilation, MNF.Extension.nullify_comp_nullify, MNF.Extension.eject_comp_eject, MNF.Extension.nullify_floor, MNF.Extension.eject_ceiling, MNF.Extension.deficit_deficit, MNF.Extension.deficit_tripotent, MNF.Extension.nullify_deficit, MNF.Extension.northProbe_deficit, MNF.Extension.eject_eq_id_add_deficit, MNF.Extension.nullify_eq_id_sub_deficit_sq, MNF.Extension.metricProj_branch, MNF.Extension.metricProj_deficit_swap, MNF.Extension.rep_conservation, MNF.Extension.rep_not_distributive, MNF.Extension.content_inject, MNF.Extension.nu_inject, MNF.Extension.eps_inject, MNF.Extension.inject_nullified, MNF.Extension.inject_at_kstar, MNF.Extension.eventual_nullification, MNF.Extension.typeA_on_demand, MNF.Extension.compact_inject, MNF.Extension.nullify_sees_through, MNF.Extension.refine_inject, MNF.Extension.ladder_not_composite, MNF.Extension.deltaStar_singleton, MNF.Extension.nu_eq_zero_of_all_below, MNF.Extension.deltaStar_inject, MNF.Extension.sameSign_refine_le, MNF.Extension.sameSign_nu_le_content, MNF.Extension.sameSign_sign, MNF.Extension.mixed_refine_can_increase, MNF.Extension.zero_reading_uninformative, MNF.Extension.inProcess_ne_postHoc, MNF.Extension.residue_eq, MNF.Extension.two_piece_sign_safe, MNF.Extension.residue_both_signs, MNF.Extension.realise, MNF.Extension.gate_minimax, MNF.Extension.soft_idem_iff, MNF.Extension.soft_no_gap, MNF.Extension.hardGate_is_nullify, MNF.Extension.injectAdd_ejectAdd, MNF.Extension.ejectAdd_not_additive, MNF.RH.nullify_eq_extension, MNF.RH.mem_Band_iff_nullified, MNF.RH.eject_fixed_iff_zero, MNF.RH.eject_band_edge, MNF.RH.eq_zero_iff_gapped_all, MNF.RH.eq_zero_iff_eject_fixed_all, MNF.RH.eq_zero_iff_nullified_all, MNF.RH.displacement_injectable, MNF.RH.injected_reads_zero_iff, MNF.RH.band_injection_blind, MNF.RH.trace_singleton, MNF.RH.trace_zero, MNF.RH.trace_inject_pos, MNF.RH.trace_inject_tendsto, MNF.RH.on_line_iff_eject_fixed_all, MNF.RH.on_line_iff_nullified_all, MNF.RH.on_line_iff_trace_zero, MNF.RH.band_trivial_of_gap, MNF.RH.gap_of_band_trivial, DPMV.cpow_neg_mul_I_eq_exp, DPMV.conj_cpow_neg_mul_I, DPMV.prod_eq_exp, DPMV.integral_exp_I_mul, DPMV.integral_exp_I_mul_zero, DPMV.norm_exp_I_mul_eq_one, DPMV.norm_integral_exp_I_mul_le, DPMV.J_self, DPMV.norm_J_le, DPMV.normSq_sum_expand, DPMV.integral_normSq_sum, DPMV.dirichlet_mean_value, DPMV2.integral_exp_mul_I, DPMV2.integral_exp_zero_mul_I, DPMV2.norm_integral_exp_mul_I_le, DPMV2.ofReal_norm_sq_dirichlet, DPMV2.ofReal_integral_norm_sq_dirichlet, DPMV2.log_sub_log_ne_zero, DPMV2.norm_integral_freq_le, DPMV2.sum_bound_split, DPMV2.dirichlet_mean_value, sum_divisor_mul_log_le, circleAverage_log_norm_le_half_log_circleAverage_sq_of_ae, circleAverage_log_norm_le_half_log_circleAverage_sq, AnalyticOnNhd.ae_circleMap_ne_zero, AnalyticOnNhd.circleAverage_log_norm_le_half_log_circleAverage_sq, M1.log_nat_gap, M1.mv_Icc, M1.log_sub_log_ne_zero, M1.term_eq, M1.Z_eq, M1.norm_cpow_neg_mul_I, M1.dirichlet_meanSquare_le, M1.cpow_neg_add_eq, M1.norm_sq_rpow, M1.sum_inv_le, M1.sum_weight_le, M1.meanValue_pow_raw, M1.meanValue_pow, M1.sum_Icc_rpow_le_integral, M1.sum_rpow_neg_le, M1.sum_Icc_rpow_le, M1.sum_weight_le_logfree, M1.meanValue_pow_logfree, M1.meanValue_pow_explicit, Zeta23.BL.M2.norm_add4_sq_le, Zeta23.BL.M2.s_re, Zeta23.BL.M2.s_im, Zeta23.BL.M2.one_sub_s_re, Zeta23.BL.M2.one_sub_s_im, Zeta23.BL.M2.neg_s_re, Zeta23.BL.M2.s_ne_one, Zeta23.BL.M2.s_ne_zero, Zeta23.BL.M2.norm_s_le, Zeta23.BL.M2.norm_one_sub_s_ge, Zeta23.BL.M2.rpow_sq_eq, Zeta23.BL.M2.norm_P_le, Zeta23.BL.M2.norm_P_le', Zeta23.BL.M2.norm_Q_le, Zeta23.BL.M2.norm_Q_le', Zeta23.BL.M2.norm_R_le_core, Zeta23.BL.M2.norm_R_le, Zeta23.BL.M2.norm_R_le_uniform, Zeta23.BL.M2.norm_R_le', Zeta23.BL.M2.zeta_eq_four_terms, Zeta23.BL.M2.zeta_sub_sum_le, Zeta23.BL.M2.norm_zeta_sq_le, Zeta23.BL.M2.norm_zeta_sq_le', Zeta23.BL.M2.one_div_cpow_eq_rpow_mul, Zeta23.BL.M2.range_sum_eq_Icc, Zeta23.BL.M2.range_sum_eq_twist, Zeta23.BL.M2.integral_range_sq_eq_Icc, M3a.sum_Icc_one_eq, M3a.antitoneOn_rpow_Icc, M3a.sum_Ico_rpow_succ_le_integral, M3a.sum_Icc_rpow_le, M3a.sum_Icc_rpow_le_mul, M3a.sum_Icc_rpow_le_tsum, M3a.sum_Icc_rpow_neg_le_tsum_one_div, M3a.sum_Icc_rpow_mul_log_le, M3a.sum_Icc_rpow_mul_log_le_of_sigma, M3a.sum_Icc_rpow_le_of_sigma, Zeta23.BL.M3.continuous_Dpoly, Zeta23.BL.M3.meanValue_Dpoly, Zeta23.BL.M3.norm_zeta_sq_le_unif, Zeta23.BL.M3.continuousOn_norm_zeta_sq, Zeta23.BL.M3.integral_inv_sq_one, Zeta23.BL.M3.integral_bound_abstract, Zeta23.BL.M3.meanSquare_param, Zeta23.BL.M3.N_choice, Zeta23.BL.M3.rpow_neg_le_of_choice, Zeta23.BL.M3.rpow_pos_le_of_choice, Zeta23.BL.M3.meanSquareUnif_explicit, Zeta23.BL.M3.meanSquareUnif_naive, Zeta23.BL.M3.meanSquareUnif_task, Zeta23.BL.NRight_eq_zero_of_half_le, Zeta23.BL.MNF_zerosIn_union, Zeta23.BL.NRight_add, Zeta23.BL.NRight_sub_eq, Zeta23.BL.NRight_mono, Zeta23.BL.zeta_order_eq_zero_of_ne_zero, Zeta23.BL.divisor_riemannZeta_eq_int, Zeta23.BL.divisor_riemannZeta_eq, Zeta23.BL.sum_zeta_order_le_finsum_divisor, Zeta23.BL.finsum_divisor_riemannZeta_eq, Zeta23.BL.finsum_divisor_riemannZeta_eq_zerosIn, Zeta23.BL.mem_closedBall_iff_sq, Zeta23.BL.abs_re_im_sub_le_of_mem_closedBall, Zeta23.BL.bounds_of_mem_closedBall_two, Zeta23.BL.one_notMem_closedBall_two, Zeta23.BL.re_ge_of_mem_closedBall_Rout, Zeta23.BL.outer_disc_facts, Zeta23.BL.geom_facts, Zeta23.BL.one_notMem_closedBall_two_add, Zeta23.BL.one_notMem_sphere_two_add, Zeta23.BL.neg_log_norm_riemannZeta_two_add_le, Zeta23.BL.count_disc_le, Zeta23.BL.finset_sum_zeta_order_le_finsum_divisor, Zeta23.BL.count_finset_le, Zeta23.BL.Lz_nonneg, Zeta23.BL.log_le_half_log_one_add_sq, Zeta23.BL.log_norm_le_Lz, Zeta23.BL.continuousOn_Lz, Zeta23.BL.circleIntegrable_Lz, Zeta23.BL.circleAverage_log_norm_le_Lz, Zeta23.BL.concaveOn_half_log_one_add, Zeta23.BL.circleAverage_Lz_le, Zeta23.BL.count_finset_le_log_meanSq, Zeta23.BL.closedBall_Rout_subset, Zeta23.BL.count_window_le, Zeta23.BL.count_window_le_log_meanSq, Zeta23.BL.circleAverage_log_le_Lz, Zeta23.BL.circleMap_two_add, Zeta23.BL.circleMap_two_add_ne_one, Zeta23.BL.continuousOn_Lz_circleMap, Zeta23.BL.integrableOn_Lz_circleMap_prod, Zeta23.BL.integrable_Lz_circleMap_prod_restrict, Zeta23.BL.intervalIntegrable_circleAverage_Lz, Zeta23.BL.integral_circleAverage_Lz_eq_swap, Zeta23.BL.Lz_le_half_sq, Zeta23.BL.segment_mapsTo_ne_one, Zeta23.BL.intervalIntegrable_Lz_segment, Zeta23.BL.intervalIntegrable_normSq_zeta_segment, Zeta23.BL.integral_Lz_circle_le, Zeta23.BL.integral_circleAverage_Lz_le, Zeta23.BL.count_le_integral, Zeta23.BL.count_le_meanSquare, Zeta23.BL.count_le_meanSquare', Zeta23.BL.tsum_one_div_rpow_anti, Zeta23.BL.meanSquare_of_gt_one, Zeta23.BL.meanSquare_hyp_extend, Zeta23.BL.rightHalf_of_meanSquareUnif, Zeta23.BL.rightHalf_gt_sixth, Zeta23.BL.bohrLandau_gt_sixth, Zeta23.BL.M45.norm_zeta_le_strip, Zeta23.BL.M45.meanSquare_zero_one, Zeta23.BL.M45.continuous_norm_zeta_sq, Zeta23.BL.M45.zeta_one_lower, Zeta23.BL.M45.not_intervalIntegrable_zeta_one_sq, Zeta23.BL.M45.integral_zeta_one_sq_eq_zero, Zeta23.BL.M45.meanSquare_one, Zeta23.BL.M45.meanSquare_strip_lt_one, Zeta23.BL.M45.meanSquare_one_from_one, Zeta23.BL.M45.meanSquare_strip_of, Zeta23.BL.M45.meanSquare_strip_from, MNF.RH.rightHalf_gt_sixth, MNF.RH.bohrLandau_gt_sixth, MNF.RH.reservoirDensity_of_linear_bound, MNF.RH.reservoirDensity_gt_sixth, MNF.RH.near_line_density_gt_sixth, MNF.RH.nullified_density_gt_sixth, MNF.RH.onLineDensityOne_of_gap_gt_sixth, BLClosure.hasSum_cos_div_sq_bernoulli, BLClosure.cos_mode_fract, BLClosure.B2per_fourier, BLClosure.P_fourier, BLClosure.P_nonpos, BLClosure.P_intCast, BLClosure.P_eq, BLClosure.psi_abs_le, BLClosure.P_abs_le, BLClosure.P_natCast, BLClosure.continuous_P, BLClosure.measurable_psi, BLClosure.hasDerivAt_P, BLClosure.integrableOn_bdd_mul_cpow, BLClosure.integrableOn_psi_mul, BLClosure.integrableOn_P_mul, BLClosure.tail_by_parts_interval, BLClosure.tail_by_parts, BLClosure.hasDerivAt_P', BLClosure.first_derivative_test_amp_smooth', BLClosure.first_derivative_test_amp_smooth, BLClosure.first_derivative_test_smooth, BLClosure.mode_integrand_eq, BLClosure.mode_bound_interval, BLClosure.integrableOn_bdd_mul_cpow', BLClosure.integrableOn_exp_mul_cpow, BLClosure.integrableOn_exp_neg_mul_cpow, BLClosure.re_w, BLClosure.re_w_lt, BLClosure.re_phase, BLClosure.re_phase', BLClosure.tail_mode_bound', BLClosure.tail_mode_bound, BLClosure.tail_mode_bound_neg, BLClosure.cmode_hasSum, BLClosure.continuous_cmode, BLClosure.cmode_abs_le, BLClosure.cmode_eq, BLClosure.mode_integral_bound, BLClosure.hasSum_mode_integrals, BLClosure.split_P, BLClosure.integral_cpow_tail, BLClosure.tail_sharp, BLClosure.zeta_eq_euler_maclaurin, BLClosure.norm_natCast_cpow_neg_div_two, BLClosure.zeta_approx_sharp, BLClosure.zeta_approx_sharp_segment, BLClosure.zeta_approx_sharp_segment', BLClosure.S_eq_Dpoly, BLClosure.norm_main_term_le, BLClosure.norm_zeta_sq_le_sharp, BLClosure.meanSquare_sharp_param, BLClosure.meanSquareUnif_all_of_lt_one, BLClosure.meanSquareUnif_all, BLClosure.meanSquareUnifFrom_all, BLClosure.rightHalfBound, BLClosure.bohrLandau_all, Zeta23.BL.rightHalf_all, Zeta23.BL.rightHalfBound, Zeta23.BL.bohrLandau_full, Zeta23.BL.rightHalfBound_of_meanSquare', Zeta23.BL.meanSquare_strip', MNF.RH.reservoirDensityOne_unconditional, MNF.RH.onLineDensityOne_of_gap_only, Zeta23.BL.one_half_pos', Zeta23.BL.tsum_one_div_rpow_two_sq_le, Zeta23.BL.meanSquare_explicit_small, Zeta23.BL.NRight_le_Ncount, Zeta23.BL.Rout_half, Zeta23.BL.rin_half, Zeta23.BL.hwin_half_ge, Zeta23.BL.log_half_ge, Zeta23.BL.K_half_ge, Zeta23.BL.rpow_neg_five_half_mul, Zeta23.BL.log_three_nonneg, Zeta23.BL.bohrLandau_explicit, Zeta23.MNF_Ncount_le_mul_log, Zeta23.MNF_mul_log_le_Ncount, MNF.RH.abs_re_sub_half_lt_half, MNF.RH.abs_re_sub_half_le_half, MNF.RH.NOff_anti, MNF.RH.NOff_antitone, MNF.RH.NOff_intervalIntegrable, MNF.RH.indicator_le_antitone, MNF.RH.term_intervalIntegrable, MNF.RH.integral_indicator_le_eq, MNF.RH.reservoirMass_eq_integral, MNF.RH.reservoirMass_nonneg, MNF.RH.reservoirMass_le_half_Ncount, MNF.RH.integral_NOff_split, MNF.RH.integral_NOff_le_mul_Ncount, MNF.RH.integral_NOff_tail_le, MNF.RH.reservoirMass_le_split, MNF.RH.reservoirMass_le_eps_Ncount, MNF.RH.signedReservoir_eq_zero, MNF.RH.sum_right_eq_sum_left, MNF.RH.reservoirMass_eq_two_right, MNF.RH.rpow_tail_intervalIntegrable, MNF.RH.integral_rpow_tail_le, MNF.RH.reservoirMass_le_rpow, MNF.RH.reservoirMass_le_Ncount_mul, MNF.RH.meanDisplacement_tendsto_zero, Zeta23.Density.analyticOnNhd_Mx, Zeta23.Density.analyticOnNhd_fz, Zeta23.Density.continuousOn_fz, Zeta23.Density.tail_inv_sq_le, Zeta23.Density.fz_sub_one_eq, Zeta23.Density.norm_fz_sub_one_le, Zeta23.Density.pi_sq_lt_ten, Zeta23.Density.pi_sq_div_six_div_le, Zeta23.Density.norm_fz_le_one_add, Zeta23.Density.one_sub_norm_le_norm_fz, Zeta23.Density.fz_lower_two, Zeta23.Density.neg_log_norm_fz_two_le, Zeta23.Density.log_norm_fz_le_of_two_le_re, Zeta23.Density.norm_sq_fz_le_of_two_le_re, Zeta23.Density.abs_cm_le, Zeta23.Density.cm_eq_of_le, Zeta23.Density.S_mul_Mx_eq, Zeta23.Density.card_filter_dvd_dvd_le, Zeta23.Density.gcd_le_sum_dvd, Zeta23.Density.gcd_le_sum_Icc, Zeta23.Density.sum_div_of_dvd_le, Zeta23.Density.ite_and_div_eq, Zeta23.Density.sum_gcd_div_le, Zeta23.Density.dX_eq_card_filter, Zeta23.Density.dX_eq_sum, Zeta23.Density.sum_dX_sq_le, Zeta23.Density.sum_mul_le_of_partial_sums, Zeta23.Density.sum_mul_le_of_partial_sums_tail, Zeta23.Density.sum_Ioc_rpow_le, Zeta23.Density.tail_sum_le, Zeta23.Density.weight_sum_le, Zeta23.Density.integral_window_eq, Zeta23.Density.norm_coeff_sq, Zeta23.Density.abs_cm_sq_le, Zeta23.Density.meanSquare_prodPoly, Zeta23.Density.norm_add_sq_le_eta, Zeta23.Density.norm_Mx_le, Zeta23.Density.continuousOn_B_window, Zeta23.Density.integral_inv_sq_window, Zeta23.Density.meanSquare_B_window, Zeta23.Density.continuous_A_window, Zeta23.Density.continuousOn_fz_window, Zeta23.Density.meanSquare_fz_window, Zeta23.Density.sum_Icc_two_inv_mul_sub_one, Zeta23.Density.norm_moebius_mul_cpow_le, Zeta23.Density.Mx_eq_one_add, Zeta23.Density.Mx_ne_zero_of_le_re, Zeta23.Density.analyticOrderAt_Mx_ne_top, Zeta23.Density.zeta_order_le_divisor_fz, Zeta23.Density.finset_sum_zeta_order_le_finsum_divisor_fz, Zeta23.Density.fz_two_add_ne_zero, Zeta23.Density.count_disc_le_fz, Zeta23.Density.count_finset_le_fz, Zeta23.Density.count_window_le_fz, Zeta23.Density.log_norm_le_Leps, Zeta23.Density.continuousOn_Leps, Zeta23.Density.circleAverage_log_norm_le_Leps, Zeta23.Density.concaveOn_half_log_add, Zeta23.Density.half_log_le_half, Zeta23.Density.segment_average_Leps_le, Zeta23.Density.continuousOn_Leps_fz_ne_one, Zeta23.Density.continuousOn_Leps_circleMap, Zeta23.Density.integrableOn_Leps_circleMap_prod, Zeta23.Density.integrable_Leps_circleMap_prod_restrict, Zeta23.Density.intervalIntegrable_circleAverage_Leps, Zeta23.Density.integral_circleAverage_Leps_eq_swap, Zeta23.Density.intervalIntegrable_Leps_segment, Zeta23.Density.intervalIntegrable_normSq_fz_segment, Zeta23.Density.circleAverage_log_fz_le_Leps, Zeta23.Density.count_le_integral_fz_window, Zeta23.Density.count_le_integral_fz_NSigma, Zeta23.Density.NRight_sub_eq_NSigma, Zeta23.Density.count_le_integral_fz, Zeta23.Density.integral_Leps_segment_le_of_meanSquare, Zeta23.Density.Leps_fz_le_of_two_le_re, Zeta23.Density.integral_Leps_segment_le_of_two_le, Zeta23.Density.integral_Leps_circle_le, Zeta23.Density.integral_circleAverage_Leps_le, Zeta23.Density.count_le_meanSquare_fz_window, Zeta23.Density.count_le_meanSquare_fz, Zeta23.Density.theta_pos, Zeta23.Density.theta_le_one, Zeta23.Density.kappa_pos, Zeta23.Density.kappa_le_theta, Zeta23.Density.theta_mul_eq, Zeta23.Density.offdiag_exponent, Zeta23.Density.cross_exponent, Zeta23.Density.cross_exponent', Zeta23.Density.half_le_nat_floor, Zeta23.Density.rpow_sq_eq, Zeta23.Density.two_rpow_le_two, Zeta23.Density.one_add_log_cube_le_rpow, Zeta23.Density.single_params, Zeta23.Density.X_rpow_le, Zeta23.Density.rpow_le_X_rpow, Zeta23.Density.NX_rpow_div_le, Zeta23.Density.inv_X_le, Zeta23.Density.E0gen_le, Zeta23.Density.le_E0gen, Zeta23.Density.E0gen_le_const, Zeta23.Density.cross_le, Zeta23.Density.Egen_le, Zeta23.Density.Ksingle_pos, Zeta23.Density.exponent_single, Zeta23.Density.w4_rhs_le, Zeta23.Density.geom_lower, Zeta23.Density.count_le_Egen, Zeta23.Density.density_single_window, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from MNFChallengesD.All
+Building MNF.RH.DensityAll
+ℹ [3573/3825] Replayed MNF.RH.Core
+info: MNF/RH/Core.lean:372:0: 'MNF.RH.zeta_order_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Core.lean:373:0: 'MNF.RH.order_one_iff_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Core.lean:374:0: 'MNF.RH.deriv_zero_of_high_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Core.lean:375:0: 'MNF.RH.nontrivial_zero_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Core.lean:376:0: 'MNF.RH.deriv_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Core.lean:377:0: 'MNF.RH.analyticOrderAt_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Core.lean:378:0: 'MNF.RH.zeta_order_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Core.lean:379:0: 'MNF.RH.shifted_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Core.lean:380:0: 'MNF.RH.in_strip_of_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Core.lean:381:0: 'MNF.RH.riemannHypothesis_iff_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Core.lean:382:0: 'MNF.RH.riemannHypothesis_iff_shifted_subset_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Core.lean:383:0: 'MNF.RH.shifted_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3574/3825] Replayed MNF.RH.Gap
+info: MNF/RH/Gap.lean:227:0: 'MNF.RH.tau_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Gap.lean:228:0: 'MNF.RH.riemannHypothesis_iff_gap_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Gap.lean:229:0: 'MNF.RH.shifted_bounded_of_zeroFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Gap.lean:230:0: 'MNF.RH.riemannHypothesis_iff_gap_of_zeroFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Gap.lean:231:0: 'MNF.RH.riemannHypothesis_iff_remaining_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Gap.lean:232:0: 'MNF.RH.gap_below_bound_insufficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Gap.lean:233:0: 'MNF.RH.symmetric_bounded_not_on_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Gap.lean:234:0: 'MNF.RH.sign_gate_shifted' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Gap.lean:235:0: 'MNF.RH.nullify_dilation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Gap.lean:236:0: 'MNF.RH.gap_iff_nullify_id' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Gap.lean:237:0: 'MNF.RH.delta_from_ratio_38_insufficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3575/3825] Replayed MNF.RH.Hypotheses
+info: MNF/RH/Hypotheses.lean:194:0: 'MNF.RH.rh_of_symmetric_operator' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Hypotheses.lean:195:0: 'MNF.RH.rh_of_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Hypotheses.lean:196:0: 'MNF.RH.rh_of_gap_of_zeroFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Hypotheses.lean:197:0: 'MNF.RH.gap_of_rh' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Hypotheses.lean:198:0: 'MNF.RH.spectralGapHyp_iff_zeroFree_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Hypotheses.lean:199:0: 'MNF.RH.spectralGapHyp_three_eighths_iff_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Hypotheses.lean:200:0: 'MNF.RH.multiplicityBoundOne_iff_allZerosSimple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Hypotheses.lean:201:0: 'MNF.RH.derivativeNonvanishing_of_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Hypotheses.lean:202:0: 'MNF.RH.allZerosSimple_of_speiser_and_double_zero_hyp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Hypotheses.lean:203:0: 'MNF.RH.allZerosSimple_of_rh_of_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3577/3825] Replayed MNF.RH.Counting
+info: MNF/RH/Counting.lean:200:0: 'MNF.RH.mem_zerosIn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:201:0: 'MNF.RH.zerosIn_subset_zetaZeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:202:0: 'MNF.RH.zerosIn_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:203:0: 'MNF.RH.zerosIn_subset_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:204:0: 'MNF.RH.zerosIn_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:205:0: 'MNF.RH.Ncount_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:206:0: 'MNF.RH.Ndist_eq_sum_ones' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:207:0: 'MNF.RH.Ndist_le_Ncount' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:208:0: 'MNF.RH.N0star_le_Ndist' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:209:0: 'MNF.RH.N0simple_le_N0star' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:210:0: 'MNF.RH.riemannHypothesis_iff_window_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:211:0: 'MNF.RH.allZerosSimple_iff_window_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/Counting.lean:212:0: 'MNF.RH.N0simple_eq_deriv_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3578/3825] Replayed MNF.RH.GapDensity
+info: MNF/RH/GapDensity.lean:170:0: 'MNF.RH.N0_le_Ncount' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/GapDensity.lean:171:0: 'MNF.RH.NOff_le_Ncount' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/GapDensity.lean:172:0: 'MNF.RH.gap_forces_NOff_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MNF/RH/GapDensity.lean:173:0: 'MNF.RH.on_line_density_one_of_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3590/3825] Replayed Zeta23.Statement
+warning: Zeta23/Statement.lean:148:30: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [3591/3825] Replayed Zeta23.Statement.Seam
+warning: Zeta23/Statement/Seam.lean:59:13: `ENat.toNat_coe` has been deprecated: Use `ENat.toNat_natCast` instead
+⚠ [3620/3825] Replayed Zeta23.Assembly
+warning: Zeta23/Assembly.lean:885:47: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/Assembly.lean:958:34: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/Assembly.lean:962:90: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [3623/3825] Replayed Zeta23.ZetaReflect
+warning: Zeta23/ZetaReflect.lean:91:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8728/8738] Replayed Zeta23.Tail
+warning: Zeta23/Tail.lean:290:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/Tail.lean:399:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8729/8738] Replayed Zeta23.ZeroSide
+warning: Zeta23/ZeroSide.lean:701:4: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/ZeroSide.lean:706:66: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/ZeroSide.lean:712:52: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/ZeroSide.lean:755:53: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+ℹ [8744/8851] Replayed Zeta23.GammaFacts.Mu
+info: Zeta23/GammaFacts/Mu.lean:137:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [8746/8851] Replayed Zeta23.GammaFacts.StirlingVert
+info: Zeta23/GammaFacts/StirlingVert.lean:452:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [8750/8851] Replayed Zeta23.FromPNTPlus.StrongPNTPrefix
+warning: Zeta23/FromPNTPlus/StrongPNTPrefix.lean:61:71: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/StrongPNTPrefix.lean:202:9: `Set.setOf_subset_setOf` has been deprecated: Use `Set.ofPred_subset_ofPred` instead
+warning: Zeta23/FromPNTPlus/StrongPNTPrefix.lean:343:10: `Set.notMem_setOf_iff` has been deprecated: Use `Set.notMem_ofPred_iff` instead
+warning: Zeta23/FromPNTPlus/StrongPNTPrefix.lean:368:48: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/StrongPNTPrefix.lean:390:10: `Set.notMem_setOf_iff` has been deprecated: Use `Set.notMem_ofPred_iff` instead
+warning: Zeta23/FromPNTPlus/StrongPNTPrefix.lean:432:48: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8758/8851] Replayed Zeta23.FromPNTPlus.ZetaBounds
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:859:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:952:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1092:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1099:32: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1105:56: `Set.preimage_setOf_eq` has been deprecated: Use `Set.preimage_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1115:56: `Set.preimage_setOf_eq` has been deprecated: Use `Set.preimage_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1119:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1135:54: `Set.preimage_setOf_eq` has been deprecated: Use `Set.preimage_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1157:22: `Set.setOf_subset_setOf` has been deprecated: Use `Set.ofPred_subset_ofPred` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1169:15: `Set.setOf_subset_setOf` has been deprecated: Use `Set.ofPred_subset_ofPred` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1169:59: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1185:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1835:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1837:45: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1840:28: `Set.setOf_subset_setOf` has been deprecated: Use `Set.ofPred_subset_ofPred` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1844:28: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1900:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:1906:20: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:2091:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:2884:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/FromPNTPlus/ZetaBounds.lean:2940:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8760/8851] Replayed Zeta23.RvM.Halving
+warning: Zeta23/RvM/Halving.lean:52:55: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/RvM/Halving.lean:62:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/RvM/Halving.lean:70:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8766/8851] Replayed Zeta23.RvM.ReZeroCount
+warning: Zeta23/RvM/ReZeroCount.lean:272:15: `ENat.toNat_coe` has been deprecated: Use `ENat.toNat_natCast` instead
+⚠ [8771/8851] Replayed Zeta23.RvM.NcountWindow
+warning: Zeta23/RvM/NcountWindow.lean:23:22: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8774/8851] Replayed Zeta23.WeilEF.ZeroSummability
+warning: Zeta23/WeilEF/ZeroSummability.lean:189:4: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8777/8851] Replayed Zeta23.WeilEF.Landau
+warning: Zeta23/WeilEF/Landau.lean:341:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/WeilEF/Landau.lean:437:64: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8779/8851] Replayed Zeta23.WeilEF.Contour
+warning: Zeta23/WeilEF/Contour.lean:69:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+ℹ [8784/8851] Replayed Zeta23.WeilEF.Main
+info: Zeta23/WeilEF/Main.lean:38:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [8785/8851] Replayed Zeta23.ZeroSide.RankTraceMult
+warning: Zeta23/ZeroSide/RankTraceMult.lean:49:32: Variable name `ht0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ht0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Zeta23/ZeroSide/RankTraceMult.lean:49:60: Variable name `hx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Zeta23/ZeroSide/RankTraceMult.lean:56:30: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Zeta23/ZeroSide/RankTraceMult.lean:56:43: Variable name `hx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Zeta23/ZeroSide/RankTraceMult.lean:81:32: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Zeta23/ZeroSide/RankTraceMult.lean:81:58: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Zeta23/ZeroSide/RankTraceMult.lean:164:20: This simp argument is unused:
+  Matrix.mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/ZeroSide/RankTraceMult.lean:359:28: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8787/8851] Replayed Zeta23.Assembly.SeamMult
+warning: Zeta23/Assembly/SeamMult.lean:26:0: automatically included section variable(s) unused in theorem `Zeta23.Assembly.ctr_sub_frobSq_perturb`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8790/8851] Replayed Zeta23.BohrLandau
+warning: Zeta23/BohrLandau.lean:41:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/BohrLandau.lean:98:8: declaration uses `sorry`
+warning: Zeta23/BohrLandau.lean:107:8: declaration uses `sorry`
+info: Zeta23/BohrLandau.lean:114:0: 'Zeta23.BL.NLeft_eq_NRight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/BohrLandau.lean:115:0: 'Zeta23.BL.bohrLandau_of_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/BohrLandau.lean:116:0: 'Zeta23.BL.bohrLandau' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: Zeta23/BohrLandau.lean:117:0: 'Zeta23.BL.meanSquare_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8808/8851] Replayed Zeta23.PrimeSideA.EndsE1
+warning: Zeta23/PrimeSideA/EndsE1.lean:326:41: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+ℹ [8813/8851] Replayed Zeta23.PrimeSideA
+info: Zeta23/PrimeSideA.lean:372:0: lem_ends : ∀ (cϱ lam : ℝ),
+  GammaFacts →
+    ChebyshevMertens →
+      0 < lam ∧ lam ≤ 1 →
+        ∃ C, EventuallyAtCore cϱ lam fun p F ↦ |trGt2A p F - MtotalA p F| ≤ C * (p.L * p.l * log p.l * (p.l ^ 2 + p.X))
+info: Zeta23/PrimeSideA.lean:398:0: prop_mumu : ∀ (cϱ lam : ℝ),
+  GammaFacts →
+    ChebyshevMertens →
+      0 < lam ∧ lam ≤ 1 →
+        ∃ C,
+          EventuallyAtCore cϱ lam fun p F ↦
+            |Mform F.Phi p.T mu mu - 2 * π * F.b * p.L * ∫ (τ : ℝ) in p.T..2 * p.T, mu τ ^ 2| ≤ C * (p.l ^ 2 * log p.L)
+info: Zeta23/PrimeSideA.lean:404:0: prop_cross_muP : ∀ (cϱ lam : ℝ),
+  GammaFacts →
+    ChebyshevMertens →
+      0 < lam ∧ lam ≤ 1 → ∃ C, EventuallyAtCore cϱ lam fun p F ↦ |Mform F.Phi p.T mu (PX p.X)| ≤ C * (p.l * √p.X)
+⚠ [8819/8851] Replayed Zeta23.MV.Spacing
+warning: Zeta23/MV/Spacing.lean:58:0: automatically included section variable(s) unused in theorem `Zeta23.MV.Adm.itv_disjoint`:
+  [Fintype ι]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Zeta23/MV/Spacing.lean:153:8: automatically included section variable(s) unused in theorem `_private.Zeta23.MV.Spacing.0.Zeta23.MV.Adm.mem_window`:
+  [Fintype ι]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ℹ [8825/8851] Replayed Zeta23.Superlinear
+info: Zeta23/Superlinear.lean:73:0: 'Zeta23.ncountSuperlinear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/Superlinear.lean:74:0: 'Zeta23.tendsto_Ncount_div_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8829/8851] Replayed Zeta23.ThmD.Window
+warning: Zeta23/ThmD/Window.lean:132:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8830/8851] Replayed Zeta23.ThmD.PP
+warning: Zeta23/ThmD/PP.lean:270:29: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Zeta23/ThmD/PP.lean:276:29: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8832/8851] Replayed Zeta23.ThmD.WindowCore
+warning: Zeta23/ThmD/WindowCore.lean:388:22: Variable name `u` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _u
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [8839/8851] Replayed Zeta23.OffLine
+info: Zeta23/OffLine.lean:61:0: 'Zeta23.offLine_le_one_third' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/OffLine.lean:62:0: 'Zeta23.offLine_le_one_third_dyadic' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8840/8851] Replayed MNF.RH.Density
+warning: MNF/RH/Density.lean:105:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8841/8851] Replayed MNF.Extension.InjectionEjection
+warning: MNF/Extension/InjectionEjection.lean:142:31: Variable name `hΔ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΔ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:200:38: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:228:31: Variable name `hΔ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΔ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:244:31: Variable name `hΔ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΔ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:285:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MNF/Extension/InjectionEjection.lean:285:35: 'simp_all' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MNF/Extension/InjectionEjection.lean:300:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MNF/Extension/InjectionEjection.lean:300:35: 'simp_all' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MNF/Extension/InjectionEjection.lean:327:35: Variable name `hΔ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΔ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:337:41: Variable name `hΔ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΔ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:438:30: Variable name `hΔ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΔ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:459:36: Variable name `hΔ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΔ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:529:41: Variable name `hj` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hj
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:529:54: Variable name `hk` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hk
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:554:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: MNF/Extension/InjectionEjection.lean:588:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: MNF/Extension/InjectionEjection.lean:677:36: Variable name `hΔ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΔ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:829:36: Variable name `hΔ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΔ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MNF/Extension/InjectionEjection.lean:920:45: Variable name `hg1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hg1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (8851 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, MNF.RH.N0_le_Ncount, MNF.RH.NOff_le_Ncount, MNF.RH.gap_forces_NOff_eq, MNF.RH.on_line_density_one_of_gap, MNF.RH.nullify_eq_zero_iff, MNF.RH.NNear_eq_nullified_count, MNF.RH.Ncount_eq_near_add_off, MNF.RH.N0_le_NNear, MNF.RH.NOff_le_NOffLine, MNF.RH.NNear_eq_N0_of_gap, MNF.RH.ncountSuperlinear, MNF.RH.offLine_le_one_third, MNF.RH.NOff_le_one_third, MNF.RH.reservoirDensityOne_of_bohrLandau, MNF.RH.near_line_density_one, MNF.RH.nullified_density_one, MNF.RH.onLineDensityOne_of_reservoir_of_gap, MNF.RH.onLineDensityOne_of_gap, MNF.RH.NOff_eq_right_add_left, MNF.RH.NLeft_eq_NRight, MNF.RH.bohrLandau_of_right, MNF.RH.onLineDensityOne_of_right, MNF.RH.reservoirDensityOne_of_right, MNF.Extension.conservation, MNF.Extension.idempotent', MNF.Extension.dilation_covariance, MNF.Extension.abs_nullify_antitone_in_threshold, MNF.Extension.eject_gapped, MNF.Extension.eject_idem, MNF.Extension.nullify_eject, MNF.Extension.eject_nullify, MNF.Extension.remainder_eject, MNF.Extension.eject_sub_nullify, MNF.Extension.eject_probe_reading, MNF.Extension.eject_dilation, MNF.Extension.nullify_comp_nullify, MNF.Extension.eject_comp_eject, MNF.Extension.nullify_floor, MNF.Extension.eject_ceiling, MNF.Extension.deficit_deficit, MNF.Extension.deficit_tripotent, MNF.Extension.nullify_deficit, MNF.Extension.northProbe_deficit, MNF.Extension.eject_eq_id_add_deficit, MNF.Extension.nullify_eq_id_sub_deficit_sq, MNF.Extension.metricProj_branch, MNF.Extension.metricProj_deficit_swap, MNF.Extension.rep_conservation, MNF.Extension.rep_not_distributive, MNF.Extension.content_inject, MNF.Extension.nu_inject, MNF.Extension.eps_inject, MNF.Extension.inject_nullified, MNF.Extension.inject_at_kstar, MNF.Extension.eventual_nullification, MNF.Extension.typeA_on_demand, MNF.Extension.compact_inject, MNF.Extension.nullify_sees_through, MNF.Extension.refine_inject, MNF.Extension.ladder_not_composite, MNF.Extension.deltaStar_singleton, MNF.Extension.nu_eq_zero_of_all_below, MNF.Extension.deltaStar_inject, MNF.Extension.sameSign_refine_le, MNF.Extension.sameSign_nu_le_content, MNF.Extension.sameSign_sign, MNF.Extension.mixed_refine_can_increase, MNF.Extension.zero_reading_uninformative, MNF.Extension.inProcess_ne_postHoc, MNF.Extension.residue_eq, MNF.Extension.two_piece_sign_safe, MNF.Extension.residue_both_signs, MNF.Extension.realise, MNF.Extension.gate_minimax, MNF.Extension.soft_idem_iff, MNF.Extension.soft_no_gap, MNF.Extension.hardGate_is_nullify, MNF.Extension.injectAdd_ejectAdd, MNF.Extension.ejectAdd_not_additive, MNF.RH.nullify_eq_extension, MNF.RH.mem_Band_iff_nullified, MNF.RH.eject_fixed_iff_zero, MNF.RH.eject_band_edge, MNF.RH.eq_zero_iff_gapped_all, MNF.RH.eq_zero_iff_eject_fixed_all, MNF.RH.eq_zero_iff_nullified_all, MNF.RH.displacement_injectable, MNF.RH.injected_reads_zero_iff, MNF.RH.band_injection_blind, MNF.RH.trace_singleton, MNF.RH.trace_zero, MNF.RH.trace_inject_pos, MNF.RH.trace_inject_tendsto, MNF.RH.on_line_iff_eject_fixed_all, MNF.RH.on_line_iff_nullified_all, MNF.RH.on_line_iff_trace_zero, MNF.RH.band_trivial_of_gap, MNF.RH.gap_of_band_trivial, DPMV.cpow_neg_mul_I_eq_exp, DPMV.conj_cpow_neg_mul_I, DPMV.prod_eq_exp, DPMV.integral_exp_I_mul, DPMV.integral_exp_I_mul_zero, DPMV.norm_exp_I_mul_eq_one, DPMV.norm_integral_exp_I_mul_le, DPMV.J_self, DPMV.norm_J_le, DPMV.normSq_sum_expand, DPMV.integral_normSq_sum, DPMV.dirichlet_mean_value, DPMV2.integral_exp_mul_I, DPMV2.integral_exp_zero_mul_I, DPMV2.norm_integral_exp_mul_I_le, DPMV2.ofReal_norm_sq_dirichlet, DPMV2.ofReal_integral_norm_sq_dirichlet, DPMV2.log_sub_log_ne_zero, DPMV2.norm_integral_freq_le, DPMV2.sum_bound_split, DPMV2.dirichlet_mean_value, sum_divisor_mul_log_le, circleAverage_log_norm_le_half_log_circleAverage_sq_of_ae, circleAverage_log_norm_le_half_log_circleAverage_sq, AnalyticOnNhd.ae_circleMap_ne_zero, AnalyticOnNhd.circleAverage_log_norm_le_half_log_circleAverage_sq, M1.log_nat_gap, M1.mv_Icc, M1.log_sub_log_ne_zero, M1.term_eq, M1.Z_eq, M1.norm_cpow_neg_mul_I, M1.dirichlet_meanSquare_le, M1.cpow_neg_add_eq, M1.norm_sq_rpow, M1.sum_inv_le, M1.sum_weight_le, M1.meanValue_pow_raw, M1.meanValue_pow, M1.sum_Icc_rpow_le_integral, M1.sum_rpow_neg_le, M1.sum_Icc_rpow_le, M1.sum_weight_le_logfree, M1.meanValue_pow_logfree, M1.meanValue_pow_explicit, Zeta23.BL.M2.norm_add4_sq_le, Zeta23.BL.M2.s_re, Zeta23.BL.M2.s_im, Zeta23.BL.M2.one_sub_s_re, Zeta23.BL.M2.one_sub_s_im, Zeta23.BL.M2.neg_s_re, Zeta23.BL.M2.s_ne_one, Zeta23.BL.M2.s_ne_zero, Zeta23.BL.M2.norm_s_le, Zeta23.BL.M2.norm_one_sub_s_ge, Zeta23.BL.M2.rpow_sq_eq, Zeta23.BL.M2.norm_P_le, Zeta23.BL.M2.norm_P_le', Zeta23.BL.M2.norm_Q_le, Zeta23.BL.M2.norm_Q_le', Zeta23.BL.M2.norm_R_le_core, Zeta23.BL.M2.norm_R_le, Zeta23.BL.M2.norm_R_le_uniform, Zeta23.BL.M2.norm_R_le', Zeta23.BL.M2.zeta_eq_four_terms, Zeta23.BL.M2.zeta_sub_sum_le, Zeta23.BL.M2.norm_zeta_sq_le, Zeta23.BL.M2.norm_zeta_sq_le', Zeta23.BL.M2.one_div_cpow_eq_rpow_mul, Zeta23.BL.M2.range_sum_eq_Icc, Zeta23.BL.M2.range_sum_eq_twist, Zeta23.BL.M2.integral_range_sq_eq_Icc, M3a.sum_Icc_one_eq, M3a.antitoneOn_rpow_Icc, M3a.sum_Ico_rpow_succ_le_integral, M3a.sum_Icc_rpow_le, M3a.sum_Icc_rpow_le_mul, M3a.sum_Icc_rpow_le_tsum, M3a.sum_Icc_rpow_neg_le_tsum_one_div, M3a.sum_Icc_rpow_mul_log_le, M3a.sum_Icc_rpow_mul_log_le_of_sigma, M3a.sum_Icc_rpow_le_of_sigma, Zeta23.BL.M3.continuous_Dpoly, Zeta23.BL.M3.meanValue_Dpoly, Zeta23.BL.M3.norm_zeta_sq_le_unif, Zeta23.BL.M3.continuousOn_norm_zeta_sq, Zeta23.BL.M3.integral_inv_sq_one, Zeta23.BL.M3.integral_bound_abstract, Zeta23.BL.M3.meanSquare_param, Zeta23.BL.M3.N_choice, Zeta23.BL.M3.rpow_neg_le_of_choice, Zeta23.BL.M3.rpow_pos_le_of_choice, Zeta23.BL.M3.meanSquareUnif_explicit, Zeta23.BL.M3.meanSquareUnif_naive, Zeta23.BL.M3.meanSquareUnif_task, Zeta23.BL.NRight_eq_zero_of_half_le, Zeta23.BL.MNF_zerosIn_union, Zeta23.BL.NRight_add, Zeta23.BL.NRight_sub_eq, Zeta23.BL.NRight_mono, Zeta23.BL.zeta_order_eq_zero_of_ne_zero, Zeta23.BL.divisor_riemannZeta_eq_int, Zeta23.BL.divisor_riemannZeta_eq, Zeta23.BL.sum_zeta_order_le_finsum_divisor, Zeta23.BL.finsum_divisor_riemannZeta_eq, Zeta23.BL.finsum_divisor_riemannZeta_eq_zerosIn, Zeta23.BL.mem_closedBall_iff_sq, Zeta23.BL.abs_re_im_sub_le_of_mem_closedBall, Zeta23.BL.bounds_of_mem_closedBall_two, Zeta23.BL.one_notMem_closedBall_two, Zeta23.BL.re_ge_of_mem_closedBall_Rout, Zeta23.BL.outer_disc_facts, Zeta23.BL.geom_facts, Zeta23.BL.one_notMem_closedBall_two_add, Zeta23.BL.one_notMem_sphere_two_add, Zeta23.BL.neg_log_norm_riemannZeta_two_add_le, Zeta23.BL.count_disc_le, Zeta23.BL.finset_sum_zeta_order_le_finsum_divisor, Zeta23.BL.count_finset_le, Zeta23.BL.Lz_nonneg, Zeta23.BL.log_le_half_log_one_add_sq, Zeta23.BL.log_norm_le_Lz, Zeta23.BL.continuousOn_Lz, Zeta23.BL.circleIntegrable_Lz, Zeta23.BL.circleAverage_log_norm_le_Lz, Zeta23.BL.concaveOn_half_log_one_add, Zeta23.BL.circleAverage_Lz_le, Zeta23.BL.count_finset_le_log_meanSq, Zeta23.BL.closedBall_Rout_subset, Zeta23.BL.count_window_le, Zeta23.BL.count_window_le_log_meanSq, Zeta23.BL.circleAverage_log_le_Lz, Zeta23.BL.circleMap_two_add, Zeta23.BL.circleMap_two_add_ne_one, Zeta23.BL.continuousOn_Lz_circleMap, Zeta23.BL.integrableOn_Lz_circleMap_prod, Zeta23.BL.integrable_Lz_circleMap_prod_restrict, Zeta23.BL.intervalIntegrable_circleAverage_Lz, Zeta23.BL.integral_circleAverage_Lz_eq_swap, Zeta23.BL.Lz_le_half_sq, Zeta23.BL.segment_mapsTo_ne_one, Zeta23.BL.intervalIntegrable_Lz_segment, Zeta23.BL.intervalIntegrable_normSq_zeta_segment, Zeta23.BL.integral_Lz_circle_le, Zeta23.BL.integral_circleAverage_Lz_le, Zeta23.BL.count_le_integral, Zeta23.BL.count_le_meanSquare, Zeta23.BL.count_le_meanSquare', Zeta23.BL.tsum_one_div_rpow_anti, Zeta23.BL.meanSquare_of_gt_one, Zeta23.BL.meanSquare_hyp_extend, Zeta23.BL.rightHalf_of_meanSquareUnif, Zeta23.BL.rightHalf_gt_sixth, Zeta23.BL.bohrLandau_gt_sixth, Zeta23.BL.M45.norm_zeta_le_strip, Zeta23.BL.M45.meanSquare_zero_one, Zeta23.BL.M45.continuous_norm_zeta_sq, Zeta23.BL.M45.zeta_one_lower, Zeta23.BL.M45.not_intervalIntegrable_zeta_one_sq, Zeta23.BL.M45.integral_zeta_one_sq_eq_zero, Zeta23.BL.M45.meanSquare_one, Zeta23.BL.M45.meanSquare_strip_lt_one, Zeta23.BL.M45.meanSquare_one_from_one, Zeta23.BL.M45.meanSquare_strip_of, Zeta23.BL.M45.meanSquare_strip_from, MNF.RH.rightHalf_gt_sixth, MNF.RH.bohrLandau_gt_sixth, MNF.RH.reservoirDensity_of_linear_bound, MNF.RH.reservoirDensity_gt_sixth, MNF.RH.near_line_density_gt_sixth, MNF.RH.nullified_density_gt_sixth, MNF.RH.onLineDensityOne_of_gap_gt_sixth, BLClosure.hasSum_cos_div_sq_bernoulli, BLClosure.cos_mode_fract, BLClosure.B2per_fourier, BLClosure.P_fourier, BLClosure.P_nonpos, BLClosure.P_intCast, BLClosure.P_eq, BLClosure.psi_abs_le, BLClosure.P_abs_le, BLClosure.P_natCast, BLClosure.continuous_P, BLClosure.measurable_psi, BLClosure.hasDerivAt_P, BLClosure.integrableOn_bdd_mul_cpow, BLClosure.integrableOn_psi_mul, BLClosure.integrableOn_P_mul, BLClosure.tail_by_parts_interval, BLClosure.tail_by_parts, BLClosure.hasDerivAt_P', BLClosure.first_derivative_test_amp_smooth', BLClosure.first_derivative_test_amp_smooth, BLClosure.first_derivative_test_smooth, BLClosure.mode_integrand_eq, BLClosure.mode_bound_interval, BLClosure.integrableOn_bdd_mul_cpow', BLClosure.integrableOn_exp_mul_cpow, BLClosure.integrableOn_exp_neg_mul_cpow, BLClosure.re_w, BLClosure.re_w_lt, BLClosure.re_phase, BLClosure.re_phase', BLClosure.tail_mode_bound', BLClosure.tail_mode_bound, BLClosure.tail_mode_bound_neg, BLClosure.cmode_hasSum, BLClosure.continuous_cmode, BLClosure.cmode_abs_le, BLClosure.cmode_eq, BLClosure.mode_integral_bound, BLClosure.hasSum_mode_integrals, BLClosure.split_P, BLClosure.integral_cpow_tail, BLClosure.tail_sharp, BLClosure.zeta_eq_euler_maclaurin, BLClosure.norm_natCast_cpow_neg_div_two, BLClosure.zeta_approx_sharp, BLClosure.zeta_approx_sharp_segment, BLClosure.zeta_approx_sharp_segment', BLClosure.S_eq_Dpoly, BLClosure.norm_main_term_le, BLClosure.norm_zeta_sq_le_sharp, BLClosure.meanSquare_sharp_param, BLClosure.meanSquareUnif_all_of_lt_one, BLClosure.meanSquareUnif_all, BLClosure.meanSquareUnifFrom_all, BLClosure.rightHalfBound, BLClosure.bohrLandau_all, Zeta23.BL.rightHalf_all, Zeta23.BL.rightHalfBound, Zeta23.BL.bohrLandau_full, Zeta23.BL.rightHalfBound_of_meanSquare', Zeta23.BL.meanSquare_strip', MNF.RH.reservoirDensityOne_unconditional, MNF.RH.onLineDensityOne_of_gap_only, Zeta23.BL.one_half_pos', Zeta23.BL.tsum_one_div_rpow_two_sq_le, Zeta23.BL.meanSquare_explicit_small, Zeta23.BL.NRight_le_Ncount, Zeta23.BL.Rout_half, Zeta23.BL.rin_half, Zeta23.BL.hwin_half_ge, Zeta23.BL.log_half_ge, Zeta23.BL.K_half_ge, Zeta23.BL.rpow_neg_five_half_mul, Zeta23.BL.log_three_nonneg, Zeta23.BL.bohrLandau_explicit, Zeta23.MNF_Ncount_le_mul_log, Zeta23.MNF_mul_log_le_Ncount, MNF.RH.abs_re_sub_half_lt_half, MNF.RH.abs_re_sub_half_le_half, MNF.RH.NOff_anti, MNF.RH.NOff_antitone, MNF.RH.NOff_intervalIntegrable, MNF.RH.indicator_le_antitone, MNF.RH.term_intervalIntegrable, MNF.RH.integral_indicator_le_eq, MNF.RH.reservoirMass_eq_integral, MNF.RH.reservoirMass_nonneg, MNF.RH.reservoirMass_le_half_Ncount, MNF.RH.integral_NOff_split, MNF.RH.integral_NOff_le_mul_Ncount, MNF.RH.integral_NOff_tail_le, MNF.RH.reservoirMass_le_split, MNF.RH.reservoirMass_le_eps_Ncount, MNF.RH.signedReservoir_eq_zero, MNF.RH.sum_right_eq_sum_left, MNF.RH.reservoirMass_eq_two_right, MNF.RH.rpow_tail_intervalIntegrable, MNF.RH.integral_rpow_tail_le, MNF.RH.reservoirMass_le_rpow, MNF.RH.reservoirMass_le_Ncount_mul, MNF.RH.meanDisplacement_tendsto_zero, Zeta23.Density.analyticOnNhd_Mx, Zeta23.Density.analyticOnNhd_fz, Zeta23.Density.continuousOn_fz, Zeta23.Density.tail_inv_sq_le, Zeta23.Density.fz_sub_one_eq, Zeta23.Density.norm_fz_sub_one_le, Zeta23.Density.pi_sq_lt_ten, Zeta23.Density.pi_sq_div_six_div_le, Zeta23.Density.norm_fz_le_one_add, Zeta23.Density.one_sub_norm_le_norm_fz, Zeta23.Density.fz_lower_two, Zeta23.Density.neg_log_norm_fz_two_le, Zeta23.Density.log_norm_fz_le_of_two_le_re, Zeta23.Density.norm_sq_fz_le_of_two_le_re, Zeta23.Density.abs_cm_le, Zeta23.Density.cm_eq_of_le, Zeta23.Density.S_mul_Mx_eq, Zeta23.Density.card_filter_dvd_dvd_le, Zeta23.Density.gcd_le_sum_dvd, Zeta23.Density.gcd_le_sum_Icc, Zeta23.Density.sum_div_of_dvd_le, Zeta23.Density.ite_and_div_eq, Zeta23.Density.sum_gcd_div_le, Zeta23.Density.dX_eq_card_filter, Zeta23.Density.dX_eq_sum, Zeta23.Density.sum_dX_sq_le, Zeta23.Density.sum_mul_le_of_partial_sums, Zeta23.Density.sum_mul_le_of_partial_sums_tail, Zeta23.Density.sum_Ioc_rpow_le, Zeta23.Density.tail_sum_le, Zeta23.Density.weight_sum_le, Zeta23.Density.integral_window_eq, Zeta23.Density.norm_coeff_sq, Zeta23.Density.abs_cm_sq_le, Zeta23.Density.meanSquare_prodPoly, Zeta23.Density.norm_add_sq_le_eta, Zeta23.Density.norm_Mx_le, Zeta23.Density.continuousOn_B_window, Zeta23.Density.integral_inv_sq_window, Zeta23.Density.meanSquare_B_window, Zeta23.Density.continuous_A_window, Zeta23.Density.continuousOn_fz_window, Zeta23.Density.meanSquare_fz_window, Zeta23.Density.sum_Icc_two_inv_mul_sub_one, Zeta23.Density.norm_moebius_mul_cpow_le, Zeta23.Density.Mx_eq_one_add, Zeta23.Density.Mx_ne_zero_of_le_re, Zeta23.Density.analyticOrderAt_Mx_ne_top, Zeta23.Density.zeta_order_le_divisor_fz, Zeta23.Density.finset_sum_zeta_order_le_finsum_divisor_fz, Zeta23.Density.fz_two_add_ne_zero, Zeta23.Density.count_disc_le_fz, Zeta23.Density.count_finset_le_fz, Zeta23.Density.count_window_le_fz, Zeta23.Density.log_norm_le_Leps, Zeta23.Density.continuousOn_Leps, Zeta23.Density.circleAverage_log_norm_le_Leps, Zeta23.Density.concaveOn_half_log_add, Zeta23.Density.half_log_le_half, Zeta23.Density.segment_average_Leps_le, Zeta23.Density.continuousOn_Leps_fz_ne_one, Zeta23.Density.continuousOn_Leps_circleMap, Zeta23.Density.integrableOn_Leps_circleMap_prod, Zeta23.Density.integrable_Leps_circleMap_prod_restrict, Zeta23.Density.intervalIntegrable_circleAverage_Leps, Zeta23.Density.integral_circleAverage_Leps_eq_swap, Zeta23.Density.intervalIntegrable_Leps_segment, Zeta23.Density.intervalIntegrable_normSq_fz_segment, Zeta23.Density.circleAverage_log_fz_le_Leps, Zeta23.Density.count_le_integral_fz_window, Zeta23.Density.count_le_integral_fz_NSigma, Zeta23.Density.NRight_sub_eq_NSigma, Zeta23.Density.count_le_integral_fz, Zeta23.Density.integral_Leps_segment_le_of_meanSquare, Zeta23.Density.Leps_fz_le_of_two_le_re, Zeta23.Density.integral_Leps_segment_le_of_two_le, Zeta23.Density.integral_Leps_circle_le, Zeta23.Density.integral_circleAverage_Leps_le, Zeta23.Density.count_le_meanSquare_fz_window, Zeta23.Density.count_le_meanSquare_fz, Zeta23.Density.theta_pos, Zeta23.Density.theta_le_one, Zeta23.Density.kappa_pos, Zeta23.Density.kappa_le_theta, Zeta23.Density.theta_mul_eq, Zeta23.Density.offdiag_exponent, Zeta23.Density.cross_exponent, Zeta23.Density.cross_exponent', Zeta23.Density.half_le_nat_floor, Zeta23.Density.rpow_sq_eq, Zeta23.Density.two_rpow_le_two, Zeta23.Density.one_add_log_cube_le_rpow, Zeta23.Density.single_params, Zeta23.Density.X_rpow_le, Zeta23.Density.rpow_le_X_rpow, Zeta23.Density.NX_rpow_div_le, Zeta23.Density.inv_X_le, Zeta23.Density.E0gen_le, Zeta23.Density.le_E0gen, Zeta23.Density.E0gen_le_const, Zeta23.Density.cross_le, Zeta23.Density.Egen_le, Zeta23.Density.Ksingle_pos, Zeta23.Density.exponent_single, Zeta23.Density.w4_rhs_le, Zeta23.Density.geom_lower, Zeta23.Density.count_le_Egen, Zeta23.Density.density_single_window, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from MNF.RH.DensityAll
+Running nanoda kernel on solution
+Nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+COMPARATOR_EXIT=0
+== end 2026-11-04T06:31:27Z

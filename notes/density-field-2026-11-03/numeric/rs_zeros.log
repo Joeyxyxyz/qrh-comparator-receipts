@@ -1,0 +1,57 @@
+== theta(t): Stirling series vs Im log Gamma (difference mod 2pi) ==
+  t=  14.0  |theta_stirling - theta_lgamma| mod 2pi = 1.78e-15
+  t=  30.0  |theta_stirling - theta_lgamma| mod 2pi = 3.55e-15
+  t= 100.0  |theta_stirling - theta_lgamma| mod 2pi = 2.84e-14
+  t= 300.0  |theta_stirling - theta_lgamma| mod 2pi = 1.71e-13
+  t= 700.0  |theta_stirling - theta_lgamma| mod 2pi = 4.55e-13
+== Z(t): Riemann-Siegel (C0 only / C0..C4) vs Euler-Maclaurin ==
+   t       Z_RS(C0)        Z_RS(C0..C4)     Z_EM            Im(e^{i th} zeta)  |RS0-EM|   |RS4-EM|
+    14.0  -0.1078305681  -0.1056286256  -0.1056262678  -1.8e-15   2.2e-03   2.4e-06
+    17.5  +2.3043230451  +2.3018422245  +2.3018457553  +7.7e-15   2.5e-03   3.5e-06
+    21.0  +0.0277653427  +0.0250809141  +0.0250838670  -1.9e-15   2.7e-03   3.0e-06
+    25.0  -0.0251194421  -0.0148742265  -0.0148724839  -1.3e-15   1.0e-02   1.7e-06
+    30.0  +0.5994592581  +0.5960275739  +0.5960285192  +3.2e-15   3.4e-03   9.5e-07
+    40.0  -1.3086736691  -1.3088822771  -1.3088823935  -6.3e-15   2.1e-04   1.2e-07
+    60.0  +0.5871238821  +0.5869506412  +0.5869504907  +1.5e-14   1.7e-04   1.5e-07
+   100.0  +2.6894071203  +2.6926970194  +2.6926970567  -1.5e-14   3.3e-03   3.7e-08
+   150.0  -0.0912046031  -0.0910109107  -0.0910109233  +3.0e-15   1.9e-04   1.3e-08
+   250.0  -0.9180025624  -0.9186334201  -0.9186334184  -3.3e-14   6.3e-04   1.8e-09
+   400.0  -0.0992457965  -0.0982811291  -0.0982811283  -5.4e-15   9.6e-04   8.2e-10
+   550.0  +1.7527094680  +1.7529844849  +1.7529844847  -4.6e-13   2.8e-04   1.5e-10
+   700.0  -0.9472748099  -0.9472035973  -0.9472035973  +3.8e-13   7.1e-05   3.7e-11
+== scanning Z_RS(C0) for sign changes on [12.0, 700.0] ==
+grid points: 19885, spacing at end ~0.0278; sign-change zeros: 414; near-miss refinements: 0 (added 0)
+  zeros found below 700.0: 414;  elapsed 0.1s
+  N(  100) found =   29   theta(T)/pi + 1 =    29.002   S(T) implied = -0.002
+  N(  200) found =   79   theta(T)/pi + 1 =    79.193   S(T) implied = -0.193
+  N(  300) found =  138   theta(T)/pi + 1 =   137.712   S(T) implied = +0.288
+  N(  400) found =  202   theta(T)/pi + 1 =   201.639   S(T) implied = +0.361
+  N(  500) found =  269   theta(T)/pi + 1 =   269.587   S(T) implied = -0.587
+  N(  600) found =  341   theta(T)/pi + 1 =   340.739   S(T) implied = +0.261
+  N(  700) found =  414   theta(T)/pi + 1 =   414.557   S(T) implied = -0.557
+  Gram points below 700.0: 414; with count(zeros < g_n) != n+1: 12  (Gram-law failures, expected a few dozen)
+== refining each zero with RS(C0..C4) and Euler-Maclaurin ==
+  max |gamma_RS(C0) - gamma_RS(C0..C4)| = 7.54e-03
+  max |gamma_RS(C0) - gamma_EM|        = 7.54e-03
+  five largest C0-vs-EM discrepancies (n, gamma, diff):
+    n=  3  gamma=25.018401  diff=-7.54e-03   Z'(gamma)=+1.372
+    n=  4  gamma=30.427646  diff=-2.77e-03   Z'(gamma)=-1.304
+    n=  5  gamma=32.932562  diff=+2.50e-03   Z'(gamma)=+1.382
+    n=  1  gamma=14.137196  diff=-2.47e-03   Z'(gamma)=+0.793
+    n= 12  gamma=56.448675  diff=-2.43e-03   Z'(gamma)=-2.368
+  min |Z'(gamma)| over the 400 zeros = 0.793
+== self-check against tabulated zeros (LMFDB/Odlyzko values as recalled) ==
+     n   gamma_RS(C0)      gamma_EM          tabulated        RS-tab      EM-tab
+     1   14.137196099   14.134725142   14.134725142   +2.47e-03   -2.65e-10
+     2   21.024376714   21.022039639   21.022039639   +2.34e-03   -2.28e-10
+     3   25.018401401   25.010857580   25.010857580   +7.54e-03   +1.46e-10
+     4   30.427645833   30.424876126   30.424876126   +2.77e-03   -1.40e-10
+     5   32.932561762   32.935061588   32.935061588   -2.50e-03   -2.61e-10
+     6   37.586861886   37.586178159   37.586178159   +6.84e-04   -1.74e-10
+     7   40.918839130   40.918719012   40.918719012   +1.20e-04   +1.48e-10
+     8   43.326490197   43.327073281   43.327073281   -5.83e-04   -8.50e-11
+     9   48.006380332   48.005150881   48.005150881   +1.23e-03   +1.67e-10
+    10   49.772640645   49.773832478   49.773832478   -1.19e-03   -3.28e-10
+   100   236.524327123   236.524229666   236.524229666   +9.75e-05   -1.84e-10
+wrote /tmp/claude-1000/-home-joeyxyxyz--config-Claude-scratch-workspaces-7e77cf71-e1c7-4f02-afcd-2f47af5ebdd4-8f8b3000-2966-4980-93f3-540a0fefac31-scratch-2026-10-28-0cd942/57b442eb-644f-4a72-89f3-9426dd550654/scratchpad/density-work/numeric/zeros.tsv  (400 zeros, gamma_1=14.137196 ... gamma_400=679.742216)
+total elapsed 1.1s

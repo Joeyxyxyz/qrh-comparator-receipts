@@ -14,3 +14,5 @@ import MNFChallengesD.JensenDisc
 import MNFChallengesD.BohrLandauPartial
 import MNFChallengesD.DensityPartial
 import MNFChallengesD.BohrLandauClosure
+import MNFChallengesD.ReservoirMass
+import MNFChallengesD.StripDensity
