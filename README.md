@@ -1,7 +1,7 @@
 # Independent Comparator receipts for OpenAI's 7/8 zero-free theorem and Anthropic's zeta23, with the MNF.RH library judged on each
 
-Joey Messina, 2026-10-29. One record, eleven artifacts, five receipts, every hash re-derivable
-with `./verify_deposit.sh`.
+Joey Messina, 2026-10-29; extended 2026-11-04. One record, seventeen artifacts, eight receipts, every
+hash re-derivable with `./verify_deposit.sh`.
 
 ## What this record is
 
@@ -34,6 +34,23 @@ definition compared by name, type and body:
 
 (Six runs, five bundles: run 2 and run 6 share the zeta23 tree and are two bundles of one add-on.)
 
+Added 2026-11-04, three more runs on the zeta23 tree, each re-judging the previous one plus new
+modules (details: `DEPOSIT_MAP.md` §10 and `notes/density-field-2026-11-03/`):
+
+7. **The density field** (`zeta23-density`, add-on v2): 124 theorems, 66 definitions, Lean kernel
+   and NanoDa, ACCEPTED 2026-11-03. `NcountSuperlinear` becomes a theorem (zeta23's Riemann–von
+   Mangoldt formula); off-line zeros ≤ (1/3 + ε)·N(0,T) (zeta23's Theorem B); the "for every fixed
+   δ" density versus density on the line itself; the strip model; the MNF2 injection/ejection
+   algebra; the first lemmas toward Bohr–Landau.
+8. **Bohr–Landau for δ > 1/6** (`zeta23-density-v3`, add-on v3): 270 theorems, ACCEPTED
+   2026-11-03, with the uniform mean square of ζ for Re s ≥ 2/3.
+9. **Bohr–Landau for every δ > 0** (`zeta23-density-v4`, add-on v4): 334 theorems, 81 definitions,
+   ACCEPTED 2026-11-04. The first-derivative test for smooth phases, the Fourier series of B₂,
+   Euler–Maclaurin for ζ, the sharp approximate formula, Hardy–Littlewood's O(T) mean square for
+   every σ > 1/2, and from them `Zeta23.BL.bohrLandau_full : MNF.RH.BohrLandau`; so the
+   density-one theorem now has exactly one hypothesis, the spectral gap
+   (`MNF.RH.onLineDensityOne_of_gap_only`). Bohr–Landau (1914) formalized, not new mathematics.
+
 ## What a PASS or ACCEPTED means, in the receipts' words
 
 From `RECEIPT.md` (OpenAI's theorem):
@@ -62,9 +79,11 @@ From `MNF_LIBRARY.md` (the library on OpenAI's tree):
 ## What the record does not claim
 
 - Not RH, not the simple-zeros conjecture, and no new technique toward either. The library
-  re-expresses RH; the one conditional theorem where the gap does work
-  (`on_line_density_one_of_gap`) takes two literature facts as explicit hypotheses that no Lean
-  library supplies, and concludes density one on the line, which is strictly weaker than RH.
+  re-expresses RH. The conditional theorem `on_line_density_one_of_gap` of add-on v3 took two
+  literature facts as explicit hypotheses; on the zeta23 tree both are now theorems (runs 7 and
+  9), so density one on the line follows from the gap alone — and the gap is unchanged: RH for
+  Δ ≥ 1/2, an open zero-free strip for 0 < Δ < 1/2. Density one on the line follows from RH and
+  is not known to imply it.
 - Nothing combines the two external results. The 7/8 theorem bounds how far a zero can sit from
   the line; zeta23 bounds what proportion sit on it; neither enters the other's proof, and no
   theorem here puts "2/3" and "7/8" together.
@@ -85,7 +104,11 @@ From `MNF_LIBRARY.md` (the library on OpenAI's tree):
 | `qrh-mnf-addon-v3.tar.gz` / `qrh-mnf-v3-receipt.tar.gz` | add-on v3 and its report | `3668e138…` / `023d7ada…` |
 | `qrh-zeta23-addon.tar.gz` | the zeta23 add-on (both runs' scripts, pins, the MNF layer) | `958abb9f…` |
 | `qrh-zeta23-receipt.tar.gz` / `qrh-zeta23-mnf-receipt.tar.gz` | receipts of runs 2 and 6 | `e0b9a4d9…` / `1476f568…` |
-| `DEPOSIT_MAP.md` | the register: what is proved, conditional, open, withdrawn, external | `9049e04f…` |
+| `qrh-zeta23-addon-v2.tar.gz` / `qrh-zeta23-density-receipt.tar.gz` | add-on v2 (the density field) and its report (MNF_DENSITY.md, audit, logs) | `5dc41dff…` / `975b2178…` |
+| `qrh-zeta23-addon-v3.tar.gz` / `qrh-zeta23-density-v3-receipt.tar.gz` | add-on v3 (Bohr–Landau for δ > 1/6) and its report | `c0958d53…` / `0588555d…` |
+| `qrh-zeta23-addon-v4.tar.gz` / `qrh-zeta23-density-v4-receipt.tar.gz` | add-on v4 (Bohr–Landau for every δ > 0) and its report | `fb74e8a2…` / `0d1919e4…` |
+| `DEPOSIT_MAP.md` | the register: what is proved, conditional, open, withdrawn, external; §10 the density field | `fd1acdf3…` |
+| `notes/density-field-2026-11-03/` | the working notes of runs 7–9: ledger, plan, the two prose reviews, the extracted receipts, the agent sources, the Aristotle contract | |
 | `CHECKSUMS.sha256`, `verify_deposit.sh` | full hashes; the verifier (hashes, verdicts, manifests, upstream statement files) | |
 | `LICENSE`, `NOTICE` | Apache-2.0 for what was authored for this record; third-party items and quoted material named | |
 
@@ -130,7 +153,11 @@ Joey Messina: the MNF corpus and library, the protocol, operation of every run, 
 decisions recorded in DEPOSIT_MAP.md. OpenAI and Anthropic: the theorems under test, which are
 theirs and are credited as such. The kit and add-on scripts, the Lean additions of 2026-10-28/29
 and these documents were produced with Claude Code (Anthropic) under Joey's direction; every
-theorem was kernel-checked and every claim here is tied to a receipt. The Sturm–Liouville file
+theorem was kernel-checked and every claim here is tied to a receipt. The Lean files of runs 7–9
+(2026-11-03/04) were written with Claude Code, the Bohr–Landau files by parallel workflow agents
+from a written dependency plan, merged, and corrected after two adversarial prose reviews, all
+under Joey's direction; the four files `Zeta23/{Superlinear,OffLine,BohrLandau,MNFBridge}.lean`
+were supplied by Joey. The Sturm–Liouville file
 is co-authored by Aristotle (Harmonic); see NOTICE.
 
 ## sources/

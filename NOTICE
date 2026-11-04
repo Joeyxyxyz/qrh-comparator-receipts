@@ -41,3 +41,17 @@ Authorship of the Lean files in the add-on tarballs:
 
 License of this record: see LICENSE (Apache-2.0 for everything authored for this record; the
 third-party items above keep their own licenses, named here).
+
+Added 2026-11-04 (runs 7–9, the density field on the zeta23 tree):
+  - MNF/RH/Density.lean, Strip.lean, DensityPartial.lean, DensityAll.lean, MNF/Extension/InjectionEjection.lean
+    (the MNF2 package's algebra, co-designed with Joey's Windows-side Claude Code session),
+    Zeta23/BL/{DPMV,DPMVexp,JensenDisc,BohrLandauPartial,BohrLandauClosure}.lean: written with
+    Claude Code (Anthropic) under Joey Messina's direction; the Bohr–Landau files by parallel
+    workflow agents from a written plan, merged, and corrected after two adversarial prose
+    reviews; every theorem kernel-checked and Comparator-judged.
+  - Zeta23/Superlinear.lean, OffLine.lean, BohrLandau.lean, MNFBridge.lean: supplied by Joey
+    Messina on 2026-11-03 (the file does not record which tool drafted them); BohrLandau.lean
+    carries two `sorry` lemmas that are in no claim set.
+  - MNF/RH/GapDensity.lean: add-on v3's file, docstrings revised 2026-11-03, statements unchanged.
+  - The receipts quote nothing from zeta23 beyond theorem names.
+

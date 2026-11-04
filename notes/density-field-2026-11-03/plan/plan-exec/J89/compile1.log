@@ -1,0 +1,3 @@
+'Zeta23.BL.rightHalf_of_meanSquareUnif' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.BL.rightHalf_gt_sixth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.BL.bohrLandau_gt_sixth' depends on axioms: [propext, Classical.choice, Quot.sound]

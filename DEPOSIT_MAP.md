@@ -10,8 +10,13 @@ Receipts behind this map, all from the kit's launcher on Joey's laptop: v1 `qrh-
 bodies compared, `c6142a40…`); v3 `qrh-mnf-v3-receipt.tar.gz` (ACCEPTED 2026-10-29 05:56–06:10 UTC, 87
 theorems, 41 definitions, `023d7ada93e313296e7e9d88c82569fa65c704a2624149a67e5e74c762c8159a`); zeta23
 `qrh-zeta23-receipt.tar.gz` (PASS, `e0b9a4d9…`) and the MNF layer on it `qrh-zeta23-mnf-receipt.tar.gz`
-(ACCEPTED, 62, `1476f568…`). This root copy is the current deposit map; the copies inside the add-on
-folders are frozen with the add-on that ran.
+(ACCEPTED, 62, `1476f568…`). Revised again 2026-11-04 for the density field (§10): three more
+receipts on the zeta23 tree, add-on v2 `qrh-zeta23-density-receipt.tar.gz` (ACCEPTED 2026-11-03,
+124 theorems, `975b2178…`), v3 `qrh-zeta23-density-v3-receipt.tar.gz` (ACCEPTED, 270, `0588555d…`),
+v4 `qrh-zeta23-density-v4-receipt.tar.gz` (ACCEPTED 2026-11-04 00:52–00:58 UTC, 334 theorems, 81
+definitions, `0d1919e42cbe45408d719536fc3c45ecdaa106bb1c83470e12b063006372f56a`). This root copy is the current deposit map;
+the copies inside the add-on folders and inside the Zenodo record of 2026-10-29 are frozen with
+the add-on or record they belong to.
 
 Register tags: **[PROVED]** kernel-checked from Mathlib alone; **[PROVED | 7/8]** kernel-checked
 from Mathlib plus OpenAI's 7/8 theorem (exactly as reliable as the Comparator PASS in
@@ -72,7 +77,7 @@ zeros there.
 | `rh_of_symmetric_operator` | a symmetric operator `T` with eigenvalues (ρ − 1/2)/i | Hilbert–Pólya ⟹ RH, in one step; the operator is the open part |
 | `rh_of_realization`, `realization_forces_line` (v3, Schrodinger) | `SchrodingerRealization` (a confining `V` with `L²` eigenfunctions at the levels (ρ − 1/2)/i) | the realization's dictionary conjunct alone forces Re ρ = 1/2: filling it in IS proving RH |
 | `eigenvalue_simple_of_realization`, `allZerosSimple_of_realization`, `multiplicityDictionary_iff` (v3, Schrodinger) | a realization, plus a `MultiplicityDictionary` | every level is a simple eigenvalue by Sturm–Liouville (free); the dictionary is ⟺ `AllZerosSimple`, so SL does not shortcut simplicity |
-| `on_line_density_one_of_gap` (v3, GapDensity) | `BohrLandau` [LITERATURE], `NcountSuperlinear` [LITERATURE], `SpectralGapHyp Δ` with Δ > 0 | **the one place the gap does work**: a zero-free strip next to the line plus Bohr–Landau gives density one on the line, strictly weaker than RH; folklore, not new mathematics; neither Prop is in any Lean library |
+| `on_line_density_one_of_gap` (v3, GapDensity) | `BohrLandau` [LITERATURE], `NcountSuperlinear` [LITERATURE], `SpectralGapHyp Δ` with Δ > 0 | a zero-free strip next to the line plus Bohr–Landau gives density one on the line (which follows from RH and is not known to imply it); folklore, not new mathematics. On the zeta23 tree both literature Props are now theorems (§10), so the same conclusion holds there from the gap alone: `MNF.RH.onLineDensityOne_of_gap_only` (receipt v4). The gap enters only through the window split `gap_forces_NOff_eq` |
 
 ## 4. Open — [OPEN]
 
@@ -84,9 +89,11 @@ zeros there.
   bears on it: all threshold, Bloch-length and residue quantities are real-valued in [0,1], while
   multiplicity is an integer ≥ 1 with no gap structure to exploit.
 - `SpeiserTheorem` [LITERATURE, Speiser 1934]: not in Mathlib; kept as a named hypothesis.
-- `BohrLandau` and `NcountSuperlinear` [LITERATURE, Bohr–Landau 1914; Riemann–von Mangoldt]: not in Mathlib
-  at this pin; Palomar holds one-sided zero-density estimates (Lewko, Lean v4.35.0-rc2) that could
-  discharge `BohrLandau` after a port. Kept as named hypotheses (GapDensity.lean).
+- `BohrLandau` and `NcountSuperlinear` [LITERATURE as of 2026-10-29]: no longer open on the zeta23
+  tree. `NcountSuperlinear` is proved there from zeta23's Riemann–von Mangoldt formula
+  (`MNF.RH.ncountSuperlinear`, receipt v2 of §10) and `BohrLandau` is proved there outright
+  (`Zeta23.BL.bohrLandau_full`, receipt v4 of §10). On the OpenAI tree (GapDensity.lean, add-on v3
+  of 2026-10-29) they remain named hypotheses; that file is frozen with its receipt.
 - `SchrodingerRealization` [OPEN]: an explicit confining `V`; the Berry–Keating / Connes programmes aim
   at exactly this and none is a theorem. `GapMechanism Δ` [OPEN] is ⟺ the band, hence ⟺ RH for Δ > 3/8.
 - The operator realization (the corpus's `HPContext`, Hilbert–Pólya): a symmetric operator
@@ -134,6 +141,13 @@ zeros there.
    copy in the challenge and by the audit compile).
 3. Not RH, not simplicity, and no new technique toward either. The honest one-line summary:
    *the nullification framework re-expresses RH; it does not reduce it.*
+4. (2026-11-03/04, §10) On the zeta23 tree: the density field formalized and kernel-checked;
+   Bohr–Landau (1914) formalized from Mathlib and the tree's own approximate formula, so that the
+   density-one theorem has exactly one hypothesis left, the gap; the MNF2 injection/ejection
+   algebra and the strip model as proved bookkeeping; and the Sturm–Liouville simplicity theorem
+   with its first oscillation step as a standalone Lake project (github.com/Joeyxyxyz/sturm-liouville-comparator-run).
+   None of this bears on `SpectralGapHyp`, which is unchanged: RH for Δ ≥ 1/2, an open zero-free
+   strip for 0 < Δ < 1/2.
 
 ## 7. The rest of the corpus (inventory by file group; not re-examined here)
 
@@ -231,4 +245,42 @@ Yang–Mills. The accompanying Lean hypotheses `FischerForward` and `MultipleZer
 kernel-equivalent to "RH ⟹ all zeros simple" (`fischerForward_iff`, `multipleZeroKillsGap_iff`,
 MNF/RH/Reduction.lean), so the experiment is **not** evidence for or against RH and is not cited
 as such. (Wording from notes/FischerForward_The_Math.md §6.)
+
+## 10. The density field and Bohr–Landau on the zeta23 tree (2026-11-03/04)
+
+Three further Comparator runs on the zeta23 checkout that run 2 checked (cold under the kit's
+launcher, AF_UNIX denied, Lean kernel and NanoDa, every definition compared by body). The
+working notes, the receipts extracted, the plan, the two adversarial prose reviews and the
+per-agent sources are in `notes/density-field-2026-11-03/` (ledger `DENSITY_LEDGER.md`).
+
+| run | label | add-on | receipt | theorems | result |
+|---|---|---|---|---|---|
+| 7 | `zeta23-density` | `qrh-zeta23-addon-v2.tar.gz` `5dc41dff…` | `qrh-zeta23-density-receipt.tar.gz` `975b2178…` | 124 (66 definitions) | ACCEPTED 2026-11-03 21:05–21:13 UTC |
+| 8 | `zeta23-density-v3` | `qrh-zeta23-addon-v3.tar.gz` `c0958d53…` | `qrh-zeta23-density-v3-receipt.tar.gz` `0588555d…` | 270 (76) | ACCEPTED 2026-11-03 22:03–22:09 UTC |
+| 9 | `zeta23-density-v4` | `qrh-zeta23-addon-v4.tar.gz` `fb74e8a2…` | `qrh-zeta23-density-v4-receipt.tar.gz` `0d1919e4…` | 334 (81) | ACCEPTED 2026-11-04 00:52–00:58 UTC |
+
+Each run re-judges everything of the previous one plus the new modules; run 9 is the complete
+layer. What is proved there, in register terms:
+
+| theorem (module) | status | note |
+|---|---|---|
+| `MNF.RH.ncountSuperlinear` (Density) | [RESTATEMENT \| zeta23] | N(T)/T → ∞, delegated to zeta23's Riemann–von Mangoldt formula; discharges the v3 hypothesis `NcountSuperlinear` |
+| `MNF.RH.offLine_le_one_third`, `NOff_le_one_third` (Density) | [RESTATEMENT \| zeta23] | off-line zeros ≤ (1/3 + ε)·N(0,T), with multiplicity: zeta23's Theorem B read as an upper bound |
+| `NNear_eq_nullified_count`, `Ncount_eq_near_add_off`, `NNear_eq_N0_of_gap` (Density) | [PROVED] bookkeeping | the reservoir count is the count of zeros nullified at δ; every window splits at every δ; under a gap at Δ the Δ-reservoir is empty |
+| `ReservoirDensityOne` ← `BohrLandau` (`reservoirDensityOne_of_bohrLandau`); `OnLineDensityOne` ← `BohrLandau` + gap (`onLineDensityOne_of_gap`) (Density) | [CONDITIONAL] | the "for every fixed δ" density versus density on the line itself; the gap is used once, to identify the Δ-near count with the on-line count |
+| Strip.lean (19), MNF/Extension/InjectionEjection.lean (56) | [PROVED] bookkeeping, operator algebra | the band around the line under N, E and injection; no analytic content; the MNF2 package's algebra (also ACCEPTED at the OpenAI pin on 2026-11-03) |
+| `Zeta23.BL.bohrLandau_gt_sixth`, `rightHalf_gt_sixth`, `M3.meanSquareUnif_explicit` (BohrLandauPartial) | [PROVED \| this tree] | Bohr–Landau for δ > 1/6 and the uniform mean square for σ ≥ 2/3, from the tree's approximate formula with its naive error (run 8) |
+| `BLClosure.first_derivative_test_smooth` / `_amp_smooth`, `B2per_fourier`, `zeta_eq_euler_maclaurin`, `tail_sharp`, `zeta_approx_sharp`, `meanSquareUnif_all` (BohrLandauClosure) | [PROVED \| this tree] | Titchmarsh Lemmas 4.2/4.3 for smooth phases; the Fourier series of B₂; Euler–Maclaurin for ζ; the sharp tail; the approximate formula with error O(N^{−σ}) for N ≥ t; Hardy–Littlewood's O(T) mean square for every σ₁ > 1/2 (run 9) |
+| **`Zeta23.BL.bohrLandau_full : MNF.RH.BohrLandau`** (BohrLandauClosure) | [PROVED \| this tree] | for every δ > 0 the nontrivial zeros with 0 < Im ρ ≤ T and \|Re ρ − 1/2\| ≥ δ, with multiplicity, number ≤ C_δ·T (T ≥ 2). Bohr–Landau 1914, formalized; not new mathematics |
+| `MNF.RH.reservoirDensityOne_unconditional`, **`onLineDensityOne_of_gap_only`** (BohrLandauClosure) | [PROVED \| this tree]; [CONDITIONAL] on the gap alone | density one within every fixed δ of the line with no hypothesis; a gap at any Δ > 0 gives density one on the line with no other hypothesis. For Δ ≥ 1/2 the gap is RH (§1); for 0 < Δ < 1/2 it is the open strip of §4 |
+| `Zeta23.BL.meanSquare_strip'`, `rightHalfBound_of_meanSquare'` (BohrLandauClosure) | [PROVED \| this tree] | the two statements that `Zeta23/BohrLandau.lean` named as `sorry`; the originals are kept untouched (their sorries are in no claim set); at σ = 1 the ∫₀ᵀ form holds only by Mathlib's junk-value convention, as the docstrings say |
+
+Register tag **[PROVED | this tree]**: proved on the zeta23 checkout from Mathlib and the tree's
+sorry-free files (zeta23's own library, receipted in run 2), delegated by unfolding where it is
+restated over MNF's names. Nothing in §10 touches `SpectralGapHyp`, `AllZerosSimple` or the
+simple-zeros conjecture, uses the 7/8 theorem, or combines the two external results. The
+Sturm–Liouville file of add-on v3 lives on as the standalone project
+github.com/Joeyxyxyz/sturm-liouville-comparator-run (simplicity plus the first oscillation step,
+Comparator-accepted 2026-11-03; no completed Lean proof of the simplicity theorem was known to the
+author as of 2026-11-03, see notes/density-field-2026-11-03 and the project's README).
 

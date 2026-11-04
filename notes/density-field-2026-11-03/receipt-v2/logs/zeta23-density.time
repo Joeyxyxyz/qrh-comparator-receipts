@@ -1,0 +1,23 @@
+	Command being timed: "lake env /home/qrh/qrh-zeta23-work/tools/comparator/.lake/build/bin/comparator MNFChallengesD/Density.json"
+	User time (seconds): 559.52
+	System time (seconds): 54.41
+	Percent of CPU this job got: 129%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:53.23
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6876032
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 121173
+	Minor (reclaiming a frame) page faults: 5137393
+	Voluntary context switches: 998988
+	Involuntary context switches: 73672
+	Swaps: 0
+	File system inputs: 16677752
+	File system outputs: 251088
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

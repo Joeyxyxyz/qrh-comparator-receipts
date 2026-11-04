@@ -1,0 +1,121 @@
+== density-layer pre-check (124 theorems, MNFChallengesD layout) 2026-11-03T20:21:28Z tree=/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23
+9f3a7f0b5f44ec30f04c43817d4996de6702912f94a6faaf0cc5da80e780ae02  MNFChallengesD/All.lean
+d8845b766a908c914b8c1758074bbb6ed4c89767c456e0fc1ab642e8d39280e6  MNFChallengesD/Density.json
+fc6690f89f8d63dead455b1e95b98d36de12c170342da678563cd60293ca8069  MNF/RH/DensityAll.lean
+Building MNFChallengesD.All
+⚠ [3573/3798] Replayed MNFChallengesD.Core
+⚠ [3574/3798] Replayed MNFChallengesD.Gap
+⚠ [3575/3798] Replayed MNFChallengesD.Hypotheses
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+⚠ [3577/3798] Replayed MNFChallengesD.Counting
+⚠ [3578/3798] Replayed MNFChallengesD.GapDensity
+⚠ [3579/3798] Replayed MNFChallengesD.Density
+⚠ [8703/8708] Replayed MNFChallengesD.Extension
+⚠ [8704/8708] Replayed MNFChallengesD.Strip
+⚠ [8705/8708] Replayed MNFChallengesD.DPMV
+⚠ [8706/8708] Replayed MNFChallengesD.DPMVexp
+⚠ [8707/8708] Replayed MNFChallengesD.JensenDisc
+Build completed successfully (8708 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, MNF.RH.N0_le_Ncount, MNF.RH.NOff_le_Ncount, MNF.RH.gap_forces_NOff_eq, MNF.RH.on_line_density_one_of_gap, MNF.RH.nullify_eq_zero_iff, MNF.RH.NNear_eq_nullified_count, MNF.RH.Ncount_eq_near_add_off, MNF.RH.N0_le_NNear, MNF.RH.NOff_le_NOffLine, MNF.RH.NNear_eq_N0_of_gap, MNF.RH.ncountSuperlinear, MNF.RH.offLine_le_one_third, MNF.RH.NOff_le_one_third, MNF.RH.reservoirDensityOne_of_bohrLandau, MNF.RH.near_line_density_one, MNF.RH.nullified_density_one, MNF.RH.onLineDensityOne_of_reservoir_of_gap, MNF.RH.onLineDensityOne_of_gap, MNF.RH.NOff_eq_right_add_left, MNF.RH.NLeft_eq_NRight, MNF.RH.bohrLandau_of_right, MNF.RH.onLineDensityOne_of_right, MNF.RH.reservoirDensityOne_of_right, MNF.Extension.conservation, MNF.Extension.idempotent', MNF.Extension.dilation_covariance, MNF.Extension.abs_nullify_antitone_in_threshold, MNF.Extension.eject_gapped, MNF.Extension.eject_idem, MNF.Extension.nullify_eject, MNF.Extension.eject_nullify, MNF.Extension.remainder_eject, MNF.Extension.eject_sub_nullify, MNF.Extension.eject_probe_reading, MNF.Extension.eject_dilation, MNF.Extension.nullify_comp_nullify, MNF.Extension.eject_comp_eject, MNF.Extension.nullify_floor, MNF.Extension.eject_ceiling, MNF.Extension.deficit_deficit, MNF.Extension.deficit_tripotent, MNF.Extension.nullify_deficit, MNF.Extension.northProbe_deficit, MNF.Extension.eject_eq_id_add_deficit, MNF.Extension.nullify_eq_id_sub_deficit_sq, MNF.Extension.metricProj_branch, MNF.Extension.metricProj_deficit_swap, MNF.Extension.rep_conservation, MNF.Extension.rep_not_distributive, MNF.Extension.content_inject, MNF.Extension.nu_inject, MNF.Extension.eps_inject, MNF.Extension.inject_nullified, MNF.Extension.inject_at_kstar, MNF.Extension.eventual_nullification, MNF.Extension.typeA_on_demand, MNF.Extension.compact_inject, MNF.Extension.nullify_sees_through, MNF.Extension.refine_inject, MNF.Extension.ladder_not_composite, MNF.Extension.deltaStar_singleton, MNF.Extension.nu_eq_zero_of_all_below, MNF.Extension.deltaStar_inject, MNF.Extension.sameSign_refine_le, MNF.Extension.sameSign_nu_le_content, MNF.Extension.sameSign_sign, MNF.Extension.mixed_refine_can_increase, MNF.Extension.zero_reading_uninformative, MNF.Extension.inProcess_ne_postHoc, MNF.Extension.residue_eq, MNF.Extension.two_piece_sign_safe, MNF.Extension.residue_both_signs, MNF.Extension.realise, MNF.Extension.gate_minimax, MNF.Extension.soft_idem_iff, MNF.Extension.soft_no_gap, MNF.Extension.hardGate_is_nullify, MNF.Extension.injectAdd_ejectAdd, MNF.Extension.ejectAdd_not_additive, MNF.RH.nullify_eq_extension, MNF.RH.mem_Band_iff_nullified, MNF.RH.eject_fixed_iff_zero, MNF.RH.eject_band_edge, MNF.RH.eq_zero_iff_gapped_all, MNF.RH.eq_zero_iff_eject_fixed_all, MNF.RH.eq_zero_iff_nullified_all, MNF.RH.displacement_injectable, MNF.RH.injected_reads_zero_iff, MNF.RH.band_injection_blind, MNF.RH.trace_singleton, MNF.RH.trace_zero, MNF.RH.trace_inject_pos, MNF.RH.trace_inject_tendsto, MNF.RH.on_line_iff_eject_fixed_all, MNF.RH.on_line_iff_nullified_all, MNF.RH.on_line_iff_trace_zero, MNF.RH.band_trivial_of_gap, MNF.RH.gap_of_band_trivial, DPMV.cpow_neg_mul_I_eq_exp, DPMV.conj_cpow_neg_mul_I, DPMV.prod_eq_exp, DPMV.integral_exp_I_mul, DPMV.integral_exp_I_mul_zero, DPMV.norm_exp_I_mul_eq_one, DPMV.norm_integral_exp_I_mul_le, DPMV.J_self, DPMV.norm_J_le, DPMV.normSq_sum_expand, DPMV.integral_normSq_sum, DPMV.dirichlet_mean_value, DPMV2.integral_exp_mul_I, DPMV2.integral_exp_zero_mul_I, DPMV2.norm_integral_exp_mul_I_le, DPMV2.ofReal_norm_sq_dirichlet, DPMV2.ofReal_integral_norm_sq_dirichlet, DPMV2.log_sub_log_ne_zero, DPMV2.norm_integral_freq_le, DPMV2.sum_bound_split, DPMV2.dirichlet_mean_value, sum_divisor_mul_log_le, circleAverage_log_norm_le_half_log_circleAverage_sq_of_ae, circleAverage_log_norm_le_half_log_circleAverage_sq, AnalyticOnNhd.ae_circleMap_ne_zero, AnalyticOnNhd.circleAverage_log_norm_le_half_log_circleAverage_sq, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from MNFChallengesD.All
+Building MNF.RH.DensityAll
+ℹ [3573/3820] Replayed MNF.RH.Core
+ℹ [3574/3820] Replayed MNF.RH.Gap
+ℹ [3575/3820] Replayed MNF.RH.Hypotheses
+ℹ [3577/3820] Replayed MNF.RH.Counting
+ℹ [3578/3820] Replayed MNF.RH.GapDensity
+⚠ [3590/3820] Replayed Zeta23.Statement
+⚠ [3591/3820] Replayed Zeta23.Statement.Seam
+⚠ [3620/3820] Replayed Zeta23.Assembly
+⚠ [3623/3820] Replayed Zeta23.ZetaReflect
+⚠ [8728/8743] Replayed Zeta23.Tail
+⚠ [8729/8743] Replayed Zeta23.ZeroSide
+ℹ [8744/8846] Replayed Zeta23.GammaFacts.Mu
+ℹ [8746/8846] Replayed Zeta23.GammaFacts.StirlingVert
+⚠ [8750/8846] Replayed Zeta23.FromPNTPlus.StrongPNTPrefix
+⚠ [8758/8846] Replayed Zeta23.FromPNTPlus.ZetaBounds
+⚠ [8760/8846] Replayed Zeta23.RvM.Halving
+⚠ [8766/8846] Replayed Zeta23.RvM.ReZeroCount
+⚠ [8771/8846] Replayed Zeta23.RvM.NcountWindow
+⚠ [8774/8846] Replayed Zeta23.WeilEF.ZeroSummability
+⚠ [8777/8846] Replayed Zeta23.WeilEF.Landau
+⚠ [8779/8846] Replayed Zeta23.WeilEF.Contour
+ℹ [8784/8846] Replayed Zeta23.WeilEF.Main
+⚠ [8785/8846] Replayed Zeta23.ZeroSide.RankTraceMult
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+⚠ [8787/8846] Replayed Zeta23.Assembly.SeamMult
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+
+⚠ [8790/8846] Replayed Zeta23.BohrLandau
+
+⚠ [8808/8846] Replayed Zeta23.PrimeSideA.EndsE1
+ℹ [8813/8846] Replayed Zeta23.PrimeSideA
+⚠ [8819/8846] Replayed Zeta23.MV.Spacing
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+
+ℹ [8825/8846] Replayed Zeta23.Superlinear
+⚠ [8829/8846] Replayed Zeta23.ThmD.Window
+⚠ [8830/8846] Replayed Zeta23.ThmD.PP
+⚠ [8832/8846] Replayed Zeta23.ThmD.WindowCore
+
+
+ℹ [8839/8846] Replayed Zeta23.OffLine
+⚠ [8840/8846] Replayed MNF.RH.Density
+⚠ [8841/8846] Replayed MNF.Extension.InjectionEjection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Build completed successfully (8846 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, MNF.RH.N0_le_Ncount, MNF.RH.NOff_le_Ncount, MNF.RH.gap_forces_NOff_eq, MNF.RH.on_line_density_one_of_gap, MNF.RH.nullify_eq_zero_iff, MNF.RH.NNear_eq_nullified_count, MNF.RH.Ncount_eq_near_add_off, MNF.RH.N0_le_NNear, MNF.RH.NOff_le_NOffLine, MNF.RH.NNear_eq_N0_of_gap, MNF.RH.ncountSuperlinear, MNF.RH.offLine_le_one_third, MNF.RH.NOff_le_one_third, MNF.RH.reservoirDensityOne_of_bohrLandau, MNF.RH.near_line_density_one, MNF.RH.nullified_density_one, MNF.RH.onLineDensityOne_of_reservoir_of_gap, MNF.RH.onLineDensityOne_of_gap, MNF.RH.NOff_eq_right_add_left, MNF.RH.NLeft_eq_NRight, MNF.RH.bohrLandau_of_right, MNF.RH.onLineDensityOne_of_right, MNF.RH.reservoirDensityOne_of_right, MNF.Extension.conservation, MNF.Extension.idempotent', MNF.Extension.dilation_covariance, MNF.Extension.abs_nullify_antitone_in_threshold, MNF.Extension.eject_gapped, MNF.Extension.eject_idem, MNF.Extension.nullify_eject, MNF.Extension.eject_nullify, MNF.Extension.remainder_eject, MNF.Extension.eject_sub_nullify, MNF.Extension.eject_probe_reading, MNF.Extension.eject_dilation, MNF.Extension.nullify_comp_nullify, MNF.Extension.eject_comp_eject, MNF.Extension.nullify_floor, MNF.Extension.eject_ceiling, MNF.Extension.deficit_deficit, MNF.Extension.deficit_tripotent, MNF.Extension.nullify_deficit, MNF.Extension.northProbe_deficit, MNF.Extension.eject_eq_id_add_deficit, MNF.Extension.nullify_eq_id_sub_deficit_sq, MNF.Extension.metricProj_branch, MNF.Extension.metricProj_deficit_swap, MNF.Extension.rep_conservation, MNF.Extension.rep_not_distributive, MNF.Extension.content_inject, MNF.Extension.nu_inject, MNF.Extension.eps_inject, MNF.Extension.inject_nullified, MNF.Extension.inject_at_kstar, MNF.Extension.eventual_nullification, MNF.Extension.typeA_on_demand, MNF.Extension.compact_inject, MNF.Extension.nullify_sees_through, MNF.Extension.refine_inject, MNF.Extension.ladder_not_composite, MNF.Extension.deltaStar_singleton, MNF.Extension.nu_eq_zero_of_all_below, MNF.Extension.deltaStar_inject, MNF.Extension.sameSign_refine_le, MNF.Extension.sameSign_nu_le_content, MNF.Extension.sameSign_sign, MNF.Extension.mixed_refine_can_increase, MNF.Extension.zero_reading_uninformative, MNF.Extension.inProcess_ne_postHoc, MNF.Extension.residue_eq, MNF.Extension.two_piece_sign_safe, MNF.Extension.residue_both_signs, MNF.Extension.realise, MNF.Extension.gate_minimax, MNF.Extension.soft_idem_iff, MNF.Extension.soft_no_gap, MNF.Extension.hardGate_is_nullify, MNF.Extension.injectAdd_ejectAdd, MNF.Extension.ejectAdd_not_additive, MNF.RH.nullify_eq_extension, MNF.RH.mem_Band_iff_nullified, MNF.RH.eject_fixed_iff_zero, MNF.RH.eject_band_edge, MNF.RH.eq_zero_iff_gapped_all, MNF.RH.eq_zero_iff_eject_fixed_all, MNF.RH.eq_zero_iff_nullified_all, MNF.RH.displacement_injectable, MNF.RH.injected_reads_zero_iff, MNF.RH.band_injection_blind, MNF.RH.trace_singleton, MNF.RH.trace_zero, MNF.RH.trace_inject_pos, MNF.RH.trace_inject_tendsto, MNF.RH.on_line_iff_eject_fixed_all, MNF.RH.on_line_iff_nullified_all, MNF.RH.on_line_iff_trace_zero, MNF.RH.band_trivial_of_gap, MNF.RH.gap_of_band_trivial, DPMV.cpow_neg_mul_I_eq_exp, DPMV.conj_cpow_neg_mul_I, DPMV.prod_eq_exp, DPMV.integral_exp_I_mul, DPMV.integral_exp_I_mul_zero, DPMV.norm_exp_I_mul_eq_one, DPMV.norm_integral_exp_I_mul_le, DPMV.J_self, DPMV.norm_J_le, DPMV.normSq_sum_expand, DPMV.integral_normSq_sum, DPMV.dirichlet_mean_value, DPMV2.integral_exp_mul_I, DPMV2.integral_exp_zero_mul_I, DPMV2.norm_integral_exp_mul_I_le, DPMV2.ofReal_norm_sq_dirichlet, DPMV2.ofReal_integral_norm_sq_dirichlet, DPMV2.log_sub_log_ne_zero, DPMV2.norm_integral_freq_le, DPMV2.sum_bound_split, DPMV2.dirichlet_mean_value, sum_divisor_mul_log_le, circleAverage_log_norm_le_half_log_circleAverage_sq_of_ae, circleAverage_log_norm_le_half_log_circleAverage_sq, AnalyticOnNhd.ae_circleMap_ne_zero, AnalyticOnNhd.circleAverage_log_norm_le_half_log_circleAverage_sq, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from MNF.RH.DensityAll
+Running nanoda kernel on solution
+Nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+COMPARATOR_EXIT=0
+== end 2026-11-03T20:27:26Z

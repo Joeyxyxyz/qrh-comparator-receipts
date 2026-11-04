@@ -6,6 +6,9 @@
 #
 #   1. every file listed in CHECKSUMS.sha256 hashes as listed;
 #   2. qrh-receipt.tar.gz: receipt.json says verdict PASS, run_type cold, the pinned OpenAI commit;
+#      (4b, added 2026-11-04) the three density receipts: check.out ends in MNF_DENSITY=ACCEPTED, the
+#      report names 124/270/334 theorems and lists no problems, the Lean sources it hashed are the
+#      add-on's, AF_UNIX was denied in the job;
 #   3. qrh-mnf-receipt.tar.gz, qrh-mnf-v2-receipt.tar.gz, qrh-mnf-v3-receipt.tar.gz: check.out ends
 #      in MNF_LIBRARY=ACCEPTED, and the library files they hash are the ones in the matching add-on
 #      tarball (byte for byte, through library_sha256.txt);
@@ -67,8 +70,28 @@ else bad "no receipt.json in qrh-zeta23-receipt.tar.gz"; fi
 mkdir -p "$tmp/z23m" && tar -xzf qrh-zeta23-mnf-receipt.tar.gz -C "$tmp/z23m" && co="$(find "$tmp/z23m" -name check.out | head -1)"
 if [ -n "$co" ] && [ "$(tail -1 "$co")" = "MNF_ZETA23=ACCEPTED" ]; then good "qrh-zeta23-mnf-receipt.tar.gz: check.out ends in MNF_ZETA23=ACCEPTED"; else bad "qrh-zeta23-mnf-receipt.tar.gz: not ACCEPTED"; fi
 
+say "== 4b. the density receipts (runs 7-9, 2026-11-03/04)"
+for pair in "qrh-zeta23-density-receipt.tar.gz:qrh-zeta23-addon-v2.tar.gz:density:124" "qrh-zeta23-density-v3-receipt.tar.gz:qrh-zeta23-addon-v3.tar.gz:density-v3:270" "qrh-zeta23-density-v4-receipt.tar.gz:qrh-zeta23-addon-v4.tar.gz:density-v4:334"; do
+  b="${pair%%:*}"; rest="${pair#*:}"; addon="${rest%%:*}"; rest="${rest#*:}"; sub="${rest%%:*}"; want="${rest#*:}"
+  mkdir -p "$tmp/$b" "$tmp/$addon" && tar -xzf "$b" -C "$tmp/$b" && tar -xzf "$addon" -C "$tmp/$addon"
+  co="$tmp/$b/$sub/check.out"
+  if [ -f "$co" ] && [ "$(tail -1 "$co")" = "MNF_DENSITY=ACCEPTED" ]; then good "$b: check.out ends in MNF_DENSITY=ACCEPTED"; else bad "$b: check.out does not end in MNF_DENSITY=ACCEPTED"; fi
+  rp="$tmp/$b/$sub/MNF_DENSITY.md"
+  if [ -f "$rp" ] && grep -q "^- $want theorems named in the challenge config" "$rp"; then good "$b: the report names $want theorems"; else bad "$b: the report does not name $want theorems"; fi
+  if [ -f "$rp" ] && ! grep -q "^Problems:" "$rp"; then good "$b: no problems listed"; else bad "$b: problems listed in the report"; fi
+  ls="$tmp/$b/$sub/density_sha256.txt"; adir="$(find "$tmp/$addon" -mindepth 1 -maxdepth 1 -type d | head -1)"
+  if [ -f "$ls" ]; then
+    # the listing hashes the files as they sat in the zeta23 checkout; the add-on ships the Lean sources among them
+    # (the challenge mirrors, the audit file and lakefile.toml are generated or modified in the tree and are not shipped)
+    shipped="$(cd "$adir" && grep -E ' (MNF/|Zeta23/)' "$ls" | while read -r h f; do [ -f "$f" ] && printf '%s  %s\n' "$h" "$f"; done)"
+    if [ -n "$shipped" ] && (cd "$adir" && printf '%s\n' "$shipped" | sha256sum --quiet -c - >/dev/null 2>&1); then good "$b: the $(printf '%s\n' "$shipped" | wc -l) Lean sources it hashed are byte-identical to those in $addon"; else bad "$b: the Lean sources it hashed differ from $addon"; fi
+  else bad "$b: no density_sha256.txt"; fi
+  ft="$(find "$tmp/$b" -name facts.tsv | head -1)"; lbl="${sub/density/zeta23-density}"; [ "$sub" = "density" ] && lbl="zeta23-density"
+  if [ -n "$ft" ] && grep -qP "\tjob_af_unix_$lbl\tdenied$" "$ft"; then good "$b: AF_UNIX denied in the job ($lbl)"; else bad "$b: AF_UNIX not recorded as denied for $lbl"; fi
+done
+
 say "== 5. the add-on tarballs against their own manifests"
-for addon in qrh-mnf-addon.tar.gz qrh-mnf-addon-v2.tar.gz qrh-mnf-addon-v3.tar.gz qrh-zeta23-addon.tar.gz; do
+for addon in qrh-mnf-addon.tar.gz qrh-mnf-addon-v2.tar.gz qrh-mnf-addon-v3.tar.gz qrh-zeta23-addon.tar.gz qrh-zeta23-addon-v2.tar.gz qrh-zeta23-addon-v3.tar.gz qrh-zeta23-addon-v4.tar.gz; do
   mkdir -p "$tmp/m-$addon" && tar -xzf "$addon" -C "$tmp/m-$addon" && adir="$(find "$tmp/m-$addon" -mindepth 1 -maxdepth 1 -type d | head -1)"
   if (cd "$adir" && sha256sum --quiet -c MANIFEST.sha256 >/dev/null 2>&1); then good "$addon: matches its MANIFEST.sha256 ($(wc -l < "$adir/MANIFEST.sha256") files)"; else bad "$addon: differs from its MANIFEST.sha256"; fi
 done
