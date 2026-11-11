@@ -1,0 +1,14 @@
+
+# --- MNF.RH restatement layer (QRH zeta23 add-on, step B2): the MNF library and its Comparator challenge ---
+[[lean_lib]]
+name = "MNF"
+globs = ["MNF.+"]
+
+[[lean_lib]]
+name = "MNFChallenges"
+globs = ["MNFChallenges.+"]
+
+# --- density layer (QRH zeta23 add-on v2, step B3): its Comparator challenge ---
+[[lean_lib]]
+name = "MNFChallengesD"
+globs = ["MNFChallengesD.+"]

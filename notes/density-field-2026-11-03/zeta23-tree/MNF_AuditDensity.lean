@@ -483,6 +483,60 @@ import MNF.RH.DensityAll
 #print axioms Zeta23.Density.geom_lower
 #print axioms Zeta23.Density.count_le_Egen
 #print axioms Zeta23.Density.density_single_window
+#print axioms MNF.RH.mirror_re
+#print axioms MNF.RH.mirror_im
+#print axioms MNF.RH.mirror_mirror
+#print axioms MNF.RH.mirror_injective
+#print axioms MNF.RH.is_nontrivial_zero_mirror
+#print axioms MNF.RH.mirror_mem_zerosIn
+#print axioms MNF.RH.zeta_order_mirror
+#print axioms MNF.RH.is_nontrivial_zero_conj
+#print axioms MNF.RH.mirror_eq_self_iff
+#print axioms MNF.RH.one_le_zeta_order
+#print axioms MNF.RH.inBand_or_inReservoir_or_onLine
+#print axioms MNF.RH.inBand_mirror_iff
+#print axioms MNF.RH.mem_bandZeros_mirror
+#print axioms MNF.RH.degenerate_of_not_onLine
+#print axioms MNF.RH.onLine_and_simple_of_not_degenerate
+#print axioms MNF.RH.not_degenerate_of_onLine_simple
+#print axioms MNF.RH.noDegenerate_iff
+#print axioms MNF.RH.spectralGapHyp_iff_not_inBand
+#print axioms MNF.RH.spectralGapHyp_iff_ordinatesInjectiveOn_bandZeros
+#print axioms MNF.RH.bandCoincidentMass_eq_zero_of_spectralGapHyp
+#print axioms MNF.RH.not_inBand_of_bandCoincidentMass_eq_zero
+#print axioms MNF.RH.spectralGapHyp_iff_bandCoincidentMass_of_im_ne_zero
+#print axioms MNF.RH.zeta_em_remainder_norm_le
+#print axioms MNF.RH.riemannZeta_ofReal_ne_zero_of_mem_Ioo
+#print axioms MNF.RH.nontrivial_zero_im_ne_zero
+#print axioms MNF.RH.spectralGapHyp_iff_bandCoincidentMass
+#print axioms MNF.RH.bandCoincidentMass_nonneg
+#print axioms MNF.RH.bandCoincidentMass_le_offDiagonalCoincidentMass
+#print axioms MNF.RH.finsum_mem_inter_setOf_eq_sum_filter
+#print axioms MNF.RH.NOffLine_real_eq_sum_filter
+#print axioms MNF.RH.N0_real_eq_sum_filter
+#print axioms MNF.RH.Ncount_eq_N0_add_NOffLine
+#print axioms MNF.RH.pairSum_eq_sum
+#print axioms MNF.RH.pairSum_const
+#print axioms MNF.RH.pairSum_fst
+#print axioms MNF.RH.pairSum_snd
+#print axioms MNF.RH.pairSum_fst_indicator
+#print axioms MNF.RH.pairSum_fst_abs
+#print axioms MNF.RH.pairSum_fst_abs_eq_integral
+#print axioms MNF.RH.pairSum_swap
+#print axioms MNF.RH.pairSum_nonneg
+#print axioms MNF.RH.pairSum_mono
+#print axioms MNF.RH.diagonalMass_nonneg
+#print axioms MNF.RH.diagonalMass_le_sq_Ncount
+#print axioms MNF.RH.Ncount_le_diagonalMass
+#print axioms MNF.RH.coincidentMass_eq
+#print axioms MNF.RH.offDiagonalCoincidentMass_nonneg
+#print axioms MNF.RH.offLine_sq_le_offDiagonalCoincidentMass
+#print axioms MNF.RH.offDiagonalCoincidentMass_le
+#print axioms MNF.RH.offDiagonalCoincidentMass_le_two_mul
+#print axioms MNF.RH.offDiagonalCoincidentMass_eq_zero_of_onLine
+#print axioms MNF.RH.onLine_of_offDiagonalCoincidentMass_eq_zero
+#print axioms MNF.RH.offDiagonalCoincidentMass_le_two_thirds
+#print axioms MNF.RH.offDiagonalCoincidentMass_le_five_ninths
 
 #check @MNF.RH.N0_le_Ncount
 #check @MNF.RH.NOff_le_Ncount
@@ -964,3 +1018,57 @@ import MNF.RH.DensityAll
 #check @Zeta23.Density.geom_lower
 #check @Zeta23.Density.count_le_Egen
 #check @Zeta23.Density.density_single_window
+#check @MNF.RH.mirror_re
+#check @MNF.RH.mirror_im
+#check @MNF.RH.mirror_mirror
+#check @MNF.RH.mirror_injective
+#check @MNF.RH.is_nontrivial_zero_mirror
+#check @MNF.RH.mirror_mem_zerosIn
+#check @MNF.RH.zeta_order_mirror
+#check @MNF.RH.is_nontrivial_zero_conj
+#check @MNF.RH.mirror_eq_self_iff
+#check @MNF.RH.one_le_zeta_order
+#check @MNF.RH.inBand_or_inReservoir_or_onLine
+#check @MNF.RH.inBand_mirror_iff
+#check @MNF.RH.mem_bandZeros_mirror
+#check @MNF.RH.degenerate_of_not_onLine
+#check @MNF.RH.onLine_and_simple_of_not_degenerate
+#check @MNF.RH.not_degenerate_of_onLine_simple
+#check @MNF.RH.noDegenerate_iff
+#check @MNF.RH.spectralGapHyp_iff_not_inBand
+#check @MNF.RH.spectralGapHyp_iff_ordinatesInjectiveOn_bandZeros
+#check @MNF.RH.bandCoincidentMass_eq_zero_of_spectralGapHyp
+#check @MNF.RH.not_inBand_of_bandCoincidentMass_eq_zero
+#check @MNF.RH.spectralGapHyp_iff_bandCoincidentMass_of_im_ne_zero
+#check @MNF.RH.zeta_em_remainder_norm_le
+#check @MNF.RH.riemannZeta_ofReal_ne_zero_of_mem_Ioo
+#check @MNF.RH.nontrivial_zero_im_ne_zero
+#check @MNF.RH.spectralGapHyp_iff_bandCoincidentMass
+#check @MNF.RH.bandCoincidentMass_nonneg
+#check @MNF.RH.bandCoincidentMass_le_offDiagonalCoincidentMass
+#check @MNF.RH.finsum_mem_inter_setOf_eq_sum_filter
+#check @MNF.RH.NOffLine_real_eq_sum_filter
+#check @MNF.RH.N0_real_eq_sum_filter
+#check @MNF.RH.Ncount_eq_N0_add_NOffLine
+#check @MNF.RH.pairSum_eq_sum
+#check @MNF.RH.pairSum_const
+#check @MNF.RH.pairSum_fst
+#check @MNF.RH.pairSum_snd
+#check @MNF.RH.pairSum_fst_indicator
+#check @MNF.RH.pairSum_fst_abs
+#check @MNF.RH.pairSum_fst_abs_eq_integral
+#check @MNF.RH.pairSum_swap
+#check @MNF.RH.pairSum_nonneg
+#check @MNF.RH.pairSum_mono
+#check @MNF.RH.diagonalMass_nonneg
+#check @MNF.RH.diagonalMass_le_sq_Ncount
+#check @MNF.RH.Ncount_le_diagonalMass
+#check @MNF.RH.coincidentMass_eq
+#check @MNF.RH.offDiagonalCoincidentMass_nonneg
+#check @MNF.RH.offLine_sq_le_offDiagonalCoincidentMass
+#check @MNF.RH.offDiagonalCoincidentMass_le
+#check @MNF.RH.offDiagonalCoincidentMass_le_two_mul
+#check @MNF.RH.offDiagonalCoincidentMass_eq_zero_of_onLine
+#check @MNF.RH.onLine_of_offDiagonalCoincidentMass_eq_zero
+#check @MNF.RH.offDiagonalCoincidentMass_le_two_thirds
+#check @MNF.RH.offDiagonalCoincidentMass_le_five_ninths

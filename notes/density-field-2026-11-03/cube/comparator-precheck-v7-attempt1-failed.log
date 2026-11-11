@@ -1,0 +1,721 @@
+== density-layer v7 pre-check 2026-11-04T18:36:31Z tree=/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23
+ca885439db1221a162d57fdf483c778b5766e140f4ccae76f665fc211a1537dd  MNF/RH/Cube.lean
+32fa92c31b8682f80faf5753717d696fbbe8132925e3d473b4f7a299c4c054eb  MNF/RH/ReservoirMass.lean
+9e4eb92d3fa667cad45c046691a95b5d4263f0c4ffd50aa0e8e444586aaabd0c  MNF/RH/DensityAll.lean
+4cf93424517a783bc93b31f7a41c23992fbbd4745c35c02b0010f28be7e2eb79  MNFChallengesD/Cube.lean
+278ccfbd7c508f10536aa1080b1e4675c7e91a23c26d98fcf2d082fdc2da7f5a  MNFChallengesD/Density.json
+config: MNFChallengesD/Density.json (534 claims)
+Building MNFChallengesD.All
+⚠ [3573/3615] Replayed MNFChallengesD.Core
+warning: MNFChallengesD/Core.lean:72:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:75:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:78:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:83:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:87:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:90:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:95:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:99:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:103:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:108:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:114:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:119:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:123:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:127:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:133:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:139:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:142:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:145:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:148:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:152:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:159:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:163:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:168:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:173:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:177:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:182:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:190:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:196:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:201:8: declaration uses `sorry`
+warning: MNFChallengesD/Core.lean:206:8: declaration uses `sorry`
+info: MNFChallengesD/Core.lean:214:0: 'MNF.RH.zeta_order_ge_one' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:215:0: 'MNF.RH.order_one_iff_deriv' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:216:0: 'MNF.RH.deriv_zero_of_high_order' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:217:0: 'MNF.RH.nontrivial_zero_reflect' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:218:0: 'MNF.RH.deriv_reflect' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:219:0: 'MNF.RH.analyticOrderAt_reflect' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:220:0: 'MNF.RH.zeta_order_reflect' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:221:0: 'MNF.RH.shifted_symmetric' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:222:0: 'MNF.RH.in_strip_of_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:223:0: 'MNF.RH.riemannHypothesis_iff_strip' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:224:0: 'MNF.RH.riemannHypothesis_iff_shifted_subset_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Core.lean:225:0: 'MNF.RH.shifted_bounded' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3574/3615] Replayed MNFChallengesD.Gap
+warning: MNFChallengesD/Gap.lean:42:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:46:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:49:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:57:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:66:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:72:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:78:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:83:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:92:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:100:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:103:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:106:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:109:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:120:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:123:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:129:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:134:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:139:8: declaration uses `sorry`
+warning: MNFChallengesD/Gap.lean:145:8: declaration uses `sorry`
+info: MNFChallengesD/Gap.lean:156:0: 'MNF.RH.tau_threshold' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:157:0: 'MNF.RH.riemannHypothesis_iff_gap_half' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:158:0: 'MNF.RH.shifted_bounded_of_zeroFree' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:159:0: 'MNF.RH.riemannHypothesis_iff_gap_of_zeroFree' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:160:0: 'MNF.RH.riemannHypothesis_iff_remaining_strip' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:161:0: 'MNF.RH.gap_below_bound_insufficient' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:162:0: 'MNF.RH.symmetric_bounded_not_on_line' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:163:0: 'MNF.RH.sign_gate_shifted' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:164:0: 'MNF.RH.nullify_dilation' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:165:0: 'MNF.RH.gap_iff_nullify_id' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Gap.lean:166:0: 'MNF.RH.delta_from_ratio_38_insufficient' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3575/3615] Replayed MNFChallengesD.Hypotheses
+warning: MNFChallengesD/Hypotheses.lean:69:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:73:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:79:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:90:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:99:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:103:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:108:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:115:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:123:8: declaration uses `sorry`
+warning: MNFChallengesD/Hypotheses.lean:132:8: declaration uses `sorry`
+info: MNFChallengesD/Hypotheses.lean:143:0: 'MNF.RH.rh_of_symmetric_operator' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:144:0: 'MNF.RH.rh_of_gap' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:145:0: 'MNF.RH.rh_of_gap_of_zeroFree' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:146:0: 'MNF.RH.gap_of_rh' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:147:0: 'MNF.RH.spectralGapHyp_iff_zeroFree_strip' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:148:0: 'MNF.RH.spectralGapHyp_three_eighths_iff_of' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:149:0: 'MNF.RH.multiplicityBoundOne_iff_allZerosSimple' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:150:0: 'MNF.RH.derivativeNonvanishing_of_left' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:151:0: 'MNF.RH.allZerosSimple_of_speiser_and_double_zero_hyp' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: MNFChallengesD/Hypotheses.lean:152:0: 'MNF.RH.allZerosSimple_of_rh_of_line' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3577/3615] Replayed MNFChallengesD.Counting
+warning: MNFChallengesD/Counting.lean:81:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:85:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:88:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:94:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:100:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:106:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:111:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:119:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:122:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:125:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:137:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:145:8: declaration uses `sorry`
+warning: MNFChallengesD/Counting.lean:152:8: declaration uses `sorry`
+info: MNFChallengesD/Counting.lean:162:0: 'MNF.RH.mem_zerosIn' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:163:0: 'MNF.RH.zerosIn_subset_zetaZeros' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:164:0: 'MNF.RH.zerosIn_mono' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:165:0: 'MNF.RH.zerosIn_subset_box' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:166:0: 'MNF.RH.zerosIn_finite' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:167:0: 'MNF.RH.Ncount_eq_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:168:0: 'MNF.RH.Ndist_eq_sum_ones' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:169:0: 'MNF.RH.Ndist_le_Ncount' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:170:0: 'MNF.RH.N0star_le_Ndist' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:171:0: 'MNF.RH.N0simple_le_N0star' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:172:0: 'MNF.RH.riemannHypothesis_iff_window_counts' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:173:0: 'MNF.RH.allZerosSimple_iff_window_counts' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/Counting.lean:174:0: 'MNF.RH.N0simple_eq_deriv_form' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3578/3615] Replayed MNFChallengesD.GapDensity
+warning: MNFChallengesD/GapDensity.lean:89:8: declaration uses `sorry`
+warning: MNFChallengesD/GapDensity.lean:93:8: declaration uses `sorry`
+warning: MNFChallengesD/GapDensity.lean:102:8: declaration uses `sorry`
+warning: MNFChallengesD/GapDensity.lean:115:8: declaration uses `sorry`
+info: MNFChallengesD/GapDensity.lean:125:0: 'MNF.RH.N0_le_Ncount' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/GapDensity.lean:126:0: 'MNF.RH.NOff_le_Ncount' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/GapDensity.lean:127:0: 'MNF.RH.gap_forces_NOff_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/GapDensity.lean:128:0: 'MNF.RH.on_line_density_one_of_gap' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3613/3615] Replayed MNFChallengesD.BohrLandau
+warning: MNFChallengesD/BohrLandau.lean:24:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:29:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:37:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:46:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:50:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:56:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:60:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:65:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandau.lean:68:8: declaration uses `sorry`
+info: MNFChallengesD/BohrLandau.lean:72:0: 'Zeta23.BL.NLeft_eq_NRight' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/BohrLandau.lean:73:0: 'Zeta23.BL.bohrLandau_of_right' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/BohrLandau.lean:74:0: 'Zeta23.BL.bohrLandau' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: MNFChallengesD/BohrLandau.lean:75:0: 'Zeta23.BL.meanSquare_gt_one' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+⚠ [3614/3615] Replayed MNFChallengesD.Density
+warning: MNFChallengesD/Density.lean:89:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:94:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:99:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:103:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:107:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:112:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:122:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:131:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:137:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:156:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:160:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:166:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:173:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:179:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:187:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:194:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:199:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:203:8: declaration uses `sorry`
+warning: MNFChallengesD/Density.lean:208:8: declaration uses `sorry`
+⚠ [8704/8715] Replayed MNFChallengesD.Extension
+warning: MNFChallengesD/Extension.lean:66:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:72:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:80:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:87:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:102:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:106:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:109:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:113:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:116:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:120:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:123:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:127:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:131:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:138:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:143:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:148:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:152:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:158:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:164:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:171:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:175:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:179:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:182:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:187:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:192:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:197:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:201:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:211:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:217:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:245:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:250:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:270:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:275:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:279:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:284:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:290:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:295:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:301:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:306:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:310:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:315:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:319:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:330:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:339:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:343:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:347:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:354:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:358:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:362:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:366:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:370:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:375:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:379:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:383:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:387:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:393:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:399:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:425:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:436:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:442:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:449:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:457:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:472:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:476:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:493:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:499:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:504:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:517:8: declaration uses `sorry`
+warning: MNFChallengesD/Extension.lean:521:8: declaration uses `sorry`
+⚠ [8705/8715] Replayed MNFChallengesD.Strip
+warning: MNFChallengesD/Strip.lean:69:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:79:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:83:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:88:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:93:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:97:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:101:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:108:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:114:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:121:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:126:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:130:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:135:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:141:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:148:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:153:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:158:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:165:8: declaration uses `sorry`
+warning: MNFChallengesD/Strip.lean:171:8: declaration uses `sorry`
+⚠ [8706/8715] Replayed MNFChallengesD.DPMV
+warning: MNFChallengesD/DPMV.lean:21:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:26:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:31:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:37:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:43:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:48:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:52:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:61:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:64:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:69:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:76:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMV.lean:82:8: declaration uses `sorry`
+⚠ [8707/8715] Replayed MNFChallengesD.DPMVexp
+warning: MNFChallengesD/DPMVexp.lean:28:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:34:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:39:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:45:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:53:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:63:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:68:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:74:6: declaration uses `sorry`
+warning: MNFChallengesD/DPMVexp.lean:83:8: declaration uses `sorry`
+⚠ [8708/8715] Replayed MNFChallengesD.JensenDisc
+warning: MNFChallengesD/JensenDisc.lean:13:8: declaration uses `sorry`
+warning: MNFChallengesD/JensenDisc.lean:26:8: declaration uses `sorry`
+warning: MNFChallengesD/JensenDisc.lean:37:8: declaration uses `sorry`
+warning: MNFChallengesD/JensenDisc.lean:48:8: declaration uses `sorry`
+warning: MNFChallengesD/JensenDisc.lean:55:8: declaration uses `sorry`
+⚠ [8709/8715] Replayed MNFChallengesD.BohrLandauPartial
+warning: MNFChallengesD/BohrLandauPartial.lean:48:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:54:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:62:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:68:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:79:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:90:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:96:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:105:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:110:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:115:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:120:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:126:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:134:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:144:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:149:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:154:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:160:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:166:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:174:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:195:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:201:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:204:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:207:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:210:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:213:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:216:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:219:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:222:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:225:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:229:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:235:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:240:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:245:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:250:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:256:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:262:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:269:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:276:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:286:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:295:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:303:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:312:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:323:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:330:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:336:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:344:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:364:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:368:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:373:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:378:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:383:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:388:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:394:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:401:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:410:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:418:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:442:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:446:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:454:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:463:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:468:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:475:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:488:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:501:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:508:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:514:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:523:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:536:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:542:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:564:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:568:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:573:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:579:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:585:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:591:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:596:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:602:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:609:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:617:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:624:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:639:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:644:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:649:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:654:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:659:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:664:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:670:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:694:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:698:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:705:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:710:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:718:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:728:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:739:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:743:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:747:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:750:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:753:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:758:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:763:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:769:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:777:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:786:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:791:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:801:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:810:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:834:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:840:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:845:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:850:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:856:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:863:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:871:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:880:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:884:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:888:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:892:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:900:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:908:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:921:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:932:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:943:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:955:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:960:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:966:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:995:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1006:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1013:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1031:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1036:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1041:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1046:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1053:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1059:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1066:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1072:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1078:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1089:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauPartial.lean:1095:8: declaration uses `sorry`
+⚠ [8710/8715] Replayed MNFChallengesD.DensityPartial
+warning: MNFChallengesD/DensityPartial.lean:68:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:76:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:81:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:88:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:93:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:99:8: declaration uses `sorry`
+warning: MNFChallengesD/DensityPartial.lean:106:8: declaration uses `sorry`
+⚠ [8711/8715] Replayed MNFChallengesD.BohrLandauClosure
+warning: MNFChallengesD/BohrLandauClosure.lean:84:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:90:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:95:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:101:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:107:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:111:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:120:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:123:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:126:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:129:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:132:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:135:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:139:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:142:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:147:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:151:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:155:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:163:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:169:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:184:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:200:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:214:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:230:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:237:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:245:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:250:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:255:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:260:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:263:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:266:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:269:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:273:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:283:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:291:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:304:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:307:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:310:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:315:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:322:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:329:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:335:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:342:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:350:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:364:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:378:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:385:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:397:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:407:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:421:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:426:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:434:6: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:446:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:453:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:461:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:468:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:474:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:480:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:499:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:503:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:508:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:517:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:530:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:543:8: declaration uses `sorry`
+warning: MNFChallengesD/BohrLandauClosure.lean:553:8: declaration uses `sorry`
+⚠ [8712/8715] Replayed MNFChallengesD.ReservoirMass
+warning: MNFChallengesD/ReservoirMass.lean:112:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:129:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:144:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:167:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:172:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:175:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:179:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:184:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:191:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:197:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:207:6: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:214:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:241:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:246:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:275:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:279:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:290:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:295:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:300:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:305:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:310:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:317:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:327:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:332:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:336:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:344:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:350:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:356:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:364:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:373:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:405:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:410:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:416:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:435:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:442:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:455:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:463:8: declaration uses `sorry`
+warning: MNFChallengesD/ReservoirMass.lean:472:8: declaration uses `sorry`
+⚠ [8713/8715] Replayed MNFChallengesD.StripDensity
+warning: MNFChallengesD/StripDensity.lean:104:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:108:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:112:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:116:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:127:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:134:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:139:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:143:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:148:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:152:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:156:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:161:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:166:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:171:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:186:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:193:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:200:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:215:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:223:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:229:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:236:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:243:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:249:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:256:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:261:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:266:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:282:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:289:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:299:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:305:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:316:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:334:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:344:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:350:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:357:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:371:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:376:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:384:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:391:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:398:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:412:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:418:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:426:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:451:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:456:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:461:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:466:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:471:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:478:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:486:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:501:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:506:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:519:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:528:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:547:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:552:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:560:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:567:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:574:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:582:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:597:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:603:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:611:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:619:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:628:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:637:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:648:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:655:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:669:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:682:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:692:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:703:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:712:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:730:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:738:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:745:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:757:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:769:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:783:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:799:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:853:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:856:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:859:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:862:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:867:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:872:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:878:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:884:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:897:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:901:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:905:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:909:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:917:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:930:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:936:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:942:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:948:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:954:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:962:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:968:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:976:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:985:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:994:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:1004:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:1016:6: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:1040:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:1057:8: declaration uses `sorry`
+warning: MNFChallengesD/StripDensity.lean:1083:8: declaration uses `sorry`
+✖ [8714/8715] Building MNFChallengesD.Cube (4.2s)
+trace: .> LEAN_PATH=/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/packages/Cli/.lake/build/lib/lean:/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/packages/batteries/.lake/build/lib/lean:/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/packages/Qq/.lake/build/lib/lean:/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/packages/aesop/.lake/build/lib/lean:/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/packages/importGraph/.lake/build/lib/lean:/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/packages/plausible/.lake/build/lib/lean:/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/packages/mathlib/.lake/build/lib/lean:/home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/build/lib/lean /home/joeyxyxyz/.elan/toolchains/leanprover--lean4---v4.33.0-rc2/bin/lean /home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/MNFChallengesD/Cube.lean -o /home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/build/lib/lean/MNFChallengesD/Cube.olean -i /home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/build/lib/lean/MNFChallengesD/Cube.ilean -c /home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/build/ir/MNFChallengesD/Cube.c --setup /home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/.lake/build/ir/MNFChallengesD/Cube.setup.json --json
+warning: MNFChallengesD/Cube.lean:163:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:166:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:169:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:172:6: declaration uses `sorry`
+error: MNFChallengesD/Cube.lean:177:49: Unknown identifier `Zeta23.reflect`
+warning: MNFChallengesD/Cube.lean:182:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:186:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:190:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:195:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:201:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:206:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:216:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:220:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:223:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:230:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:234:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:238:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:243:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:255:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:265:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:273:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:282:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:291:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:303:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:308:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:314:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:323:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:329:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:334:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:343:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:349:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:354:6: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:359:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:367:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:375:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:383:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:390:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:396:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:405:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:413:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:419:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:428:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:435:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:440:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:447:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:451:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:456:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:465:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:471:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:479:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:492:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:498:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:504:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:511:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:518:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:531:8: declaration uses `sorry`
+error: Lean exited with code 1
+Some required targets logged failures:
+- MNFChallengesD.Cube
+error: build failed
+uncaught exception: Child exited with 1
+COMPARATOR_EXIT=1
+== end 2026-11-04T18:36:42Z

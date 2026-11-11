@@ -10,14 +10,17 @@ Receipts behind this map, all from the kit's launcher on Joey's laptop: v1 `qrh-
 bodies compared, `c6142a40…`); v3 `qrh-mnf-v3-receipt.tar.gz` (ACCEPTED 2026-10-29 05:56–06:10 UTC, 87
 theorems, 41 definitions, `023d7ada93e313296e7e9d88c82569fa65c704a2624149a67e5e74c762c8159a`); zeta23
 `qrh-zeta23-receipt.tar.gz` (PASS, `e0b9a4d9…`) and the MNF layer on it `qrh-zeta23-mnf-receipt.tar.gz`
-(ACCEPTED, 62, `1476f568…`). Revised again 2026-11-04 for the density field (§10): four more
+(ACCEPTED, 62, `1476f568…`). Revised again 2026-11-04 and 2026-11-11 for the density field (§10): five more
 receipts on the zeta23 tree, add-on v2 `qrh-zeta23-density-receipt.tar.gz` (ACCEPTED 2026-11-03,
 124 theorems, `975b2178…`), v3 `qrh-zeta23-density-v3-receipt.tar.gz` (ACCEPTED, 270, `0588555d…`),
 v4 `qrh-zeta23-density-v4-receipt.tar.gz` (ACCEPTED 2026-11-04 00:52–00:58 UTC, 334 theorems, 81
 definitions, `0d1919e42cbe45408d719536fc3c45ecdaa106bb1c83470e12b063006372f56a`), v5
 `qrh-zeta23-density-v5-receipt.tar.gz` (ACCEPTED 2026-11-04 14:38–14:45 UTC, 480 theorems, 98
 definitions, `37a806b20c4ef5abf9bed06f127746e46d2184b928a75a0efcaa06de1a5ef863`: the reservoir mass and
-a zero-density estimate with a power saving). This root copy is the current deposit map;
+a zero-density estimate with a power saving), v6
+`qrh-zeta23-density-v6-receipt.tar.gz` (ACCEPTED 2026-11-11 00:02–00:17 UTC, 534 theorems, 110
+definitions, `ca07a500aa8384b96b03f3480053cd48271bb157a04155de42342ca21254a90c`: the strip cube and the
+absence of real zeros of ζ in (0, 1)). This root copy is the current deposit map;
 the copies inside the add-on folders and inside the Zenodo record of 2026-10-29 are frozen with
 the add-on or record they belong to.
 
@@ -251,7 +254,7 @@ as such. (Wording from notes/FischerForward_The_Math.md §6.)
 
 ## 10. The density field and Bohr–Landau on the zeta23 tree (2026-11-03/04)
 
-Four further Comparator runs on the zeta23 checkout that run 2 checked (cold under the kit's
+Five further Comparator runs on the zeta23 checkout that run 2 checked (cold under the kit's
 launcher, AF_UNIX denied, Lean kernel and NanoDa, every definition compared by body). The
 working notes, the receipts extracted, the plan, the two adversarial prose reviews and the
 per-agent sources are in `notes/density-field-2026-11-03/` (ledger `DENSITY_LEDGER.md`).
@@ -262,8 +265,9 @@ per-agent sources are in `notes/density-field-2026-11-03/` (ledger `DENSITY_LEDG
 | 8 | `zeta23-density-v3` | `qrh-zeta23-addon-v3.tar.gz` `c0958d53…` | `qrh-zeta23-density-v3-receipt.tar.gz` `0588555d…` | 270 (76) | ACCEPTED 2026-11-03 22:03–22:09 UTC |
 | 9 | `zeta23-density-v4` | `qrh-zeta23-addon-v4.tar.gz` `fb74e8a2…` | `qrh-zeta23-density-v4-receipt.tar.gz` `0d1919e4…` | 334 (81) | ACCEPTED 2026-11-04 00:52–00:58 UTC |
 | 10 | `zeta23-density-v5` | `qrh-zeta23-addon-v5.tar.gz` `2d2cf058…` | `qrh-zeta23-density-v5-receipt.tar.gz` `37a806b2…` | 480 (98) | ACCEPTED 2026-11-04 14:38–14:45 UTC |
+| 11 | `zeta23-density-v6` | `qrh-zeta23-addon-v6.tar.gz` `99575a1e…` | `qrh-zeta23-density-v6-receipt.tar.gz` `ca07a500…` | 534 (110) | ACCEPTED 2026-11-11 00:02–00:17 UTC |
 
-Each run re-judges everything of the previous one plus the new modules; run 10 is the complete
+Each run re-judges everything of the previous one plus the new modules; run 11 is the complete
 layer. What is proved there, in register terms:
 
 | theorem (module) | status | note |
@@ -283,6 +287,11 @@ layer. What is proved there, in register terms:
 | **`MNF.RH.reservoirMass_le_rpow`**, `reservoirMass_le_Ncount_mul`, **`meanDisplacement_tendsto_zero`** (ReservoirMass) | [PROVED \| this tree] | reservoirMass T ≤ A·T·(log T)^{3/5} for T ≥ T₀, hence ≤ A·(log T)^{−2/5}·N(0,T): the mean distance of the zeros from the line, with multiplicity, tends to 0. Far weaker than Littlewood 1924 (O(T log log T)) and Selberg 1946 (O(T)); compatible with infinitely many zeros off the line and silent on the gap |
 | **`Zeta23.Density.density_single_window`** (StripDensity) | [PROVED \| this tree] | for 1/2 < σ₁ and σ₁ − 1/2 < δ ≤ 1/2: NRight(δ, T) ≤ C·T^{1 − (2σ₁−1)²/(2σ₁)}·(1 + log T)³ for all T ≥ 2 (at σ₁ = 3/4: O(T^{5/6}(log T)³)) — a zero-density estimate with a power saving, Carlson's method with one approximate formula on one window; weaker than Carlson's exponent 4σ₁(1 − σ₁), which is not proved. A count, not a zero-free region: it excludes no individual zero and says nothing about zeros closer than δ to the line |
 | `sum_dX_sq_le`, `S_mul_Mx_eq`, `fz_sub_one_eq`, `meanSquare_fz_window`, `count_le_meanSquare_fz` (StripDensity) | [PROVED], [PROVED \| this tree] | the divisor bound Σ_{m≤Y} d_X(m)² ≤ Y(1 + log X)³; the product polynomial S_N·M_X; the Möbius identity ζ·M_X − 1 = −ζ·Σ_{n>X} μ(n)n^{−s} for Re s > 1; the window mean square of ζ·M_X; the Jensen-disc count with the majorant ½ log(ε² + ‖f‖²) |
+| `MNF.RH.degenerate_of_not_onLine`, **`noDegenerate_iff`** (Cube) | [PROVED] bookkeeping; an equivalence | an off-line zero shares its ordinate with its mirror 1 − ρ̄, so it is *degenerate* (multiple, or sharing an ordinate with another zero); "no nontrivial zero is degenerate" ⟺ "every nontrivial zero is on the line and simple". Relocates RH together with the simplicity conjecture; proves neither |
+| **`MNF.RH.spectralGapHyp_iff_ordinatesInjectiveOn_bandZeros`**, `spectralGapHyp_iff_not_inBand`, **`spectralGapHyp_iff_bandCoincidentMass`** (Cube) | [PROVED] an equivalence | `SpectralGapHyp Δ` ⟺ no two distinct zeros within distance < Δ of the line share an ordinate ⟺ the band's coincident mass vanishes in every window (0, T]. Relocates the gap, which stays [OPEN] |
+| **`MNF.RH.riemannZeta_ofReal_ne_zero_of_mem_Ioo`**, `nontrivial_zero_im_ne_zero` (Cube) | [PROVED \| this tree] | ζ(σ) ≠ 0 for real 0 < σ < 1, so every nontrivial zero has a nonzero ordinate; from the tree's one-term Euler–Maclaurin representation with the remainder bounded by 1/(2σ). Classical and elementary; a zero-free statement about the real segment only, not about the interior of the strip |
+| `pairSum_const`, `pairSum_fst_indicator`, `pairSum_fst_abs`, `pairSum_fst_abs_eq_integral`, `pairSum_swap` (Cube) | [PROVED] bookkeeping | the pair measure of a window ("the cube": ordered pairs of zeros at (Re ρ − 1/2, Re ρ′ − 1/2, Im ρ − Im ρ′) with weight m(ρ)m(ρ′)): total mass N², first marginals N·NOff and N·reservoirMass, the double layer cake N·∫₀^{1/2} NOff dδ |
+| `coincidentMass_eq`, `offLine_sq_le_offDiagonalCoincidentMass`, `offDiagonalCoincidentMass_le`, `offDiagonalCoincidentMass_le_five_ninths` (Cube) | [PROVED] bookkeeping; [PROVED \| this tree] for the eventual bound | the atom at ordinate difference 0 is the diagonal mass Σ m(ρ)² plus the off-diagonal coincidences; each off-line zero contributes m(ρ)² through its mirror; the off-diagonal part is ≤ NOffLine·(N + N0), hence eventually ≤ (5/9 + ε)·N² by Theorem B. The cubic small-distance law of the zeros is the GUE prediction (Montgomery 1973), not a theorem |
 
 Register tag **[PROVED | this tree]**: proved on the zeta23 checkout from Mathlib and the tree's
 sorry-free files (zeta23's own library, receipted in run 2), delegated by unfolding where it is
@@ -300,5 +309,7 @@ statement block and axiom table show (`Zeta23.BL.bohrLandau_full` with standard 
 verdict, the audit and the hashes of run 9 are unaffected; the generator is corrected in add-on
 v5 and the run 10 report carries the corrected prose; the run 9 bundle is not altered. The
 zero-density estimate of run 10 is a count of zeros off the line, not a zero-free region:
-`SpectralGapHyp` stays [OPEN] for every Δ, exactly as in §6.
+`SpectralGapHyp` stays [OPEN] for every Δ, exactly as in §6. The equivalences of run 11 restate RH
+with simplicity, and the gap, as statements about coincident ordinates of zeros; each side of each
+equivalence is as open as the other.
 

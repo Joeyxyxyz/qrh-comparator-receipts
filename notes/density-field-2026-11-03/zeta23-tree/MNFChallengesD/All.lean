@@ -16,3 +16,4 @@ import MNFChallengesD.DensityPartial
 import MNFChallengesD.BohrLandauClosure
 import MNFChallengesD.ReservoirMass
 import MNFChallengesD.StripDensity
+import MNFChallengesD.Cube

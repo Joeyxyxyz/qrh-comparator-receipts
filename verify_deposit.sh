@@ -6,8 +6,8 @@
 #
 #   1. every file listed in CHECKSUMS.sha256 hashes as listed;
 #   2. qrh-receipt.tar.gz: receipt.json says verdict PASS, run_type cold, the pinned OpenAI commit;
-#      (4b, added 2026-11-04) the four density receipts: check.out ends in MNF_DENSITY=ACCEPTED, the
-#      report names 124/270/334/480 theorems and lists no problems, the Lean sources it hashed are the
+#      (4b, added 2026-11-04) the five density receipts: check.out ends in MNF_DENSITY=ACCEPTED, the
+#      report names 124/270/334/480/534 theorems and lists no problems, the Lean sources it hashed are the
 #      add-on's, AF_UNIX was denied in the job;
 #   3. qrh-mnf-receipt.tar.gz, qrh-mnf-v2-receipt.tar.gz, qrh-mnf-v3-receipt.tar.gz: check.out ends
 #      in MNF_LIBRARY=ACCEPTED, and the library files they hash are the ones in the matching add-on
@@ -70,8 +70,8 @@ else bad "no receipt.json in qrh-zeta23-receipt.tar.gz"; fi
 mkdir -p "$tmp/z23m" && tar -xzf qrh-zeta23-mnf-receipt.tar.gz -C "$tmp/z23m" && co="$(find "$tmp/z23m" -name check.out | head -1)"
 if [ -n "$co" ] && [ "$(tail -1 "$co")" = "MNF_ZETA23=ACCEPTED" ]; then good "qrh-zeta23-mnf-receipt.tar.gz: check.out ends in MNF_ZETA23=ACCEPTED"; else bad "qrh-zeta23-mnf-receipt.tar.gz: not ACCEPTED"; fi
 
-say "== 4b. the density receipts (runs 7-10, 2026-11-03/04)"
-for pair in "qrh-zeta23-density-receipt.tar.gz:qrh-zeta23-addon-v2.tar.gz:density:124" "qrh-zeta23-density-v3-receipt.tar.gz:qrh-zeta23-addon-v3.tar.gz:density-v3:270" "qrh-zeta23-density-v4-receipt.tar.gz:qrh-zeta23-addon-v4.tar.gz:density-v4:334" "qrh-zeta23-density-v5-receipt.tar.gz:qrh-zeta23-addon-v5.tar.gz:density-v5:480"; do
+say "== 4b. the density receipts (runs 7-11, 2026-11-03/04 and 2026-11-11)"
+for pair in "qrh-zeta23-density-receipt.tar.gz:qrh-zeta23-addon-v2.tar.gz:density:124" "qrh-zeta23-density-v3-receipt.tar.gz:qrh-zeta23-addon-v3.tar.gz:density-v3:270" "qrh-zeta23-density-v4-receipt.tar.gz:qrh-zeta23-addon-v4.tar.gz:density-v4:334" "qrh-zeta23-density-v5-receipt.tar.gz:qrh-zeta23-addon-v5.tar.gz:density-v5:480" "qrh-zeta23-density-v6-receipt.tar.gz:qrh-zeta23-addon-v6.tar.gz:density-v6:534"; do
   b="${pair%%:*}"; rest="${pair#*:}"; addon="${rest%%:*}"; rest="${rest#*:}"; sub="${rest%%:*}"; want="${rest#*:}"
   mkdir -p "$tmp/$b" "$tmp/$addon" && tar -xzf "$b" -C "$tmp/$b" && tar -xzf "$addon" -C "$tmp/$addon"
   co="$tmp/$b/$sub/check.out"
@@ -91,7 +91,7 @@ for pair in "qrh-zeta23-density-receipt.tar.gz:qrh-zeta23-addon-v2.tar.gz:densit
 done
 
 say "== 5. the add-on tarballs against their own manifests"
-for addon in qrh-mnf-addon.tar.gz qrh-mnf-addon-v2.tar.gz qrh-mnf-addon-v3.tar.gz qrh-zeta23-addon.tar.gz qrh-zeta23-addon-v2.tar.gz qrh-zeta23-addon-v3.tar.gz qrh-zeta23-addon-v4.tar.gz qrh-zeta23-addon-v5.tar.gz; do
+for addon in qrh-mnf-addon.tar.gz qrh-mnf-addon-v2.tar.gz qrh-mnf-addon-v3.tar.gz qrh-zeta23-addon.tar.gz qrh-zeta23-addon-v2.tar.gz qrh-zeta23-addon-v3.tar.gz qrh-zeta23-addon-v4.tar.gz qrh-zeta23-addon-v5.tar.gz qrh-zeta23-addon-v6.tar.gz; do
   mkdir -p "$tmp/m-$addon" && tar -xzf "$addon" -C "$tmp/m-$addon" && adir="$(find "$tmp/m-$addon" -mindepth 1 -maxdepth 1 -type d | head -1)"
   if (cd "$adir" && sha256sum --quiet -c MANIFEST.sha256 >/dev/null 2>&1); then good "$addon: matches its MANIFEST.sha256 ($(wc -l < "$adir/MANIFEST.sha256") files)"; else bad "$addon: differs from its MANIFEST.sha256"; fi
 done

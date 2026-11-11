@@ -273,3 +273,64 @@ line (`on_line_iff_eject_fixed_all`).
   and `Zeta23.Density.density_single_window`, cold under the launcher, on top of everything v4
   covered. Its `## How to read this` block carries the corrected prose (Bohr–Landau PROVED;
   the zero-density estimate described as a count, not a zero-free region).
+
+## Addendum, 2026-11-04 (evening): the strip cube; no real zero; add-on v6
+
+- **The strip cube is a module of the tree** (`cube/`; source `zeta23-tree/MNF/RH/Cube.lean`,
+  56 declarations, 54 claimed, standard axioms). The "cube" is the pair measure that puts every
+  ordered pair of zeros of a window at (Re ρ − 1/2, Re ρ′ − 1/2, Im ρ − Im ρ′) with weight
+  m(ρ)m(ρ′) (`pairSum`); the strip is cut into the line, the punctured band 0 < |Re ρ − 1/2| < Δ
+  and the reservoir |Re ρ − 1/2| ≥ Δ; a zero is *degenerate* if multiple or sharing its ordinate
+  with another zero. Proved: **projection degeneracy** — an off-line zero is degenerate through
+  its mirror 1 − ρ̄ (`degenerate_of_not_onLine`), so "no degenerate zero" is exactly "RH and all
+  zeros simple" (`noDegenerate_iff`); **the gap as ordinate injectivity** — `SpectralGapHyp Δ` ⟺
+  no two distinct zeros within Δ of the line share an ordinate
+  (`spectralGapHyp_iff_ordinatesInjectiveOn_bandZeros`) ⟺ the band's coincident mass vanishes in
+  every window (`spectralGapHyp_iff_bandCoincidentMass`); the marginals of the pair measure
+  (N·NOff, N·reservoirMass, the double layer cake); the atom at ordinate difference 0
+  (`coincidentMass_eq`; every off-line zero contributes m(ρ)²; at most NOffLine·(N + N0), hence
+  eventually ≤ (5/9 + ε)·N² by Theorem B). **ζ has no real zero in (0, 1)**
+  (`riemannZeta_ofReal_ne_zero_of_mem_Ioo`, `nontrivial_zero_im_ne_zero`), from the tree's
+  one-term Euler–Maclaurin representation ζ(σ) = σ/(σ−1) − 1/2 + σJ(σ) with ‖J(σ)‖ ≤ 1/(2σ):
+  neither Mathlib at this pin nor the tree had it. The equivalences RELOCATE RH, simplicity and
+  the gap (each side as open as the other); the real-zero theorem is a zero-free statement about
+  the real segment only. The plan's bound offDiag ≤ NOffLine·N (constant 1/3) was found to be
+  false as bookkeeping (an on-line double zero sharing its ordinate with an off-line mirror pair
+  violates it) and was replaced by the N0-corrected bound; the cubic small-distance law is the
+  GUE prediction, not a theorem. Workflow of four nodes + merge (`cube/NODE_REPORTS.md`), the
+  real-zero proof by a fifth agent (`cube/nodes/REALZERO/`), independent recompile, prose review
+  (14 findings, `cube/Cube.review.diff`).
+- **Comparator pre-check, 534 theorems and 110 definitions, accepted with both kernels**
+  (`cube/comparator-precheck-v7.log`, 2026-11-04T18:37:43Z–18:53:02Z; axioms in
+  `cube/audit-v7.out`; first attempt failed because the generator kept the two `aux_` lemmas in
+  the Mathlib-only mirror, `cube/comparator-precheck-v7-attempt1-failed.log`; fixed in
+  `cube/gen_v7.py` by excluding them, as for ReservoirMass).
+- **Numerics**: the empirical cube from the 400 zeros (`numeric/cube.svg`, `numeric/CUBE_NUMERIC.md`):
+  the measure lies on the s-axis (all simple, on the line), hole of radius 0.243 around the atom
+  (mass 400 / 0); integrated pair count per zero at x = 0.5 is 0.145 (GUE 0.226, Poisson 1);
+  log-log slope 3.71 on [0.25, 0.75] against GUE's 2.67 on the same points; exploration only.
+- **Add-on v6** (`math/qrh-zeta23-addon-v6/`, tarball `math/qrh-zeta23-addon-v6.tar.gz`, copy in
+  `~/Downloads`; label `zeta23-density-v6`, work dir `density-v6`) packages the layer with
+  `Cube.lean`; dry run on the author's account (`dryrun-v6/`): MNF_DENSITY=ACCEPTED,
+  2026-11-04T18:54:22Z–19:09:39Z, 534 theorems, 110 definitions, both kernels, no problems; the
+  cold qrh run needs Joey at the keyboard.
+
+## Addendum, 2026-11-11 (00:18Z): the cold receipt for v6
+
+- **Cold run of add-on v6 on the qrh account: MNF_DENSITY=ACCEPTED** (label `zeta23-density-v6`,
+  2026-11-11T00:02:37Z–00:17:52Z, 15 min with the laptop under load from another job, exit 0,
+  534 theorems, 110 definitions compared by body, Lean kernel and NanoDa, systemd user unit with
+  AF_UNIX denied, probes and job in the same boot, layer files unchanged after the run, no
+  Problems). Receipt bundle `math/qrh-zeta23-density-v6-receipt.tar.gz`, sha256
+  `ca07a500aa8384b96b03f3480053cd48271bb157a04155de42342ca21254a90c` (copy in `~/`), extracted in
+  `receipt-v6/`. The layer's Lean files and the challenge are byte-identical to the dry run's
+  (the `density_sha256.txt` listings differ only in the two trees' `lakefile.toml`). This is the
+  receipt that covers `MNF.RH.noDegenerate_iff`,
+  `MNF.RH.spectralGapHyp_iff_ordinatesInjectiveOn_bandZeros`,
+  `MNF.RH.spectralGapHyp_iff_bandCoincidentMass` and
+  `MNF.RH.riemannZeta_ofReal_ne_zero_of_mem_Ioo`, cold under the launcher, on top of everything
+  v5 covered.
+- **Procedure note.** This run was started by Joey from a regular terminal window: the desktop
+  app instance of 2026-11-10 carries the no-new-privileges flag, so `sudo` refuses to run in its
+  terminal tabs (two attempts there failed at once with that message and ran nothing). The
+  receipt was picked up from the world-readable copy in `/tmp`, as before.

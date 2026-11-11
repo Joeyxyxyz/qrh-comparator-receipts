@@ -1,0 +1,51 @@
+installed /home/joeyxyxyz/mnf-stageB/z23work2/formal-math/zeta23/MNF/RH/Cube.lean lines 934
+CODE_DIFFERS 29174 26505
+/- Top module of the density layer: everything the Comparator run MNFChallengesD/Density.json judges. -/
+import MNF.RH.Strip
+import MNF.RH.DensityPartial
+import Zeta23.BL.DPMV
+import Zeta23.BL.DPMVexp
+import Zeta23.BL.JensenDisc
+import Zeta23.BL.BohrLandauPartial
+import Zeta23.BL.BohrLandauClosure
+import MNF.RH.ReservoirMass
+import Zeta23.Density.StripDensity
+import MNF.RH.Cube
+MNFChallengesD.Core: 30 theorems mirrored
+MNFChallengesD.Gap: 19 theorems mirrored
+MNFChallengesD.Hypotheses: 10 theorems mirrored
+MNFChallengesD.Counting: 13 theorems mirrored
+MNFChallengesD.GapDensity: 4 theorems mirrored (claimed)
+MNFChallengesD.BohrLandau: 9 theorems mirrored
+MNFChallengesD.Density: 19 theorems mirrored (claimed)
+MNFChallengesD.Extension: 56 theorems mirrored (claimed)
+MNFChallengesD.Strip: 19 theorems mirrored (claimed)
+MNFChallengesD.DPMV: 12 theorems mirrored (claimed)
+MNFChallengesD.DPMVexp: 9 theorems mirrored (claimed)
+MNFChallengesD.JensenDisc: 5 theorems mirrored (claimed)
+MNFChallengesD.BohrLandauPartial: 139 theorems mirrored (claimed)
+MNFChallengesD.DensityPartial: 7 theorems mirrored (claimed)
+MNFChallengesD.BohrLandauClosure: 64 theorems mirrored (claimed)
+MNFChallengesD.ReservoirMass: 38 theorems mirrored (claimed)
+MNFChallengesD.StripDensity: 108 theorems mirrored (claimed)
+MNFChallengesD.Cube: 54 theorems mirrored (claimed)
+534 theorems listed in MNFChallengesD/Density.json; MNF_AuditDensity.lean written
+== lake build 2026-11-04T18:35:30Z
+BUILD_EXIT=1
+warning: MNFChallengesD/Cube.lean:518:8: declaration uses `sorry`
+warning: MNFChallengesD/Cube.lean:531:8: declaration uses `sorry`
+error: Lean exited with code 1
+Some required targets logged failures:
+- MNFChallengesD.Cube
+error: build failed
+== audit 2026-11-04T18:36:24Z
+AUDIT_EXIT=0
+axiom lines: 534 nonstandard: 0 errors: 0
+== precheck 2026-11-04T18:36:31Z
+Some required targets logged failures:
+- MNFChallengesD.Cube
+error: build failed
+uncaught exception: Child exited with 1
+COMPARATOR_EXIT=1
+== end 2026-11-04T18:36:42Z
+INSTALL_SCRIPT_EXIT=0

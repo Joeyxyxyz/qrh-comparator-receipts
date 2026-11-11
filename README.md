@@ -34,8 +34,8 @@ definition compared by name, type and body:
 
 (Six runs, five bundles: run 2 and run 6 share the zeta23 tree and are two bundles of one add-on.)
 
-Added 2026-11-04, four more runs on the zeta23 tree, each re-judging the previous one plus new
-modules (details: `DEPOSIT_MAP.md` §10 and `notes/density-field-2026-11-03/`):
+Added 2026-11-04 (runs 7–10) and 2026-11-11 (run 11), five more runs on the zeta23 tree, each
+re-judging the previous one plus new modules (details: `DEPOSIT_MAP.md` §10 and `notes/density-field-2026-11-03/`):
 
 7. **The density field** (`zeta23-density`, add-on v2): 124 theorems, 66 definitions, Lean kernel
    and NanoDa, ACCEPTED 2026-11-03. `NcountSuperlinear` becomes a theorem (zeta23's Riemann–von
@@ -64,6 +64,18 @@ modules (details: `DEPOSIT_MAP.md` §10 and `notes/density-field-2026-11-03/`):
    and false for run 9, as that report's own axiom table shows; the verdict, audit and hashes of
    run 9 are unaffected, the generator is corrected in add-on v5, and the bundle is not altered
    (`DEPOSIT_MAP.md` §10).
+11. **The strip cube** (`zeta23-density-v6`, add-on v6): 534 theorems, 110 definitions, Lean kernel
+    and NanoDa, ACCEPTED 2026-11-11. `MNF/RH/Cube.lean`: the strip seen through three coordinates of
+    an ordered pair of zeros (the two shifted real parts and the ordinate difference). An off-line
+    zero is degenerate through its mirror 1 − ρ̄; "no degenerate zero" is exactly "RH and all zeros
+    simple" (`noDegenerate_iff`); the gap `SpectralGapHyp Δ` is exactly "no two distinct zeros
+    within Δ of the line share an ordinate" (`spectralGapHyp_iff_ordinatesInjectiveOn_bandZeros`),
+    equivalently the band's coincident mass vanishes in every window. The marginals of the pair
+    measure reproduce the off-line counts and the reservoir mass; the atom at ordinate difference 0
+    is bounded through the one-third theorem. New unconditional fact: ζ has no real zero in (0, 1)
+    (`riemannZeta_ofReal_ne_zero_of_mem_Ioo`). The equivalences relocate RH, simplicity and the
+    gap; they prove none of them, and the cubic small-distance law of the zeros is the GUE
+    prediction, not a theorem.
 
 ## What a PASS or ACCEPTED means, in the receipts' words
 
@@ -122,8 +134,9 @@ From `MNF_LIBRARY.md` (the library on OpenAI's tree):
 | `qrh-zeta23-addon-v3.tar.gz` / `qrh-zeta23-density-v3-receipt.tar.gz` | add-on v3 (Bohr–Landau for δ > 1/6) and its report | `c0958d53…` / `0588555d…` |
 | `qrh-zeta23-addon-v4.tar.gz` / `qrh-zeta23-density-v4-receipt.tar.gz` | add-on v4 (Bohr–Landau for every δ > 0) and its report | `fb74e8a2…` / `0d1919e4…` |
 | `qrh-zeta23-addon-v5.tar.gz` / `qrh-zeta23-density-v5-receipt.tar.gz` | add-on v5 (the reservoir mass; a zero-density estimate with a power saving) and its report | `2d2cf058…` / `37a806b2…` |
-| `DEPOSIT_MAP.md` | the register: what is proved, conditional, open, withdrawn, external; §10 the density field | `3c058e0a…` |
-| `notes/density-field-2026-11-03/` | the working notes of runs 7–10: ledger, plans, the prose reviews, the extracted receipts and dry runs, the agent sources, the numeric exploration of the first 400 zeros, the Aristotle contract | |
+| `qrh-zeta23-addon-v6.tar.gz` / `qrh-zeta23-density-v6-receipt.tar.gz` | add-on v6 (the strip cube; no real zero of ζ in (0, 1)) and its report | `99575a1e…` / `ca07a500…` |
+| `DEPOSIT_MAP.md` | the register: what is proved, conditional, open, withdrawn, external; §10 the density field | `b1ce6eeb…` |
+| `notes/density-field-2026-11-03/` | the working notes of runs 7–11: ledger, plans, the prose reviews, the extracted receipts and dry runs, the agent sources, the numeric exploration of the first 400 zeros (cascade and cube), the Aristotle contract | |
 | `CHECKSUMS.sha256`, `verify_deposit.sh` | full hashes; the verifier (hashes, verdicts, manifests, upstream statement files) | |
 | `LICENSE`, `NOTICE` | Apache-2.0 for what was authored for this record; third-party items and quoted material named | |
 

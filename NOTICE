@@ -66,3 +66,9 @@ Added 2026-11-04 (run 10, add-on v5):
     tabulated zero ordinates it compares against are public (Odlyzko / LMFDB tables) and are
     reproduced only for the first ten zeros and the hundredth, to nine decimals.
 
+Added 2026-11-11 (run 11, add-on v6):
+  - MNF/RH/Cube.lean: written with Claude Code (Anthropic) under Joey Messina's direction by parallel
+    workflow agents from a written plan (notes/density-field-2026-11-03/cube/), merged, recompiled
+    independently and corrected after an adversarial prose review; reading the strip through the
+    simplicity of the projected zeros is Joey Messina's idea; every theorem kernel-checked and
+    Comparator-judged.
