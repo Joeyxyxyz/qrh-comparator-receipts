@@ -49,7 +49,7 @@ published theorem stated as a hypothesis, not formalized; **[OPEN]** conjecture;
 | `sign_gate_trivial`, `sign_gate_shifted` | the hackathon sign gate returns {0} on any symmetric set: applied to S it assumes RH | scan item 5 |
 | `nullify_dilation`, `gap_iff_nullify_id` | nullify is dilation-covariant; the gap property is "nullify is the identity on S" | Python-verified in the corpus, now kernel-checked |
 | `spectralGapHyp_iff_zeroFree_strip` (v2) | **the gap hypothesis at Δ is exactly a zero-free strip 1/2 < Re s < 1/2 + Δ** (no hypothesis, any Δ) | new; makes the §4 remark on Δ ≤ 3/8 a theorem |
-| `spectralGapHyp_three_eighths_iff_of` (v2) | given `ZeroFreeRightOf (7/8)`: gap at exactly 3/8 ⟺ every nontrivial zero has Re ∈ {1/2, 1/8, 7/8} | new; shows the threshold Δ > 3/8 of §2 is exact |
+| `spectralGapHyp_three_eighths_iff_of` (v2) | given `ZeroFreeRightOf (7/8)`: gap at exactly 3/8 ⟺ every nontrivial zero has Re ∈ {1/2, 1/8, 7/8} | new; shows where the squeeze from the bound \|Re ρ − 1/2\| ≤ 3/8 stops: at Δ = 3/8 it leaves the line Re s = 7/8 open |
 | `zerosIn_finite`, `Ndist_le_Ncount`, `N0star_le_Ndist`, `N0simple_le_N0star` (v3, Counting) | the zeros in a window (T₁,T₂] are finitely many; distinct ≤ with multiplicity; on-line ≤ distinct; simple on-line ≤ on-line | [BOOKKEEPING]; zeta23's vocabulary over MNF's names |
 | `riemannHypothesis_iff_window_counts`, `allZerosSimple_iff_window_counts` (v3, Counting) | RH ⟺ ∀ T₁ T₂, N0star = Ndist; AllZerosSimple ⟺ ∀ T₁ T₂, Ncount = Ndist | [BOOKKEEPING] restatements, not density results |
 | `gap_iff_zeroFreeBand`, `gap_of_right_side`, `rh_of_band_of_zeroFree` (v3, Reduction) | the gap at Δ IS the zero-free band 1/2 < Re ρ < 1/2 + Δ; one side suffices; with a region Re > θ, RH ⟺ no zero with 1/2 < Re ρ ≤ θ | frontier package; `rh_of_band_seven_eighths` is the θ = 7/8 instance (§2) |
@@ -137,7 +137,10 @@ zeros there.
 1. An independent Comparator verification of OpenAI's 7/8 zero-free-region theorem (RECEIPT.md),
    with the MNF bridge compiled on top (BRIDGE.md).
 2. A kernel-checked library (this add-on, MNF_LIBRARY.md) establishing that the MNF gap
-   hypothesis is equivalent to RH for every Δ > 3/8 and insufficient for every Δ ≤ 3/8, and (v2)
+   hypothesis is equivalent to RH for every Δ > 3/8 (given OpenAI's theorem; for Δ ≥ 1/2 from Mathlib
+   alone), that the squeeze from the bound |Re ρ − 1/2| ≤ 3/8 does not reach Δ ≤ 3/8
+   (`gap_below_bound_insufficient` is a statement about abstract symmetric sets of reals; it does
+   not decide whether a gap at such Δ implies RH), and (v2)
    that at every Δ it is exactly a zero-free strip next to the critical line; the multiplicity
    lemmas; the functional-equation symmetry of multiplicities; and the exact relation between
    Mathlib's `RiemannHypothesis` and the strip form. The v1 run (2026-10-28, ACCEPTED) compared
@@ -208,10 +211,12 @@ NanoDa + con-ron, status PASS, not a signed registry admission); and the tracker
 receipted the way OpenAI's theorem was (a cold Comparator run of its tree under the kit's launcher),
 instantiates `riemannHypothesis_iff_gap_of_zeroFree` and `riemannHypothesis_iff_remaining_strip`
 verbatim at its θ, with `θ − 1/2` in place of `3/8`; none is used here. Lean zero-density
-estimates exist on Palomar (Mark Lewko, PALOMAR-2026-10-11-000010 and -10-21-000008, Lean
-v4.35.0-rc2, another pin), one-sided (`Re ρ ≥ σ`), which with the reflection `ρ ↦ 1 − ρ` of
+estimates exist on Palomar (Mark Lewko, PALOMAR-2026-10-07-000009, -10-09-000005, -10-11-000010
+and -10-21-000008; the third on Lean v4.35.0-rc2, another pin), one-sided (`Re ρ ≥ σ`), which with the reflection `ρ ↦ 1 − ρ` of
 `nontrivial_zero_reflect` would supply the Bohr–Landau-type input the §4 gap-forces-density
-remark needs; not attempted.
+remark needs; not attempted at the time (2026-10-28). That input was later proved on the zeta23
+tree instead (§10, run 9); Lewko's estimates are earlier and stronger than the zero-density
+estimate of run 10 (§10, Prior Lean work).
 
 **The restatement layer (B2, 2026-10-29 UTC), [RESTATEMENT \| zeta23] and [BOOKKEEPING]:** on the
 receipted zeta23 checkout, the qrh-zeta23 add-on's second Comparator run (label `zeta23-mnf`, Lean
@@ -254,10 +259,14 @@ as such. (Wording from notes/FischerForward_The_Math.md §6.)
 
 ## 10. The density field and Bohr–Landau on the zeta23 tree (2026-11-03/04)
 
-Five further Comparator runs on the zeta23 checkout that run 2 checked (cold under the kit's
-launcher, AF_UNIX denied, Lean kernel and NanoDa, every definition compared by body). The
-working notes, the receipts extracted, the plan, the two adversarial prose reviews and the
-per-agent sources are in `notes/density-field-2026-11-03/` (ledger `DENSITY_LEDGER.md`).
+Five further Comparator runs on the zeta23 checkout that run 2 checked (under the kit's launcher,
+AF_UNIX denied, Lean kernel and NanoDa, no definition holes, so that the body of every definition
+a claimed statement refers to is compared). The receipts record these runs as warm: the Zeta23
+library was compiled by run 2, and the modules of earlier layer runs by those runs; each run is
+cold only for the modules its add-on introduces, which the launch script enforces. They report
+ACCEPTED, not the kit's PASS, which is reserved for cold runs. The working notes, the receipts
+extracted, the plans, the adversarial prose reviews and the per-agent sources are in
+`notes/density-field-2026-11-03/` (ledger `DENSITY_LEDGER.md`).
 
 | run | label | add-on | receipt | theorems | result |
 |---|---|---|---|---|---|
@@ -278,7 +287,7 @@ layer. What is proved there, in register terms:
 | `ReservoirDensityOne` ← `BohrLandau` (`reservoirDensityOne_of_bohrLandau`); `OnLineDensityOne` ← `BohrLandau` + gap (`onLineDensityOne_of_gap`) (Density) | [CONDITIONAL] | the "for every fixed δ" density versus density on the line itself; the gap is used once, to identify the Δ-near count with the on-line count |
 | Strip.lean (19), MNF/Extension/InjectionEjection.lean (56) | [PROVED] bookkeeping, operator algebra | the band around the line under N, E and injection; no analytic content; the MNF2 package's algebra (also ACCEPTED at the OpenAI pin on 2026-11-03) |
 | `Zeta23.BL.bohrLandau_gt_sixth`, `rightHalf_gt_sixth`, `M3.meanSquareUnif_explicit` (BohrLandauPartial) | [PROVED \| this tree] | Bohr–Landau for δ > 1/6 and the uniform mean square for σ ≥ 2/3, from the tree's approximate formula with its naive error (run 8) |
-| `BLClosure.first_derivative_test_smooth` / `_amp_smooth`, `B2per_fourier`, `zeta_eq_euler_maclaurin`, `tail_sharp`, `zeta_approx_sharp`, `meanSquareUnif_all` (BohrLandauClosure) | [PROVED \| this tree] | Titchmarsh Lemmas 4.2/4.3 for smooth phases; the Fourier series of B₂; Euler–Maclaurin for ζ; the sharp tail; the approximate formula with error O(N^{−σ}) for N ≥ t; Hardy–Littlewood's O(T) mean square for every σ₁ > 1/2 (run 9) |
+| `BLClosure.first_derivative_test_smooth` / `_amp_smooth`, `B2per_fourier`, `zeta_eq_euler_maclaurin`, `tail_sharp`, `zeta_approx_sharp`, `meanSquareUnif_all` (BohrLandauClosure) | [PROVED \| this tree] | Titchmarsh Lemmas 4.2/4.3 for smooth phases; the Fourier series of B₂; Euler–Maclaurin for ζ; the sharp tail; the approximate formula with error O(N^{−σ}) for N ≥ t; the classical O(T) mean square of ζ on the lines σ ≥ σ₁, for every σ₁ > 1/2 (run 9) |
 | **`Zeta23.BL.bohrLandau_full : MNF.RH.BohrLandau`** (BohrLandauClosure) | [PROVED \| this tree] | for every δ > 0 the nontrivial zeros with 0 < Im ρ ≤ T and \|Re ρ − 1/2\| ≥ δ, with multiplicity, number ≤ C_δ·T (T ≥ 2). Bohr–Landau 1914, formalized; not new mathematics |
 | `MNF.RH.reservoirDensityOne_unconditional`, **`onLineDensityOne_of_gap_only`** (BohrLandauClosure) | [PROVED \| this tree]; [CONDITIONAL] on the gap alone | density one within every fixed δ of the line with no hypothesis; a gap at any Δ > 0 gives density one on the line with no other hypothesis. For Δ ≥ 1/2 the gap is RH (§1); for 0 < Δ < 1/2 it is the open strip of §4 |
 | `Zeta23.BL.meanSquare_strip'`, `rightHalfBound_of_meanSquare'` (BohrLandauClosure) | [PROVED \| this tree] | the two statements that `Zeta23/BohrLandau.lean` named as `sorry`; the originals are kept untouched (their sorries are in no claim set); at σ = 1 the ∫₀ᵀ form holds only by Mathlib's junk-value convention, as the docstrings say |
@@ -287,11 +296,11 @@ layer. What is proved there, in register terms:
 | **`MNF.RH.reservoirMass_le_rpow`**, `reservoirMass_le_Ncount_mul`, **`meanDisplacement_tendsto_zero`** (ReservoirMass) | [PROVED \| this tree] | reservoirMass T ≤ A·T·(log T)^{3/5} for T ≥ T₀, hence ≤ A·(log T)^{−2/5}·N(0,T): the mean distance of the zeros from the line, with multiplicity, tends to 0. Far weaker than Littlewood 1924 (O(T log log T)) and Selberg 1946 (O(T)); compatible with infinitely many zeros off the line and silent on the gap |
 | **`Zeta23.Density.density_single_window`** (StripDensity) | [PROVED \| this tree] | for 1/2 < σ₁ and σ₁ − 1/2 < δ ≤ 1/2: NRight(δ, T) ≤ C·T^{1 − (2σ₁−1)²/(2σ₁)}·(1 + log T)³ for all T ≥ 2 (at σ₁ = 3/4: O(T^{5/6}(log T)³)) — a zero-density estimate with a power saving, Carlson's method with one approximate formula on one window; weaker than Carlson's exponent 4σ₁(1 − σ₁), which is not proved. A count, not a zero-free region: it excludes no individual zero and says nothing about zeros closer than δ to the line |
 | `sum_dX_sq_le`, `S_mul_Mx_eq`, `fz_sub_one_eq`, `meanSquare_fz_window`, `count_le_meanSquare_fz` (StripDensity) | [PROVED], [PROVED \| this tree] | the divisor bound Σ_{m≤Y} d_X(m)² ≤ Y(1 + log X)³; the product polynomial S_N·M_X; the Möbius identity ζ·M_X − 1 = −ζ·Σ_{n>X} μ(n)n^{−s} for Re s > 1; the window mean square of ζ·M_X; the Jensen-disc count with the majorant ½ log(ε² + ‖f‖²) |
-| `MNF.RH.degenerate_of_not_onLine`, **`noDegenerate_iff`** (Cube) | [PROVED] bookkeeping; an equivalence | an off-line zero shares its ordinate with its mirror 1 − ρ̄, so it is *degenerate* (multiple, or sharing an ordinate with another zero); "no nontrivial zero is degenerate" ⟺ "every nontrivial zero is on the line and simple". Relocates RH together with the simplicity conjecture; proves neither |
-| **`MNF.RH.spectralGapHyp_iff_ordinatesInjectiveOn_bandZeros`**, `spectralGapHyp_iff_not_inBand`, **`spectralGapHyp_iff_bandCoincidentMass`** (Cube) | [PROVED] an equivalence | `SpectralGapHyp Δ` ⟺ no two distinct zeros within distance < Δ of the line share an ordinate ⟺ the band's coincident mass vanishes in every window (0, T]. Relocates the gap, which stays [OPEN] |
+| `MNF.RH.degenerate_of_not_onLine`, **`noDegenerate_iff`** (Cube) | [PROVED \| this tree] (the reflection lemma of the zeta23 library is used); an equivalence | an off-line zero shares its ordinate with its mirror 1 − ρ̄, so it is *degenerate* (multiple, or sharing an ordinate with another zero); "no nontrivial zero is degenerate" ⟺ "every nontrivial zero is on the line and simple". Relocates RH together with the simplicity conjecture; proves neither |
+| **`MNF.RH.spectralGapHyp_iff_ordinatesInjectiveOn_bandZeros`**, `spectralGapHyp_iff_not_inBand`, **`spectralGapHyp_iff_bandCoincidentMass`** (Cube) | [PROVED \| this tree]; an equivalence | `SpectralGapHyp Δ` ⟺ no two distinct zeros within distance < Δ of the line share an ordinate ⟺ the band's coincident mass vanishes in every window (0, T]. Relocates the gap, which stays [OPEN] |
 | **`MNF.RH.riemannZeta_ofReal_ne_zero_of_mem_Ioo`**, `nontrivial_zero_im_ne_zero` (Cube) | [PROVED \| this tree] | ζ(σ) ≠ 0 for real 0 < σ < 1, so every nontrivial zero has a nonzero ordinate; from the tree's one-term Euler–Maclaurin representation with the remainder bounded by 1/(2σ). Classical and elementary; a zero-free statement about the real segment only, not about the interior of the strip |
 | `pairSum_const`, `pairSum_fst_indicator`, `pairSum_fst_abs`, `pairSum_fst_abs_eq_integral`, `pairSum_swap` (Cube) | [PROVED] bookkeeping | the pair measure of a window ("the cube": ordered pairs of zeros at (Re ρ − 1/2, Re ρ′ − 1/2, Im ρ − Im ρ′) with weight m(ρ)m(ρ′)): total mass N², first marginals N·NOff and N·reservoirMass, the double layer cake N·∫₀^{1/2} NOff dδ |
-| `coincidentMass_eq`, `offLine_sq_le_offDiagonalCoincidentMass`, `offDiagonalCoincidentMass_le`, `offDiagonalCoincidentMass_le_five_ninths` (Cube) | [PROVED] bookkeeping; [PROVED \| this tree] for the eventual bound | the atom at ordinate difference 0 is the diagonal mass Σ m(ρ)² plus the off-diagonal coincidences; each off-line zero contributes m(ρ)² through its mirror; the off-diagonal part is ≤ NOffLine·(N + N0), hence eventually ≤ (5/9 + ε)·N² by Theorem B. The cubic small-distance law of the zeros is the GUE prediction (Montgomery 1973), not a theorem |
+| `coincidentMass_eq`, `offLine_sq_le_offDiagonalCoincidentMass`, `offDiagonalCoincidentMass_le`, `offDiagonalCoincidentMass_le_five_ninths` (Cube) | [PROVED \| this tree] (bookkeeping on the reflection lemma; Theorem B for the eventual bound) | the atom at ordinate difference 0 is the diagonal mass Σ m(ρ)² plus the off-diagonal coincidences; each off-line zero contributes m(ρ)² through its mirror; the off-diagonal part is ≤ NOffLine·(N + N0), hence eventually ≤ (5/9 + ε)·N² by Theorem B. The cubic small-distance law of the zeros is the GUE prediction (Montgomery 1973), not a theorem |
 
 Register tag **[PROVED | this tree]**: proved on the zeta23 checkout from Mathlib and the tree's
 sorry-free files (zeta23's own library, receipted in run 2), delegated by unfolding where it is
@@ -312,4 +321,40 @@ zero-density estimate of run 10 is a count of zeros off the line, not a zero-fre
 `SpectralGapHyp` stays [OPEN] for every Δ, exactly as in §6. The equivalences of run 11 restate RH
 with simplicity, and the gap, as statements about coincident ordinates of zeros; each side of each
 equivalence is as open as the other.
+
+Prior Lean work (read 2026-11-10/11 for the paper, not run here). Mark Lewko's four Palomar entries
+named in §8 register zero-density estimates with stronger exponents than
+`Zeta23.Density.density_single_window` (run 10), on another toolchain pin and not on the zeta23
+tree; they imply the one-sided Bohr–Landau bound. The absence of real zeros of ζ in (0, 1)
+(run 11) has earlier Lean proofs: by the same one-term Euler–Maclaurin route in
+AxiomMath/ZetaZerosV2 (`ZetaZeros/Analytic/RealSegment.lean`, commit `1d7edeb4`, 2026-10-03), and
+in sthubbar/goldbach-lean. Neither result is claimed as a first formalization. The phrase "first
+kernel-checked zero-density estimate with a power saving" in the working notes of run 10
+(`strip/STRIP_PLAN.md`, `strip/STRIP_SCOPE_REPORTS_2026-11-04.md`) was provisional, subject to
+reading those entries, and does not hold.
+
+Errata (2026-11-11, found while the paper was prepared; no bundle is altered). (1) The receipts
+record runs 6 to 11 as warm, cold only for the modules each add-on introduces; this section said
+"cold" until this revision, and "cold run" in the ledger means a run under the launcher on the
+`qrh` account in that sense. (2) The reports of runs 4 to 11 say that the definitions of the
+challenge were "all compared by name, type and body"; the number they print counts `def` lines of
+the challenge modules, and Comparator compares those a claimed statement refers to, so each count
+is an upper bound (in run 11, `Zeta23.BL.CG`, `meanSquareB` and `A₀` are counted and no claimed
+statement refers to them). (3) The "What was proved" block of the reports of runs 7 to 11 omits
+the statements Lean prints with a leading `@` (279 of 534 in run 11); the axiom table and
+`audit.out` have all. (4) The run 8 report's "How to read this" block is run 7's and does not
+mention Bohr–Landau for δ > 1/6, which its statement block and axiom table contain. (5) Run 2's
+receipt records an add-on manifest hash (`a20b1b1d…`) other than that of the deposited
+`qrh-zeta23-addon.tar.gz` (`0c37cc13…`), which also carries run 6's step: an earlier version of
+the add-on launched run 2 and is not in the record; what run 2 judged is fixed by its receipt.
+(6) §6 item 2 said the gap hypothesis is "insufficient for every Δ ≤ 3/8" and §1 called the
+threshold "exact"; the Lean statement `gap_below_bound_insufficient` is about abstract symmetric
+sets of reals and shows only where the squeeze stops. (7) The equivalences of `Cube.lean` were
+tagged [PROVED]; their proofs use the zeta23 library's reflection lemma, so the tag is
+[PROVED | this tree]. (8) In `notes/density-field-2026-11-03/numeric/RESULTS.md` the "exact GUE"
+standard deviation 0.4221 is a typed constant (the Wigner surmise gives 0.4220; `numeric/gue_sd.py`
+recomputes the exact law's value, 0.4243), and the eleven tabulated ordinates it compares with are
+constants "as recalled", not read from the tables. (9) The mean square on the lines σ > 1/2 was
+attributed here and in the README to Hardy and Littlewood without the source having been checked;
+it is now called classical. The paper (`paper/`) states each of these.
 

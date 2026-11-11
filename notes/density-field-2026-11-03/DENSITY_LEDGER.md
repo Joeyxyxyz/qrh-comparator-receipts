@@ -334,3 +334,41 @@ line (`on_line_iff_eject_fixed_all`).
   app instance of 2026-11-10 carries the no-new-privileges flag, so `sudo` refuses to run in its
   terminal tabs (two attempts there failed at once with that message and ran nothing). The
   receipt was picked up from the world-readable copy in `/tmp`, as before.
+
+## Addendum, 2026-11-11: corrections found while the paper was prepared
+
+- **Terminology: these runs are warm.** In the addenda above, "cold run of add-on vN on the qrh
+  account" means a run under the kit's launcher as the unprivileged user `qrh`. The receipts
+  record runs 6 to 11 as warm: the Zeta23 library was compiled by run 2 and, in later runs, the
+  layer's earlier modules by earlier runs; each run is cold only for the modules its add-on
+  introduces (the launch script refuses to start otherwise). These runs report ACCEPTED, not the
+  kit's PASS, which is reserved for cold runs. The deposit map §10 now says so.
+- **How the runs were started.** For runs 7 to 10 (add-ons v2 to v5) the Claude Code session
+  working with Joey typed one command line into a terminal tab of the desktop app (copy the add-on
+  tarball to the `qrh` account, open a shell as `qrh` with `machinectl`, run the add-on's three
+  scripts); Joey authorized it by entering his password in that tab, and the scripts ran as `qrh`.
+  Run 11 (add-on v6) Joey started himself from a regular terminal window with the same command
+  line (see the previous addendum).
+- **Prior Lean work.** Read for the paper on 2026-11-10/11, not run here: Mark Lewko's four
+  Palomar entries (PALOMAR-2026-10-07-000009, -10-09-000005, -10-11-000010, -10-21-000008)
+  register zero-density estimates with stronger exponents than `density_single_window`, on another
+  pin; AxiomMath/ZetaZerosV2 (commit `1d7edeb4`, 2026-10-03) and sthubbar/goldbach-lean prove that
+  ζ has no real zero in (0, 1), the former by the same one-term Euler–Maclaurin route as
+  `Cube.lean`. The phrase "first kernel-checked zero-density estimate with a power saving" in
+  `strip/STRIP_PLAN.md` and `strip/STRIP_SCOPE_REPORTS_2026-11-04.md` was provisional and does not
+  hold; the README's "New unconditional fact" for the real-zero theorem meant new to this tree and
+  has been reworded.
+- **Numerics.** `numeric/gue_sd.py` (added) recomputes the standard deviation of the exact GUE
+  nearest-neighbour spacing law: 0.4243. The value 0.4221 in `numeric/RESULTS.md` is a constant
+  typed into `mnf_analysis.py`; the Wigner surmise gives 0.4220. The eleven "tabulated" ordinates
+  that `rs_zeros.py` compares with are constants marked "as recalled"; they were not read from the
+  tables, so "checked against the standard tables" above overstates the check. The two figures
+  with their text labels edited for the paper are `numeric/cascade-relabeled.svg` and
+  `numeric/cube-relabeled.svg` (scripts `relabel_figures.py`, `relabel_tooltips.py`); the plotted
+  data are unchanged.
+- **Regeneration check.** `paper-review/regen.log` (added): the challenge files of runs 6 to 11,
+  regenerated in scratch copies with each add-on's own generator on its own sources, have the
+  sha256 values of the receipts' listings.
+- **Where the corrections are stated.** `DEPOSIT_MAP.md` §10 (Prior Lean work; Errata of
+  2026-11-11) and the paper, which is added to the repository under `paper/` with the commit
+  after this one.

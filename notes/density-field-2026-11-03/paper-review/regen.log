@@ -1,0 +1,12 @@
+Regeneration of the challenge files of runs 6 to 11 in scratch copies (final round, 2026-11-11 UTC).
+For each run: the add-on's Lean sources were copied from REPO/sources/<add-on> into an empty folder, the add-on's generator was run there with python3 -I,
+and every line of the receipt's sha256 listing except lakefile.toml was checked with sha256sum -c in that folder.
+
+run 6 (qrh-zeta23-addon, z23_gen_challenge.py): listing lines 14; OK 13; not OK 0
+run 7 (qrh-zeta23-addon-v2, z23_gen_density_challenge.py): listing lines 32, of which generated files 14; OK 31; not OK 0; theorem names in the generated configuration 124 definition_names []
+run 8 (qrh-zeta23-addon-v3, z23_gen_density_challenge.py): listing lines 37, of which generated files 17; OK 36; not OK 0; theorem names in the generated configuration 270 definition_names []
+run 9 (qrh-zeta23-addon-v4, z23_gen_density_challenge.py): listing lines 39, of which generated files 18; OK 38; not OK 0; theorem names in the generated configuration 334 definition_names []
+run 10 (qrh-zeta23-addon-v5, z23_gen_density_challenge.py): listing lines 43, of which generated files 20; OK 42; not OK 0; theorem names in the generated configuration 480 definition_names []
+run 11 (qrh-zeta23-addon-v6, z23_gen_density_challenge.py): listing lines 45, of which generated files 21; OK 44; not OK 0; theorem names in the generated configuration 534 definition_names []
+
+notes copy of run 11: 21 of 21 generated files in notes/density-field-2026-11-03/zeta23-tree match the run 11 listing

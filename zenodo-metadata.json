@@ -1,23 +1,55 @@
 {
   "metadata": {
-    "upload_type": "dataset",
-    "title": "Independent Comparator receipts for OpenAI's 7/8 zero-free theorem and Anthropic's zeta23, with the MNF.RH Lean library judged on each",
+    "upload_type": "publication",
+    "publication_type": "preprint",
+    "title": "Receipted Comparator Checks of Two Lean Proofs on Zeros of the Riemann Zeta Function, with Formalizations of the Bohr–Landau Theorem and a Zero-Density Estimate",
     "creators": [
-      {"name": "Messina, Joey"}
+      {
+        "name": "Messina, Joey"
+      }
     ],
-    "description": "Five receipt bundles and the pinned kits that produced them. On one laptop, under a sandboxed protocol with every input held to a sha256, Comparator (the Lean FRO's proof judge) re-checked (1) OpenAI's Lean 4 theorem that the Riemann zeta function has no zeros with real part above 7/8 (github.com/openai/math at commit adc7f124; verdict PASS, cold run, Lean kernel, 2026-10-27) and (2) Anthropic's Lean 4 formalization zeta23 of Alpoege and Furman's theorem that more than two thirds of the zeta zeros are simple and on the critical line, 17 statements (github.com/anthropics/formal-math at commit 16a5ce41; verdict PASS, cold run, Lean kernel and NanoDa, 2026-10-28). On top of each verified tree, the depositor's consolidated Lean library MNF.RH was judged by Comparator as a further run with its own challenge file and every definition compared by body: 40, 43 and 87 theorems on OpenAI's tree (v1, v2, v3; ACCEPTED 2026-10-28/29) and 62 theorems on Anthropic's tree (ACCEPTED 2026-10-29). The library re-expresses the Riemann Hypothesis (the MNF spectral-gap hypothesis at any threshold above 3/8 is RH; at every threshold it is a zero-free strip next to the critical line), restates zeta23's Theorems A to D over its own definitions, and proves, with two literature facts as explicit hypotheses, that a gap at any positive threshold forces density one of the zeros onto the line. The record claims no proof of RH or of the simple-zeros conjecture and combines nothing from the two external results. Every hash is re-derivable with the included verify_deposit.sh; DEPOSIT_MAP.md is the register of what is proved, conditional, open and withdrawn.",
+    "description": "<p>This paper reports eleven runs of Comparator, the Lean FRO's proof judge, under a pinned, sandboxed protocol, each with a published receipt. Two runs repeat checks of public Lean 4 proofs on zeros of the Riemann zeta function: OpenAI's theorem that zeta has no zeros with real part above 7/8, and zeta23, Anthropic's formalization of Alpöge and Furman's theorem that more than two thirds of the zeros are simple and on the critical line (as judged: for every ε &gt; 0, a proportion at least 2/3 − ε at all large heights). Both ended in PASS: the pinned proof was accepted by the Lean kernel (and NanoDa for zeta23) against the pinned statement file, using only the axioms propext, Quot.sound and Classical.choice. Nine further accepted runs judge Lean files added to the verified trees: the author's library MNF.RH, and a layer formalizing the Bohr–Landau theorem, a zero-density estimate with a power saving weaker than Carlson's, a bound for the zeros' total displacement from the critical line that is far weaker than Littlewood's and Selberg's, two equivalences that restate, and do not prove, the Riemann hypothesis with simplicity and a zero-free-strip hypothesis of the author's library, and the absence of real zeros of zeta in (0,1). The analytic results are classical or weaker than classical ones; Lean zero-density estimates with stronger exponents, which imply the one-sided Bohr–Landau bound, were registered earlier by others, and earlier Lean proofs of the absence of real zeros exist. Nothing here proves, or is evidence for, the Riemann hypothesis, the simplicity of the zeros, or a zero-free strip next to the critical line. The layer's Lean files (apart from four supporting files, which the author supplied), parts of MNF.RH, the scripts and the text of the paper were produced with Claude Code, Anthropic's coding agent, under the direction of the author, who conceived the MNF framework, set the goals, operated every run and is responsible for the claims.</p><p>Files: the paper (PDF), and a snapshot of the public record github.com/Joeyxyxyz/qrh-comparator-receipts (the kit, nine add-ons, eleven receipt bundles, the register DEPOSIT_MAP.md, the verifier verify_deposit.sh, unpacked sources, working notes, and the paper's source and review record).</p>",
     "access_right": "open",
-    "license": "Apache-2.0",
-    "keywords": ["Riemann zeta function", "Riemann Hypothesis", "Lean 4", "Mathlib", "Comparator", "formal verification", "zero-free region", "zeros on the critical line", "Messina Nullification Framework", "reproducibility"],
-    "related_identifiers": [
-      {"identifier": "arXiv:2608.13637", "relation": "references", "resource_type": "publication-preprint"},
-      {"identifier": "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a", "relation": "isDerivedFrom", "resource_type": "software"},
-      {"identifier": "https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5", "relation": "isDerivedFrom", "resource_type": "software"},
-      {"identifier": "https://github.com/leanprover/comparator/tree/d03acab154d269c06e60e4de7e4cc85deebff94b", "relation": "cites", "resource_type": "software"},
-      {"identifier": "https://github.com/leanprover/comparator/tree/75c730e9b6ef5c2c3b334fad7c3d51fe20624c88", "relation": "cites", "resource_type": "software"},
-      {"identifier": "https://github.com/leanprover/lean4export/tree/076e8e57707e813375e8f9da8bf989799ace9680", "relation": "cites", "resource_type": "software"},
-      {"identifier": "https://github.com/leanprover/lean4export/tree/9fb131bb100eb32ccf6836f14e4f8328d13b6792", "relation": "cites", "resource_type": "software"}
+    "license": "CC-BY-4.0",
+    "keywords": [
+      "Riemann zeta function",
+      "zeros of the zeta function",
+      "Lean 4",
+      "Mathlib",
+      "Comparator",
+      "proof checking",
+      "reproducibility",
+      "Bohr–Landau theorem",
+      "zero-density estimate",
+      "AI-assisted formalization"
     ],
-    "notes": "The theorems under test belong to OpenAI and to Anthropic/Alpoege-Furman and are credited as such; this record is an independent repetition of checks their authors report, not a first verification. Warm/cold status, kernels used and every deviation are stated in each receipt. The Lean additions of 2026-10-28/29 and the scripts were produced with Claude Code under the depositor's direction; the Sturm-Liouville file is co-authored by Aristotle (Harmonic). Zenodo's concept DOI should be added to README-DEPOSIT.md after first publication; do not regenerate any add-on tarball for that edit."
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/Joeyxyxyz/qrh-comparator-receipts",
+        "relation": "isSupplementedBy",
+        "resource_type": "dataset"
+      },
+      {
+        "identifier": "arXiv:2608.13637",
+        "relation": "references",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+        "relation": "references",
+        "resource_type": "software"
+      },
+      {
+        "identifier": "https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+        "relation": "references",
+        "resource_type": "software"
+      },
+      {
+        "identifier": "https://github.com/leanprover/comparator",
+        "relation": "references",
+        "resource_type": "software"
+      }
+    ],
+    "notes": "Licenses: the text of the paper is under CC BY 4.0; the files of the record (scripts, documents, the author's Lean files, the receipts) are under the Apache License 2.0 (LICENSE, NOTICE in the snapshot). The theorems under test belong to OpenAI and to Anthropic and Alpöge-Furman and are credited as such; the runs repeat checks and are not first verifications. Use of AI tools is stated in the paper's section 'Authorship and use of AI tools'. This file is a helper for filling the Zenodo form by hand; it replaces the metadata drafted on 2026-10-29 for a dataset deposit of runs 1 to 6."
   }
 }

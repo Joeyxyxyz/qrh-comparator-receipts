@@ -1,7 +1,7 @@
 # sha256 of every top-level file of this record except this one and README.md (which cites these hashes).
 # Check: sha256sum -c CHECKSUMS.sha256   (the unpacked copies under sources/ and the notes/ folder are not listed: the tarballs are canonical)
 c75666b5df7a332bb2c9d839e7872a51eb4f8d2ab905e41f8f9f0e28f811562d  .gitignore
-b1ce6eeb31e5f25a9dea5c16d715cff257b24ea7861359e0d467519351712225  DEPOSIT_MAP.md
+46a1509b238c7c1f9da229244694ddaa1ef3d475e3e638ec90c3eff069b418a9  DEPOSIT_MAP.md
 acdec80a53f64d284e1358abd6f6c96c3926b6e6c0a937f078a4847c7a9afd7c  LICENSE
 12935a2060234c9b46adf4dd2c339c9f1941cc45476649b45cdfd1e9ace14ba0  NOTICE
 e0745073e49e9e2d3620a4a6472c9757819ab163388f56ac1aaf253bd92c46ea  qrh-comparator-kit.tar.gz
@@ -26,4 +26,4 @@ ca07a500aa8384b96b03f3480053cd48271bb157a04155de42342ca21254a90c  qrh-zeta23-den
 1476f56809c5739866e538d84d41670d573dc37fb56f74ddcc1709da065c1eef  qrh-zeta23-mnf-receipt.tar.gz
 e0b9a4d97a04dff75f25cca69f28e684a785bd5f633ea8d0763085be7ea364e5  qrh-zeta23-receipt.tar.gz
 e89e62afc3981acc09d5f3109acc7198feaf9a76c01d6b5d4e7b685f1c133d2e  verify_deposit.sh
-47bb00544e40ed3337daa2668c2a42e71692c7e0951e2be990f9555b811249b8  zenodo-metadata.json
+c2670b944a1202bad26d6bc4097abffb9ebbd5b6d6099504411f317510b5244d  zenodo-metadata.json
