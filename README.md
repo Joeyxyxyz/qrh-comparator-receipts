@@ -3,6 +3,11 @@
 Joey Messina, 2026-10-29; extended 2026-11-04 and 2026-11-11. One record, twenty-one tarballs (the
 kit, nine add-ons, eleven receipt bundles), every hash re-derivable with `./verify_deposit.sh`.
 
+**The paper.** [`paper/Messina_2026_Receipted_Comparator_Checks.pdf`](paper/Messina_2026_Receipted_Comparator_Checks.pdf)
+describes this record as of commit `9a6a1d9`, with its source and its review record beside it
+(`paper/`). It is to be deposited on Zenodo with a snapshot of the record; the DOI will be added
+here.
+
 ## What this record is
 
 Two public, machine-checked Lean 4 results about the zeros of the Riemann zeta function were

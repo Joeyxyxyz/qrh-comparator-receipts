@@ -1,0 +1,354 @@
+% Bibliography of the paper, one entry per key of md/99-references.md (39 entries, keys unchanged).
+% Written for Typst 0.15 with style "ieee". That style prints neither note nor howpublished nor
+% eprint, and for a web entry it prints only author, title, series, url. So that nothing of a
+% reference is lost in print, the remarks of a reference stand in a field the style prints:
+%   - online entries (repositories, web pages, registry entries): the remark is in series,
+%     printed after the title;
+%   - unpublished entries (arXiv preprints, the OpenAI preprint): the arXiv identifier, version,
+%     date and remarks are in publisher (eprint, archiveprefix, primaryclass are kept as data);
+%   - carlson-1920: the double year and the extent are in number, since year takes one year only
+%     and pages would print as a single page;
+%   - ingham-1940: the page range and the remark on it are in volume, since a page field with a
+%     remark prints with the singular label;
+%   - titchmarsh: the reviser and the extent are in edition.
+% Greek letters, accents, dashes and typographic quotes are literal Unicode characters.
+% Personal authors are literal names (double braces) holding the words of md/99-references.md, so
+% that given names print as the paper has them ("Levent Alpöge and Ralph Furman", not the style's
+% "L. Alpöge and R. Furman") and the style adds no comma to a list of three.
+% Two entries refer to another entry: the field holds ⟦key⟧, which main.typ replaces by a
+% citation of that key, so the printed number follows the numbering of the list.
+% No invisible characters: main.typ switches hyphenation off for the whole list.
+
+@unpublished{alpoge-furman,
+  author = {{Levent Alpöge and Ralph Furman}},
+  title = {More than two thirds of the zeta zeros are simple and on the critical line},
+  publisher = {arXiv:2608.13637 [math.NT], v2 (19 August 2026)},
+  eprint = {2608.13637},
+  archiveprefix = {arXiv},
+  primaryclass = {math.NT},
+  doi = {10.48550/arXiv.2608.13637}
+}
+
+@online{anthropic-formal-math,
+  author = {{Anthropic}},
+  title = {anthropics/formal-math},
+  series = {project zeta23/ (Lean 4 formalization of the theorem of ⟦alpoge-furman⟧). GitHub repository, commit 16a5ce41304fcdaea4e0be7c132e1c361dc26da5 (2026-10-27)},
+  url = {https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5}
+}
+
+@unpublished{aristotle,
+  author = {{Tudor Achim, Alex Best, Alberto Bietti, et al. (23 authors)}},
+  title = {Aristotle: IMO-level Automated Theorem Proving},
+  publisher = {arXiv:2510.01346 [cs.AI], v2 (10 October 2025)},
+  eprint = {2510.01346},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.AI}
+}
+
+@online{axiom-zetazeros,
+  author = {{Axiom Math}},
+  title = {ZetaZerosV2 (Lean formalization of arXiv:2609.02882)},
+  series = {file ZetaZeros/Analytic/RealSegment.lean. GitHub repository AxiomMath/ZetaZerosV2, commit 1d7edeb4e67096f9da1b37cd4b763e8b73886655 (2026-10-03)},
+  url = {https://github.com/AxiomMath/ZetaZerosV2/blob/1d7edeb4e67096f9da1b37cd4b763e8b73886655/ZetaZeros/Analytic/RealSegment.lean}
+}
+
+@article{bohr-landau-1914,
+  author = {{Harald Bohr and Edmund Landau}},
+  title = {Sur les zéros de la fonction ζ(s) de Riemann},
+  journal = {Comptes Rendus de l’Académie des Sciences (Paris)},
+  volume = {158},
+  year = {1914},
+  pages = {106--110}
+}
+
+@article{bohr-landau-1914b,
+  author = {{Harald Bohr and Edmund Landau}},
+  title = {Ein Satz über Dirichletsche Reihen mit Anwendung auf die ζ-Funktion und die L-Funktionen},
+  journal = {Rendiconti del Circolo Matematico di Palermo},
+  volume = {37},
+  year = {1914},
+  pages = {269--272}
+}
+
+@article{carlson-1920,
+  author = {{F. Carlson}},
+  title = {Über die Nullstellen der Dirichletschen Reihen und der Riemannschen ζ-Funktion},
+  journal = {Arkiv för Matematik, Astronomi och Fysik},
+  volume = {15},
+  number = {20 (1920/21), 28 pp.}
+}
+
+@online{claude-code,
+  author = {{Anthropic}},
+  title = {Claude Code (an agentic coding tool that reads a codebase, edits files and runs commands)},
+  series = {Documentation, read 2026-11-10},
+  url = {https://code.claude.com/docs/en/overview}
+}
+
+@online{comparator,
+  author = {{Lean FRO}},
+  title = {Comparator (a judge for Lean proofs: challenge file against solution file)},
+  series = {GitHub repository leanprover/comparator, archived by its owner on 2026-10-20; tags v4.34.0 (commit d03acab154d269c06e60e4de7e4cc85deebff94b) and v4.33.0-rc2 (commit 75c730e9b6ef5c2c3b334fad7c3d51fe20624c88)},
+  url = {https://github.com/leanprover/comparator}
+}
+
+@unpublished{fiori-2026,
+  author = {{Andrew Fiori}},
+  title = {Zero density theorems for short intervals},
+  publisher = {arXiv:2609.22624 (18 September 2026). Lean formalization: GitHub repository andrewfiori/ZeroDensityInShortIntervals; Palomar registry, entry PALOMAR-2026-09-23-000001 (registered 2026-09-23)},
+  eprint = {2609.22624},
+  archiveprefix = {arXiv},
+  url = {https://data.palomar-registry.org/entries/PALOMAR-2026-09-23-000001-v1.json}
+}
+
+@article{guth-maynard,
+  author = {{Larry Guth and James Maynard}},
+  title = {New large value estimates for Dirichlet polynomials},
+  journal = {Annals of Mathematics (2)},
+  volume = {203},
+  number = {2},
+  year = {2026},
+  pages = {623--675},
+  doi = {10.4007/annals.2026.203.2.6}
+}
+
+@online{hubbard-goldbach-lean,
+  author = {{Steve Hubbard}},
+  title = {goldbach-lean (described by its repository as AI-written)},
+  series = {file entries/renyi1948/LeanLab/PNTPort/DirichletZF/SiegelSigns.lean (theorem riemannZeta_real_neg). GitHub repository sthubbar/goldbach-lean, commit 30ab3dd5fbb90ed832a592a0a63424ab858a94a0 (2026-10-21)},
+  url = {https://github.com/sthubbar/goldbach-lean/blob/30ab3dd5fbb90ed832a592a0a63424ab858a94a0/entries/renyi1948/LeanLab/PNTPort/DirichletZF/SiegelSigns.lean}
+}
+
+@article{ingham-1940,
+  author = {{A. E. Ingham}},
+  title = {On the estimation of N(σ, T)},
+  journal = {The Quarterly Journal of Mathematics (Oxford Series)},
+  volume = {11, pp. 291–292 (pages as in zbMATH, Zbl 0025.02704; the Crossref record of the DOI has 201–202)},
+  year = {1940},
+  doi = {10.1093/qmath/os-11.1.201}
+}
+
+@online{landrun,
+  author = {{Armin Ranjbar}},
+  title = {landrun (runs a Linux process in an unprivileged sandbox using Landlock)},
+  series = {GitHub repository zouuup/landrun, commit 811cfff51ceaf3d9843708aa6d22e9b84ccac8b4 (2026-07-23)},
+  url = {https://github.com/zouuup/landrun}
+}
+
+@online{lean-4-35,
+  author = {{Lean FRO}},
+  title = {Lean 4.35.0 release notes},
+  series = {section “Checking Projects with lake check and lake comparator”. Released 2026-10-12},
+  url = {https://lean-lang.org/doc/reference/latest/releases/v4.35.0/}
+}
+
+@inproceedings{lean4,
+  author = {{Leonardo de Moura and Sebastian Ullrich}},
+  title = {The Lean 4 Theorem Prover and Programming Language},
+  booktitle = {Automated Deduction – CADE 28},
+  publisher = {Springer},
+  year = {2021},
+  pages = {625--635},
+  doi = {10.1007/978-3-030-79876-5_37}
+}
+
+@online{lean4export,
+  author = {{Lean FRO}},
+  title = {lean4export (plain-text export of Lean 4 declarations)},
+  series = {GitHub repository leanprover/lean4export, commits 076e8e57707e813375e8f9da8bf989799ace9680 (2026-09-14) and 9fb131bb100eb32ccf6836f14e4f8328d13b6792 (2026-08-03)},
+  url = {https://github.com/leanprover/lean4export}
+}
+
+@article{levinson-montgomery-1974,
+  author = {{Norman Levinson and H. L. Montgomery}},
+  title = {Zeros of the derivatives of the Riemann zeta-function},
+  journal = {Acta Mathematica},
+  volume = {133},
+  year = {1974},
+  pages = {49--65},
+  doi = {10.1007/BF02392141}
+}
+
+@online{lewko-density-32,
+  author = {{Mark Lewko}},
+  title = {A zero-density estimate with exponent 3(1−σ)/(2σ) for the Riemann zeta function},
+  series = {Palomar registry, entry PALOMAR-2026-10-09-000005 (registered 2026-10-09)},
+  url = {https://data.palomar-registry.org/entries/PALOMAR-2026-10-09-000005-v1.json}
+}
+
+@online{lewko-density-34,
+  author = {{Mark Lewko}},
+  title = {The density hypothesis for σ > 3/4},
+  series = {Palomar registry, entry PALOMAR-2026-10-07-000009 (registered 2026-10-07)},
+  url = {https://data.palomar-registry.org/entries/PALOMAR-2026-10-07-000009-v1.json}
+}
+
+@online{lewko-density-3917,
+  author = {{Mark Lewko}},
+  title = {Zero-density estimates from an improved large-values bound},
+  series = {Palomar registry, entry PALOMAR-2026-10-11-000010 (registered 2026-10-11)},
+  url = {https://data.palomar-registry.org/entries/PALOMAR-2026-10-11-000010-v1.json}
+}
+
+@online{lewko-density-improved,
+  author = {{Mark Lewko}},
+  title = {Improved zero-density estimates for the Riemann zeta function},
+  series = {Palomar registry, entry PALOMAR-2026-10-21-000008 (registered 2026-10-21)},
+  url = {https://data.palomar-registry.org/entries/PALOMAR-2026-10-21-000008-v1.json}
+}
+
+@article{littlewood-1924,
+  author = {{J. E. Littlewood}},
+  title = {On the zeros of the Riemann zeta-function},
+  journal = {Proceedings of the Cambridge Philosophical Society},
+  volume = {22},
+  number = {3},
+  year = {1924},
+  pages = {295--318},
+  doi = {10.1017/S0305004100014225}
+}
+
+@unpublished{liu-2026,
+  author = {{Baiying Liu}},
+  title = {Improved zero-free half-planes for the quasi-Riemann hypothesis},
+  publisher = {arXiv:2610.12234 [math.NT], v2 (12 October 2026)},
+  eprint = {2610.12234},
+  archiveprefix = {arXiv},
+  primaryclass = {math.NT}
+}
+
+@inproceedings{mathlib,
+  author = {{The mathlib Community}},
+  title = {The Lean Mathematical Library},
+  booktitle = {Proceedings of the 9th ACM SIGPLAN International Conference on Certified Programs and Proofs (CPP 2020)},
+  publisher = {ACM},
+  year = {2020},
+  pages = {367--381},
+  doi = {10.1145/3372885.3373824}
+}
+
+@inproceedings{montgomery-1973,
+  author = {{H. L. Montgomery}},
+  title = {The pair correlation of zeros of the zeta function},
+  booktitle = {Analytic Number Theory (St. Louis, Mo., 1972)},
+  series = {Proceedings of Symposia in Pure Mathematics},
+  volume = {24},
+  publisher = {American Mathematical Society},
+  year = {1973},
+  pages = {181--193},
+  doi = {10.1090/pspum/024/9944}
+}
+
+@article{montgomery-vaughan-1974,
+  author = {{H. L. Montgomery and R. C. Vaughan}},
+  title = {Hilbert’s inequality},
+  journal = {Journal of the London Mathematical Society (2)},
+  volume = {8},
+  year = {1974},
+  pages = {73--82},
+  doi = {10.1112/jlms/s2-8.1.73}
+}
+
+@online{nanoda,
+  author = {{ammkrn}},
+  title = {nanoda_lib (an external type checker for Lean 4 export files)},
+  series = {GitHub repository ammkrn/nanoda_lib; the record pins the fork robsimmons/nanoda_lib at commit 68d5ca9db226849b41a6fff59d796ff19d0a8840},
+  url = {https://github.com/ammkrn/nanoda_lib}
+}
+
+@article{odlyzko-1987,
+  author = {{A. M. Odlyzko}},
+  title = {On the distribution of spacings between zeros of the zeta function},
+  journal = {Mathematics of Computation},
+  volume = {48},
+  number = {177},
+  year = {1987},
+  pages = {273--308},
+  doi = {10.1090/S0025-5718-1987-0866115-0}
+}
+
+@online{openai-math,
+  author = {{OpenAI}},
+  title = {openai/math (mathematical manuscripts and Lean proof artifacts)},
+  series = {GitHub repository, commit adc7f1241b42e322a6451854ab7e4b4c146bf78a (2026-10-06)},
+  url = {https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a}
+}
+
+@unpublished{openai-qrh,
+  author = {{OpenAI}},
+  title = {The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s) > 7/8},
+  publisher = {OpenAI Math Release preprint, 30 September 2026; file preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf in ⟦openai-math⟧},
+  url = {https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf}
+}
+
+@online{palomar,
+  author = {{Palomar Registry}},
+  title = {A public registry of Lean-verified results},
+  url = {https://palomar-registry.org/}
+}
+
+@article{platt-trudgian-2021,
+  author = {{Dave Platt and Tim Trudgian}},
+  title = {The Riemann hypothesis is true up to 3·10¹²},
+  journal = {Bulletin of the London Mathematical Society},
+  volume = {53},
+  number = {3},
+  year = {2021},
+  pages = {792--797},
+  doi = {10.1112/blms.12460}
+}
+
+@online{pnt-plus,
+  author = {{Alex Kontorovich and Terence Tao (organizers)}},
+  title = {Prime Number Theorem and More (PrimeNumberTheoremAnd)},
+  series = {collaborative Lean project, launched 2024-01-09},
+  url = {https://github.com/AlexKontorovich/PrimeNumberTheoremAnd}
+}
+
+@article{selberg-1946,
+  author = {{Atle Selberg}},
+  title = {Contributions to the theory of the Riemann zeta-function},
+  journal = {Arch. Math. Naturvid.},
+  volume = {48},
+  number = {5},
+  year = {1946},
+  pages = {89--155}
+}
+
+@article{speiser-1934,
+  author = {{Andreas Speiser}},
+  title = {Geometrisches zur Riemannschen Zetafunktion},
+  journal = {Mathematische Annalen},
+  volume = {110},
+  year = {1934},
+  pages = {514--521},
+  doi = {10.1007/BF01448042}
+}
+
+@unpublished{tao-trudgian-yang,
+  author = {{Terence Tao, Tim Trudgian and Andrew Yang}},
+  title = {New exponent pairs, zero density estimates, and zero additive energy estimates: a systematic approach},
+  publisher = {arXiv:2501.16779 (28 January 2025). Companion database, zero-density chapter},
+  eprint = {2501.16779},
+  archiveprefix = {arXiv},
+  url = {https://teorth.github.io/expdb/blueprint/zero-density-chapter.html}
+}
+
+@book{titchmarsh,
+  author = {{E. C. Titchmarsh}},
+  title = {The Theory of the Riemann Zeta-function},
+  edition = {Second edition, revised by D. R. Heath-Brown, x + 412 pp.},
+  address = {Oxford},
+  publisher = {Clarendon Press},
+  year = {1986}
+}
+
+@article{von-mangoldt-1905,
+  author = {{H. von Mangoldt}},
+  title = {Zur Verteilung der Nullstellen der Riemannschen Funktion ξ(t)},
+  journal = {Mathematische Annalen},
+  volume = {60},
+  year = {1905},
+  pages = {1--19},
+  doi = {10.1007/BF01447494}
+}
